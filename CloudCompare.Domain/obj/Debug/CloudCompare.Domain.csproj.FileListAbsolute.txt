@@ -1,7 +1,0 @@
-J:\CloudCompare\CloudCompare.Domain\obj\Debug\ResolveAssemblyReference.cache
-J:\CloudCompare\CloudCompare.Domain\bin\Debug\CloudCompare.Domain.dll
-J:\CloudCompare\CloudCompare.Domain\bin\Debug\CloudCompare.Domain.pdb
-J:\CloudCompare\CloudCompare.Domain\obj\Debug\CloudCompare.Domain.dll
-J:\CloudCompare\CloudCompare.Domain\obj\Debug\CloudCompare.Domain.pdb
-J:\CloudCompare\CloudCompare.Domain\bin\Debug\EntityFramework.dll
-J:\CloudCompare\CloudCompare.Domain\bin\Debug\EntityFramework.xml

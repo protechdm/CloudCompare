@@ -1,6 +1,0 @@
-J:\CloudCompare\CloudCompare.Repository\obj\Debug\ResolveAssemblyReference.cache
-J:\CloudCompare\CloudCompare.Repository\bin\Debug\CloudCompare.Repository.dll.config
-J:\CloudCompare\CloudCompare.Repository\bin\Debug\CloudCompare.Repository.dll
-J:\CloudCompare\CloudCompare.Repository\bin\Debug\CloudCompare.Repository.pdb
-J:\CloudCompare\CloudCompare.Repository\obj\Debug\CloudCompare.Repository.dll
-J:\CloudCompare\CloudCompare.Repository\obj\Debug\CloudCompare.Repository.pdb
