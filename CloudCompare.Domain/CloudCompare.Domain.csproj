@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9586A4AA-25C3-40AB-B851-0BCEEB0D7098}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CloudCompare.Domain</RootNamespace>
+    <AssemblyName>CloudCompare.Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.4.1.10331.0\lib\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Contracts\Repositories\IBaseRepository.cs" />
+    <Compile Include="Contracts\Repositories\ICloudCompareRepository.cs" />
+    <Compile Include="Models\CloudApplication.cs" />
+    <Compile Include="Models\Class1.cs" />
+    <Compile Include="Models\Browser.cs" />
+    <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\CloudApplicationFeature.cs" />
+    <Compile Include="Models\SearchFilterTwoColumn.cs" />
+    <Compile Include="Models\FeatureType.cs" />
+    <Compile Include="Models\SearchFilterOneColumn.cs" />
+    <Compile Include="Models\HomePage.cs" />
+    <Compile Include="Models\SimpleSearchInputs.cs" />
+    <Compile Include="Models\TabbedSearchResults.cs" />
+    <Compile Include="Models\SearchResult.cs" />
+    <Compile Include="Models\FreeTrialPeriod.cs" />
+    <Compile Include="Models\PaymentOption.cs" />
+    <Compile Include="Models\SetupFee.cs" />
+    <Compile Include="Models\PaymentFrequency.cs" />
+    <Compile Include="Models\MinimumContract.cs" />
+    <Compile Include="Models\SupportTerritory.cs" />
+    <Compile Include="Models\SupportHours.cs" />
+    <Compile Include="Models\SupportDays.cs" />
+    <Compile Include="Models\SupportType.cs" />
+    <Compile Include="Models\Language.cs" />
+    <Compile Include="Models\LicenceType.cs" />
+    <Compile Include="Models\MobilePlatform.cs" />
+    <Compile Include="Models\OperatingSystem.cs" />
+    <Compile Include="Models\Feature.cs" />
+    <Compile Include="Contracts\Repositories\ICloudCompareContext.cs" />
+    <Compile Include="Contracts\Repositories\IValidate.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Models\Vendor.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

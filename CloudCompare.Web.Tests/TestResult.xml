@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="J:\CloudCompare\CloudCompare.Web.Tests\SecurityTests.nunit" total="6" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2012-09-06" time="00:54:11">
+  <environment nunit-version="2.5.10.11092" clr-version="2.0.50727.3625" os-version="Microsoft Windows NT 5.1.2600 Service Pack 3" platform="Win32NT" cwd="H:\Program Files\NUnit 2.5.10\bin\net-2.0" machine-name="DEVELOPMENT" user="Glyn" user-domain="DEVELOPMENT" />
+  <culture-info current-culture="en-GB" current-uiculture="en-US" />
+  <test-suite type="Project" name="J:\CloudCompare\CloudCompare.Web.Tests\SecurityTests.nunit" executed="True" result="Success" success="True" time="0.938" asserts="0">
+    <results>
+      <test-suite type="Assembly" name="J:\CloudCompare\CloudCompare.Web.Tests\bin\Debug\CloudCompare.Web.Tests.dll" executed="True" result="Success" success="True" time="0.922" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="CloudCompare" executed="True" result="Success" success="True" time="0.922" asserts="0">
+            <results>
+              <test-suite type="Namespace" name="Web" executed="True" result="Success" success="True" time="0.922" asserts="0">
+                <results>
+                  <test-suite type="Namespace" name="Tests" executed="True" result="Success" success="True" time="0.922" asserts="0">
+                    <results>
+                      <test-suite type="TestFixture" name="WindsorTests" executed="True" result="Success" success="True" time="0.906" asserts="0">
+                        <results>
+                          <test-case name="CloudCompare.Web.Tests.WindsorTests.All_and_only_controllers_have_Controllers_suffix" executed="True" result="Success" success="True" time="0.078" asserts="1" />
+                          <test-case name="CloudCompare.Web.Tests.WindsorTests.All_and_only_controllers_live_in_Controllers_namespace" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                          <test-case name="CloudCompare.Web.Tests.WindsorTests.All_controllers_are_registered" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                          <test-case name="CloudCompare.Web.Tests.WindsorTests.All_controllers_are_transient" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                          <test-case name="CloudCompare.Web.Tests.WindsorTests.All_controllers_expose_themselves_as_service" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                          <test-case name="CloudCompare.Web.Tests.WindsorTests.All_controllers_implement_IController" executed="True" result="Success" success="True" time="0.000" asserts="2" />
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

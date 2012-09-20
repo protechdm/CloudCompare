@@ -1,0 +1,108 @@
+﻿@*@model CloudCompare.Web.Models.SearchFiltersModel
+*@
+@model CloudCompare.Web.Models.SearchModel
+@using CloudCompare.Web.Models;
+@*@using (Html.BeginForm("SearchPage1", "Home", FormMethod.Post, new { id = "InsertCaseForm" }))
+*@
+
+<link href="@Url.Content("~/Content/search-page.css")" rel="stylesheet" type="text/css" />
+
+@using (Html.BeginForm())
+{
+
+    <style>
+        /* IE has layout issues when sorting (see #5413) */
+        .group
+        {
+            zoom: 1;
+        }
+    </style>
+    <script>
+
+
+        $(document).ready(function () {
+            $('div.demo-show:eq(0)> div').show();
+            
+            $('div.demo-show:eq(0)> h3').click(function () {
+                //$(this).next().slideToggle('fast');
+            });
+        });
+
+</script>
+
+    <input type="submit" value="Compare Cloudware" />
+
+    if (ViewBag.JavaScriptEnabled)
+    {
+    <p>
+        ENABLED!</p>
+        //Html.RenderPartial("SearchResults", @Model);
+        //Html.RenderPartial("SearchInputSimple", new ViewDataDictionary(@Model));
+        Html.RenderPartial("SearchFilters", @Model);
+    }
+    else
+    {
+    <p>
+        DISABLED!</p>
+        //Html.RenderPartial("SearchInputSimple", new ViewDataDictionary(@Model));
+        //Html.RenderPartial("SearchResultsNoScriptIE", @Model);
+        //@Html.Partial("SearchFilters", @Model);
+@*    @Html.DisplayFor(x => x.SearchFilters);
+*@    
+    <div class="search-page-div">
+        <div class="search-filters-div">
+            @*        var test = Model.SearchFiltersModel.SearchFilters.Where(y => y.SearchFilterType == "OPERATINGSYSTEM")
+         .Select<SearchFilterModel, SearchFilterModel>(z => new SearchFilterModel() { })
+             ;
+
+
+
+
+        Html.DisplayFor(x => x.SearchFiltersModel.SearchFilters.Where(y => y.SearchFilterType == "OPERATINGSYSTEM").Select<SearchFilterModel, SearchFilterModel>(z => new SearchFilterModel() { }))
+
+        foreach(var item in Model.SearchFiltersModel.SearchFiltersOperatingSystems)
+        {
+            Html.RenderPartial("SearchFilterModelTwoColumn", item);
+        }
+*@
+            <div class="demo-show">
+                <h3>Operating Systems</h3>
+                <div>
+                    @Html.DisplayFor(x => x.SearchFiltersModel.SearchFiltersOperatingSystems)
+                </div>
+                <h3>Browsers</h3>
+                <div>
+                            @Html.DisplayFor(x => x.SearchFiltersModel.SearchFiltersBrowsers)
+                </div>
+                <h3>Mobile Platforms</h3>
+                <div>
+                            @Html.DisplayFor(x => x.SearchFiltersModel.SearchFiltersMobilePlatforms)
+                </div>
+                <h3>Features</h3>
+                <div>
+                            @Html.DisplayFor(x => x.SearchFiltersModel.SearchFiltersFeatures)
+                </div>
+                <h3>Support Types</h3>
+                <div>
+                            @Html.DisplayFor(x => x.SearchFiltersModel.SearchFiltersSupportTypes)
+                </div>
+                <h3>Support Days</h3>
+                <div>
+                            @Html.DisplayFor(x => x.SearchFiltersModel.SearchFiltersSupportDays)
+                </div>
+                <h3>Support Hours</h3>
+                <div>
+                            @Html.DisplayFor(x => x.SearchFiltersModel.SearchFiltersSupportHours)
+                </div>
+                <h3>Languages</h3>
+                <div>
+                            @Html.DisplayFor(x => x.SearchFiltersModel.SearchFiltersLanguages)
+                </div>
+            </div>
+        </div>
+        <div class="search-results-div">
+            @Html.DisplayFor(x => x.SearchResultsModel.SearchResults)
+        </div>
+    </div>
+    }
+}

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="CloudComparePackageDataModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+  <EntityContainer Name="CloudComparePackageDataModelContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Package" EntityType="CloudComparePackageDataModel.Package" />
+    <EntitySet Name="PackageVendor" EntityType="CloudComparePackageDataModel.PackageVendor" />
+    <EntitySet Name="PackageBulletPoint" EntityType="CloudComparePackageDataModel.PackageBulletPoint" />
+  </EntityContainer>
+  <EntityType Name="Package">
+    <Key>
+      <PropertyRef Name="PackageID" />
+    </Key>
+    <Property Type="Int32" Name="PackageID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="PackageName" Nullable="false" />
+    <Property Type="String" Name="PackageCostPerQuarter" Nullable="false" />
+    <Property Type="String" Name="PackageCostPerAnnum" Nullable="false" />
+    <Property Type="String" Name="PackageActiveFrom" Nullable="false" />
+    <Property Type="String" Name="PackageActiveTo" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PackageVendor">
+    <Key>
+      <PropertyRef Name="PackageVendorID" />
+    </Key>
+    <Property Type="Int32" Name="PackageVendorID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="PackageID" Nullable="false" />
+    <Property Type="String" Name="VendorID" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PackageBulletPoint">
+    <Key>
+      <PropertyRef Name="PackageBulletPointID" />
+    </Key>
+    <Property Type="Int32" Name="PackageBulletPointID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="PackageID" Nullable="false" />
+    <Property Type="String" Name="PackageBulletPointDescription" Nullable="false" />
+    <Property Type="String" Name="ListPosition" Nullable="false" />
+  </EntityType>
+</Schema>

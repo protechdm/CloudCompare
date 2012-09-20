@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="cd0ff692-f695-4507-9387-3e6553935d93" name="Glyn@DEVELOPMENT 2012-08-24 14:23:06" runUser="DEVELOPMENT\Glyn" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="5c4784dc-2b05-422d-afed-1288768842cf">
+    <Deployment runDeploymentRoot="Glyn_DEVELOPMENT 2012-08-24 14_23_06">
+      <DeploymentItem filename="J:\CloudCompare\CloudCompare.Web\bin\CloudCompare.Web.dll" />
+      <DeploymentItem filename="J:\CloudCompare\packages\FluentSecurity.1.4.0\lib\FluentSecurity.dll" />
+      <DeploymentItem filename="J:\CloudCompare\packages\NUnit.2.6.1\lib\nunit.framework.dll" />
+      <DeploymentItem filename="J:\CloudCompare\packages\EntityFramework.4.1.10331.0\lib\EntityFramework.dll" />
+      <DeploymentItem filename="J:\CloudCompare\packages\FluentSecurity.TestHelper.1.4.0\lib\FluentSecurity.TestHelper.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-08-24T14:23:06.5888750+01:00" queuing="2012-08-24T14:23:09.0732500+01:00" start="2012-08-24T14:23:09.5107500+01:00" finish="2012-08-24T14:23:13.8701250+01:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="13" executed="13" error="0" failed="13" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="ChangePasswordSuccessTest" storage="j:\cloudcompare\cloudcompare.web.tests\bin\debug\cloudcompare.web.tests.dll" id="c56f3f3f-b5d3-8b9e-2ac4-8d9b460bd21a">
+      <Execution id="fd7f20c8-8598-4899-bb36-793e06beceb2" />
+      <TestMethod codeBase="J:/CloudCompare/CloudCompare.Web.Tests/bin/Debug/CloudCompare.Web.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CloudCompare.Web.Tests.AccountControllerTest, CloudCompare.Web.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ChangePasswordSuccessTest" />
+      <AspNet webSiteUrl="http://localhost:4262/">
+        <Host pathToWebApp="J:\CloudCompare\CloudCompare.Web" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="ChangePasswordTest1" storage="j:\cloudcompare\cloudcompare.web.tests\bin\debug\cloudcompare.web.tests.dll" id="ca9633e2-97ad-d3e5-181f-454bbed50499">
+      <Execution id="ed21ab74-6300-4ba4-a7e4-fc4f67f4c22c" />
+      <TestMethod codeBase="J:/CloudCompare/CloudCompare.Web.Tests/bin/Debug/CloudCompare.Web.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CloudCompare.Web.Tests.AccountControllerTest, CloudCompare.Web.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ChangePasswordTest1" />
+      <AspNet webSiteUrl="http://localhost:4262/">
+        <Host pathToWebApp="J:\CloudCompare\CloudCompare.Web" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="IndexTest" storage="j:\cloudcompare\cloudcompare.web.tests\bin\debug\cloudcompare.web.tests.dll" id="23d60db9-d4c7-1066-c4f0-b9989c2588af">
+      <Execution id="000e3fc2-1e28-451e-af70-6632642cee55" />
+      <TestMethod codeBase="J:/CloudCompare/CloudCompare.Web.Tests/bin/Debug/CloudCompare.Web.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CloudCompare.Web.Tests.HomeControllerTest, CloudCompare.Web.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="IndexTest" />
+      <AspNet webSiteUrl="http://localhost:4262/">
+        <Host pathToWebApp="J:\CloudCompare\CloudCompare.Web" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="LogOnTest1" storage="j:\cloudcompare\cloudcompare.web.tests\bin\debug\cloudcompare.web.tests.dll" id="ffd4f379-8b52-b526-e1b0-97bb32c46f0e">
+      <Execution id="9aa6e781-09f1-473b-965c-8270fc5a8c2e" />
+      <TestMethod codeBase="J:/CloudCompare/CloudCompare.Web.Tests/bin/Debug/CloudCompare.Web.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CloudCompare.Web.Tests.AccountControllerTest, CloudCompare.Web.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LogOnTest1" />
+      <AspNet webSiteUrl="http://localhost:4262/">
+        <Host pathToWebApp="J:\CloudCompare\CloudCompare.Web" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="AccountControllerConstructorTest" storage="j:\cloudcompare\cloudcompare.web.tests\bin\debug\cloudcompare.web.tests.dll" id="0a82e7b2-a233-89cb-4eec-9eee8caf0035">
+      <Execution id="787fd206-aaae-46dd-bb67-721f0be70888" />
+      <TestMethod codeBase="J:/CloudCompare/CloudCompare.Web.Tests/bin/Debug/CloudCompare.Web.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CloudCompare.Web.Tests.AccountControllerTest, CloudCompare.Web.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AccountControllerConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:4262/">
+        <Host pathToWebApp="J:\CloudCompare\CloudCompare.Web" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="LogOnTest" storage="j:\cloudcompare\cloudcompare.web.tests\bin\debug\cloudcompare.web.tests.dll" id="36b251be-4868-06e7-0d80-50b4e2d6b30c">
+      <Execution id="28edf43c-b93b-47b3-bf0e-30f372740f58" />
+      <TestMethod codeBase="J:/CloudCompare/CloudCompare.Web.Tests/bin/Debug/CloudCompare.Web.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CloudCompare.Web.Tests.AccountControllerTest, CloudCompare.Web.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LogOnTest" />
+      <AspNet webSiteUrl="http://localhost:4262/">
+        <Host pathToWebApp="J:\CloudCompare\CloudCompare.Web" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="RegisterTest1" storage="j:\cloudcompare\cloudcompare.web.tests\bin\debug\cloudcompare.web.tests.dll" id="839976b2-2154-d660-3876-eb70635b84f4">
+      <Execution id="a41ce95e-eba4-4a8a-b35d-dd64c49d47a3" />
+      <TestMethod codeBase="J:/CloudCompare/CloudCompare.Web.Tests/bin/Debug/CloudCompare.Web.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CloudCompare.Web.Tests.AccountControllerTest, CloudCompare.Web.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="RegisterTest1" />
+      <AspNet webSiteUrl="http://localhost:4262/">
+        <Host pathToWebApp="J:\CloudCompare\CloudCompare.Web" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="HomeControllerConstructorTest" storage="j:\cloudcompare\cloudcompare.web.tests\bin\debug\cloudcompare.web.tests.dll" id="a8e4a35e-1112-2bab-1fcb-84c3d0b5cba3">
+      <Execution id="46436dec-963e-4a7d-8dfe-4ac2c735c745" />
+      <TestMethod codeBase="J:/CloudCompare/CloudCompare.Web.Tests/bin/Debug/CloudCompare.Web.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CloudCompare.Web.Tests.HomeControllerTest, CloudCompare.Web.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="HomeControllerConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:4262/">
+        <Host pathToWebApp="J:\CloudCompare\CloudCompare.Web" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="ErrorCodeToStringTest" storage="j:\cloudcompare\cloudcompare.web.tests\bin\debug\cloudcompare.web.tests.dll" id="1eb3c7b2-bf3b-5afa-c71b-f0888f4e3ed5">
+      <DeploymentItems>
+        <DeploymentItem filename="CloudCompare.Web.dll" />
+      </DeploymentItems>
+      <Execution id="f680d2a7-cb48-4971-9084-32a066b596ef" />
+      <TestMethod codeBase="J:/CloudCompare/CloudCompare.Web.Tests/bin/Debug/CloudCompare.Web.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CloudCompare.Web.Tests.AccountControllerTest, CloudCompare.Web.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ErrorCodeToStringTest" />
+      <AspNet webSiteUrl="http://localhost:4262/">
+        <Host pathToWebApp="J:\CloudCompare\CloudCompare.Web" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="AboutTest" storage="j:\cloudcompare\cloudcompare.web.tests\bin\debug\cloudcompare.web.tests.dll" id="c8e7201c-358c-5ce3-5d4c-cf4a38d2544a">
+      <Execution id="d35625cd-7150-43ce-a97c-fb3a6444ff61" />
+      <TestMethod codeBase="J:/CloudCompare/CloudCompare.Web.Tests/bin/Debug/CloudCompare.Web.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CloudCompare.Web.Tests.HomeControllerTest, CloudCompare.Web.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AboutTest" />
+      <AspNet webSiteUrl="http://localhost:4262/">
+        <Host pathToWebApp="J:\CloudCompare\CloudCompare.Web" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="ChangePasswordTest" storage="j:\cloudcompare\cloudcompare.web.tests\bin\debug\cloudcompare.web.tests.dll" id="b989950f-0e00-284c-c508-d8ad5cc2f33b">
+      <Execution id="67b998b8-6a83-44c7-82d0-6c20b2f64a0f" />
+      <TestMethod codeBase="J:/CloudCompare/CloudCompare.Web.Tests/bin/Debug/CloudCompare.Web.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CloudCompare.Web.Tests.AccountControllerTest, CloudCompare.Web.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ChangePasswordTest" />
+      <AspNet webSiteUrl="http://localhost:4262/">
+        <Host pathToWebApp="J:\CloudCompare\CloudCompare.Web" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="RegisterTest" storage="j:\cloudcompare\cloudcompare.web.tests\bin\debug\cloudcompare.web.tests.dll" id="e1d7f8d6-610c-c06f-5105-ec6a3c11e295">
+      <Execution id="6de5a85a-0edf-4d03-84db-3b5b275bf1b2" />
+      <TestMethod codeBase="J:/CloudCompare/CloudCompare.Web.Tests/bin/Debug/CloudCompare.Web.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CloudCompare.Web.Tests.AccountControllerTest, CloudCompare.Web.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="RegisterTest" />
+      <AspNet webSiteUrl="http://localhost:4262/">
+        <Host pathToWebApp="J:\CloudCompare\CloudCompare.Web" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="LogOffTest" storage="j:\cloudcompare\cloudcompare.web.tests\bin\debug\cloudcompare.web.tests.dll" id="360f3b3f-4c52-3ba9-0ccf-6c74da635b79">
+      <Execution id="09d0adcc-ab84-4772-a5b7-cb9973804e25" />
+      <TestMethod codeBase="J:/CloudCompare/CloudCompare.Web.Tests/bin/Debug/CloudCompare.Web.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CloudCompare.Web.Tests.AccountControllerTest, CloudCompare.Web.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LogOffTest" />
+      <AspNet webSiteUrl="http://localhost:4262/">
+        <Host pathToWebApp="J:\CloudCompare\CloudCompare.Web" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="0a82e7b2-a233-89cb-4eec-9eee8caf0035" executionId="787fd206-aaae-46dd-bb67-721f0be70888" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1eb3c7b2-bf3b-5afa-c71b-f0888f4e3ed5" executionId="f680d2a7-cb48-4971-9084-32a066b596ef" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="23d60db9-d4c7-1066-c4f0-b9989c2588af" executionId="000e3fc2-1e28-451e-af70-6632642cee55" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="360f3b3f-4c52-3ba9-0ccf-6c74da635b79" executionId="09d0adcc-ab84-4772-a5b7-cb9973804e25" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="36b251be-4868-06e7-0d80-50b4e2d6b30c" executionId="28edf43c-b93b-47b3-bf0e-30f372740f58" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="839976b2-2154-d660-3876-eb70635b84f4" executionId="a41ce95e-eba4-4a8a-b35d-dd64c49d47a3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a8e4a35e-1112-2bab-1fcb-84c3d0b5cba3" executionId="46436dec-963e-4a7d-8dfe-4ac2c735c745" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b989950f-0e00-284c-c508-d8ad5cc2f33b" executionId="67b998b8-6a83-44c7-82d0-6c20b2f64a0f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c56f3f3f-b5d3-8b9e-2ac4-8d9b460bd21a" executionId="fd7f20c8-8598-4899-bb36-793e06beceb2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c8e7201c-358c-5ce3-5d4c-cf4a38d2544a" executionId="d35625cd-7150-43ce-a97c-fb3a6444ff61" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ca9633e2-97ad-d3e5-181f-454bbed50499" executionId="ed21ab74-6300-4ba4-a7e4-fc4f67f4c22c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e1d7f8d6-610c-c06f-5105-ec6a3c11e295" executionId="6de5a85a-0edf-4d03-84db-3b5b275bf1b2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ffd4f379-8b52-b526-e1b0-97bb32c46f0e" executionId="9aa6e781-09f1-473b-965c-8270fc5a8c2e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="787fd206-aaae-46dd-bb67-721f0be70888" testId="0a82e7b2-a233-89cb-4eec-9eee8caf0035" testName="AccountControllerConstructorTest" computerName="DEVELOPMENT" startTime="2012-08-24T14:23:09.9951250+01:00" endTime="2012-08-24T14:23:13.1513750+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="787fd206-aaae-46dd-bb67-721f0be70888">
+      <Output>
+        <ErrorInfo>
+          <Message>Could not connect to the Web server for page 'http://localhost:4262/'. The remote server returned an error: (500) Internal Server Error.. Check that the Web server is running and visible on the network and that the page specified exists.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f680d2a7-cb48-4971-9084-32a066b596ef" testId="1eb3c7b2-bf3b-5afa-c71b-f0888f4e3ed5" testName="ErrorCodeToStringTest" computerName="DEVELOPMENT" startTime="2012-08-24T14:23:13.1513750+01:00" endTime="2012-08-24T14:23:13.6045000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f680d2a7-cb48-4971-9084-32a066b596ef">
+      <Output>
+        <ErrorInfo>
+          <Message>Could not connect to the Web server for page 'http://localhost:4262/'. The remote server returned an error: (500) Internal Server Error.. Check that the Web server is running and visible on the network and that the page specified exists.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="000e3fc2-1e28-451e-af70-6632642cee55" testId="23d60db9-d4c7-1066-c4f0-b9989c2588af" testName="IndexTest" computerName="DEVELOPMENT" startTime="2012-08-24T14:23:13.6045000+01:00" endTime="2012-08-24T14:23:13.6201250+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="000e3fc2-1e28-451e-af70-6632642cee55">
+      <Output>
+        <ErrorInfo>
+          <Message>Could not connect to the Web server for page 'http://localhost:4262/'. The remote server returned an error: (500) Internal Server Error.. Check that the Web server is running and visible on the network and that the page specified exists.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="09d0adcc-ab84-4772-a5b7-cb9973804e25" testId="360f3b3f-4c52-3ba9-0ccf-6c74da635b79" testName="LogOffTest" computerName="DEVELOPMENT" startTime="2012-08-24T14:23:13.6201250+01:00" endTime="2012-08-24T14:23:13.6357500+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="09d0adcc-ab84-4772-a5b7-cb9973804e25">
+      <Output>
+        <ErrorInfo>
+          <Message>Could not connect to the Web server for page 'http://localhost:4262/'. The remote server returned an error: (500) Internal Server Error.. Check that the Web server is running and visible on the network and that the page specified exists.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="28edf43c-b93b-47b3-bf0e-30f372740f58" testId="36b251be-4868-06e7-0d80-50b4e2d6b30c" testName="LogOnTest" computerName="DEVELOPMENT" startTime="2012-08-24T14:23:13.6357500+01:00" endTime="2012-08-24T14:23:13.6513750+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="28edf43c-b93b-47b3-bf0e-30f372740f58">
+      <Output>
+        <ErrorInfo>
+          <Message>Could not connect to the Web server for page 'http://localhost:4262/'. The remote server returned an error: (500) Internal Server Error.. Check that the Web server is running and visible on the network and that the page specified exists.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a41ce95e-eba4-4a8a-b35d-dd64c49d47a3" testId="839976b2-2154-d660-3876-eb70635b84f4" testName="RegisterTest1" computerName="DEVELOPMENT" startTime="2012-08-24T14:23:13.6513750+01:00" endTime="2012-08-24T14:23:13.6826250+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a41ce95e-eba4-4a8a-b35d-dd64c49d47a3">
+      <Output>
+        <ErrorInfo>
+          <Message>Could not connect to the Web server for page 'http://localhost:4262/'. The remote server returned an error: (500) Internal Server Error.. Check that the Web server is running and visible on the network and that the page specified exists.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="46436dec-963e-4a7d-8dfe-4ac2c735c745" testId="a8e4a35e-1112-2bab-1fcb-84c3d0b5cba3" testName="HomeControllerConstructorTest" computerName="DEVELOPMENT" startTime="2012-08-24T14:23:13.6826250+01:00" endTime="2012-08-24T14:23:13.6982500+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="46436dec-963e-4a7d-8dfe-4ac2c735c745">
+      <Output>
+        <ErrorInfo>
+          <Message>Could not connect to the Web server for page 'http://localhost:4262/'. The remote server returned an error: (500) Internal Server Error.. Check that the Web server is running and visible on the network and that the page specified exists.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="67b998b8-6a83-44c7-82d0-6c20b2f64a0f" testId="b989950f-0e00-284c-c508-d8ad5cc2f33b" testName="ChangePasswordTest" computerName="DEVELOPMENT" startTime="2012-08-24T14:23:13.7138750+01:00" endTime="2012-08-24T14:23:13.7295000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="67b998b8-6a83-44c7-82d0-6c20b2f64a0f">
+      <Output>
+        <ErrorInfo>
+          <Message>Could not connect to the Web server for page 'http://localhost:4262/'. The remote server returned an error: (500) Internal Server Error.. Check that the Web server is running and visible on the network and that the page specified exists.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="fd7f20c8-8598-4899-bb36-793e06beceb2" testId="c56f3f3f-b5d3-8b9e-2ac4-8d9b460bd21a" testName="ChangePasswordSuccessTest" computerName="DEVELOPMENT" startTime="2012-08-24T14:23:13.7295000+01:00" endTime="2012-08-24T14:23:13.7451250+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fd7f20c8-8598-4899-bb36-793e06beceb2">
+      <Output>
+        <ErrorInfo>
+          <Message>Could not connect to the Web server for page 'http://localhost:4262/'. The remote server returned an error: (500) Internal Server Error.. Check that the Web server is running and visible on the network and that the page specified exists.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d35625cd-7150-43ce-a97c-fb3a6444ff61" testId="c8e7201c-358c-5ce3-5d4c-cf4a38d2544a" testName="AboutTest" computerName="DEVELOPMENT" startTime="2012-08-24T14:23:13.7451250+01:00" endTime="2012-08-24T14:23:13.7607500+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d35625cd-7150-43ce-a97c-fb3a6444ff61">
+      <Output>
+        <ErrorInfo>
+          <Message>Could not connect to the Web server for page 'http://localhost:4262/'. The remote server returned an error: (500) Internal Server Error.. Check that the Web server is running and visible on the network and that the page specified exists.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ed21ab74-6300-4ba4-a7e4-fc4f67f4c22c" testId="ca9633e2-97ad-d3e5-181f-454bbed50499" testName="ChangePasswordTest1" computerName="DEVELOPMENT" startTime="2012-08-24T14:23:13.7763750+01:00" endTime="2012-08-24T14:23:13.7920000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ed21ab74-6300-4ba4-a7e4-fc4f67f4c22c">
+      <Output>
+        <ErrorInfo>
+          <Message>Could not connect to the Web server for page 'http://localhost:4262/'. The remote server returned an error: (500) Internal Server Error.. Check that the Web server is running and visible on the network and that the page specified exists.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="6de5a85a-0edf-4d03-84db-3b5b275bf1b2" testId="e1d7f8d6-610c-c06f-5105-ec6a3c11e295" testName="RegisterTest" computerName="DEVELOPMENT" startTime="2012-08-24T14:23:13.7920000+01:00" endTime="2012-08-24T14:23:13.8076250+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6de5a85a-0edf-4d03-84db-3b5b275bf1b2">
+      <Output>
+        <ErrorInfo>
+          <Message>Could not connect to the Web server for page 'http://localhost:4262/'. The remote server returned an error: (500) Internal Server Error.. Check that the Web server is running and visible on the network and that the page specified exists.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="9aa6e781-09f1-473b-965c-8270fc5a8c2e" testId="ffd4f379-8b52-b526-e1b0-97bb32c46f0e" testName="LogOnTest1" computerName="DEVELOPMENT" startTime="2012-08-24T14:23:13.8076250+01:00" endTime="2012-08-24T14:23:13.8232500+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9aa6e781-09f1-473b-965c-8270fc5a8c2e">
+      <Output>
+        <ErrorInfo>
+          <Message>Could not connect to the Web server for page 'http://localhost:4262/'. The remote server returned an error: (500) Internal Server Error.. Check that the Web server is running and visible on the network and that the page specified exists.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

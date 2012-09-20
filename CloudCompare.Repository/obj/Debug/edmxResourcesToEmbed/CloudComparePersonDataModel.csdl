@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="CloudComparePersonDataModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+  <EntityContainer Name="CloudComparePersonDataModelContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Person" EntityType="CloudComparePersonDataModel.Person" />
+    <EntitySet Name="DashBoardRole" EntityType="CloudComparePersonDataModel.DashBoardRole" />
+    <EntitySet Name="VendorDashboards" EntityType="CloudComparePersonDataModel.VendorDashboard" />
+    <EntitySet Name="VendorDashboardRolePerson" EntityType="CloudComparePersonDataModel.VendorDashboardRolePerson" />
+    <EntitySet Name="VendorDashboardRole" EntityType="CloudComparePersonDataModel.VendorDashboardRole" />
+    <EntitySet Name="VendorApplicationCategory" EntityType="CloudComparePersonDataModel.VendorApplicationCategory" />
+  </EntityContainer>
+  <EntityType Name="Person">
+    <Key>
+      <PropertyRef Name="PersonID" />
+    </Key>
+    <Property Type="Int32" Name="PersonID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Forename" Nullable="false" />
+    <Property Type="String" Name="Surname" Nullable="false" />
+    <Property Type="String" Name="EMail" Nullable="false" />
+    <Property Type="String" Name="Telephone" Nullable="false" />
+    <Property Type="String" Name="Company" Nullable="false" />
+    <Property Type="String" Name="NumberOfEmployees" Nullable="false" />
+    <Property Type="String" Name="Position" Nullable="false" />
+    <Property Type="String" Name="Username" Nullable="false" />
+    <Property Type="String" Name="Password" Nullable="false" />
+    <Property Type="String" Name="PersonAddress1" Nullable="false" />
+    <Property Type="String" Name="PersonAddress2" Nullable="false" />
+    <Property Type="String" Name="PersonRegion" Nullable="false" />
+    <Property Type="String" Name="PersonCountry" Nullable="false" />
+    <Property Type="String" Name="PersonPostCode" Nullable="false" />
+    <Property Type="String" Name="AccountsPersonID" Nullable="false" />
+    <Property Type="String" Name="LastLoggedIn" Nullable="false" />
+    <Property Type="String" Name="IsAdministrator" Nullable="false" />
+    <Property Type="String" Name="IsEditor" Nullable="false" />
+    <Property Type="String" Name="IsFinanceContact" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DashBoardRole">
+    <Key>
+      <PropertyRef Name="DashboardRoleID" />
+    </Key>
+    <Property Type="Int32" Name="DashboardRoleID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="DashboardRoleName" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VendorDashboard">
+    <Key>
+      <PropertyRef Name="VendorDashboardID" />
+    </Key>
+    <Property Type="Int32" Name="VendorDashboardID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="VendorID" Nullable="false" />
+    <Property Type="String" Name="DashboardRoleID" Nullable="false" />
+    <Property Type="String" Name="IsActive" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VendorDashboardRolePerson">
+    <Key>
+      <PropertyRef Name="VendorDashboardRolePersonID" />
+    </Key>
+    <Property Type="Int32" Name="VendorDashboardRolePersonID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="DashboardRoleID" Nullable="false" />
+    <Property Type="String" Name="PersonID" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VendorDashboardRole">
+    <Key>
+      <PropertyRef Name="VendorDashboardRoleID" />
+    </Key>
+    <Property Type="Int32" Name="VendorDashboardRoleID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="DashboardRoleID" Nullable="false" />
+    <Property Type="String" Name="IsActive" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VendorApplicationCategory">
+    <Key>
+      <PropertyRef Name="VendorApplicationCategoryID" />
+    </Key>
+    <Property Type="Int32" Name="VendorApplicationCategoryID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="VendorID" Nullable="false" />
+    <Property Type="String" Name="ApplicationID" Nullable="false" />
+    <Property Type="String" Name="CategoryID" Nullable="false" />
+    <Property Type="String" Name="SendUpdates" Nullable="false" />
+    <Property Type="String" Name="SendNews" Nullable="false" />
+    <Property Type="String" Name="IsActive" Nullable="false" />
+  </EntityType>
+</Schema>
