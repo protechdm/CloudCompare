@@ -1,0 +1,20 @@
+﻿@model CloudCompare.Web.Models.HomePageModel
+
+<table style="width:100%;">
+@{int i = 0;}
+@foreach (CloudCompare.Domain.Models.SearchResult sr in @Model.TabbedSearchResults.FeaturedCloudware)
+{
+    if (i % 2 == 0)    { 
+        @: <tr> 
+        }
+        <td style="width:50%">
+            @{Html.RenderPartial("SearchResult", sr);}
+        </td>
+    if (i % 2 == 1)    { 
+        @: </tr> 
+        }
+    i += 1;
+}
+</table>
+
+
