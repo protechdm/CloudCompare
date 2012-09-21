@@ -238,6 +238,20 @@ namespace CloudCompare.POCOQueryRepository
         }
         #endregion
 
+        #region AddThumbnailDocumentType
+        public void AddThumbnailDocumentType(ThumbnailDocumentType tdt)
+        {
+            _context.ThumbnailDocumentTypes.Add(tdt);
+        }
+        #endregion
+
+        #region AddThumbnailDocument
+        public void AddThumbnailDocument(ThumbnailDocument td)
+        {
+            _context.ThumbnailDocuments.Add(td);
+        }
+        #endregion
+
         #region FindCloudApplicationById
         public CloudApplication FindCloudApplicationById(int cloudApplicationId)
         {
@@ -476,10 +490,27 @@ namespace CloudCompare.POCOQueryRepository
         }
         #endregion
 
+        #region FindThumbnailDocumentTypeByName
+        public ThumbnailDocumentType FindThumbnailDocumentTypeByName(string thumbnailDocumentTypeName)
+        {
+            ThumbnailDocumentType f1 = _context.ThumbnailDocumentTypes.Where(x => x.ThumbnailDocumentTypeName.ToUpper().StartsWith(thumbnailDocumentTypeName.ToUpper())).FirstOrDefault();
+            ThumbnailDocumentType f2 = (from cf in _context.ThumbnailDocumentTypes
+                              where cf.ThumbnailDocumentTypeName.ToUpper().StartsWith(thumbnailDocumentTypeName.ToUpper())
+                              select cf).FirstOrDefault();
+
+            return f2;
+        }
+        #endregion
+
         #region GetDescription
         public string GetDescription()
         {
             return Ipsum.GetPhrase(100);
+        }
+
+        public string GetDescription(int length)
+        {
+            return Ipsum.GetPhrase(length);
         }
         #endregion
 

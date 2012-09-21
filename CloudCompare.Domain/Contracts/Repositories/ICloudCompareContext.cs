@@ -31,6 +31,8 @@ namespace CloudCompare.Domain.Contracts.Repositories
         IDbSet<PaymentOption> PaymentOptions { get; }
         IDbSet<FreeTrialPeriod> FreeTrialPeriods { get; }
         IDbSet<FeatureType> FeatureTypes { get; }
+        IDbSet<ThumbnailDocument> ThumbnailDocuments { get; }
+        IDbSet<ThumbnailDocumentType> ThumbnailDocumentTypes { get; }
 
         int SaveChanges();
         //int GetStations(string startsWith);

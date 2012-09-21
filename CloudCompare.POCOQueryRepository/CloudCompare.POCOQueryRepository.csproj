@@ -59,6 +59,10 @@
     <Compile Include="Configurations\CategoryConfiguration.cs" />
     <Compile Include="Configurations\CloudApplicationConfiguration.cs" />
     <Compile Include="Configurations\CloudApplicationFeatureConfiguration.cs" />
+    <Compile Include="Configurations\CloudApplicationReviewConfiguration.cs" />
+    <Compile Include="Configurations\CloudApplicationRatingConfiguration.cs" />
+    <Compile Include="Configurations\ThumbnailDocumentConfiguration.cs" />
+    <Compile Include="Configurations\ThumbnailDocumentTypeConfiguration.cs" />
     <Compile Include="Configurations\FeatureTypeConfiguration.cs" />
     <Compile Include="Configurations\FeatureConfiguration.cs" />
     <Compile Include="Configurations\FreeTrialPeriodConfiguration.cs" />

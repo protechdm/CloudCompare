@@ -36,13 +36,6 @@ namespace CloudCompare.Domain.Models
 
 
 
-    #region ThumbnailDocumentType
-    public class ThumbnailDocumentType
-    {
-        public virtual int ThumbnailDocumentTypeID { get; set; }
-        public virtual string ThumbnailDocumentTypeName { get; set; }
-    }
-    #endregion
 
     #region DashboardRole
     public class DashboardRole
@@ -264,46 +257,9 @@ namespace CloudCompare.Domain.Models
     }
     #endregion
 
-    #region ThumbnailDocument
-    public class ThumbnailDocument
-    {
-        public virtual int ThumbnailDocumentID { get; set; }
-        public virtual int ThumbnailDocumentTypeID { get; set; }
-        public virtual string ThumbnailDocumentTitle { get; set; }
-        public virtual string ThumbnailDocumentURL { get; set; }
-        public virtual int ApplicationID { get; set; }
-    }
-    #endregion
 
 
-    #region ProductReview
-    public class ProductReview
-    {
-        public virtual int ProductReviewID { get; set; }
-        public virtual string ProductReviewHeadline { get; set; }
-        public virtual string ProductReviewPublisherName { get; set; }
-        public virtual string ProductReviewText { get; set; }
-        public virtual DateTime ProductReviewDate { get; set; }
-        public virtual string ProductReviewURL { get; set; }
-        public virtual int ApplicationID { get; set; }
-    }
-    #endregion
 
-    #region RatingReview
-    public class RatingReview
-    {
-        public virtual int RatingReviewID { get; set; }
-        public virtual string RatingReviewReviewerName { get; set; }
-        public virtual string RatingReviewReviewerTitle { get; set; }
-        public virtual string RatingReviewReviewerCompany { get; set; }
-        public virtual string RatingReviewText { get; set; }
-        public virtual decimal OverallRating { get; set; }
-        public virtual decimal EaseOfUse { get; set; }
-        public virtual decimal ValueForMoney { get; set; }
-        public virtual decimal Functionality { get; set; }
-        public virtual int ApplicationID { get; set; }
-    }
-    #endregion
 
     #region Person
     public class Customer

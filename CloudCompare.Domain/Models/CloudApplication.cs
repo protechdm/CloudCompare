@@ -64,6 +64,8 @@ namespace CloudCompare.Domain.Models
         public virtual int ApplicationContentStatusID { get; set; }
         public virtual int ApprovalStatusID { get; set; }
 
+        public virtual List<CloudApplicationReview> Reviews { get; set; }
+        public virtual List<CloudApplicationRating> Ratings { get; set; }
         public virtual byte[] RowVersion { get; set; }
 
     }

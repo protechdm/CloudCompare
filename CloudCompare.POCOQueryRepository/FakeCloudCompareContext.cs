@@ -32,6 +32,8 @@ namespace CloudCompare.POCOQueryRepository
         private FakeObjectSet<PaymentOption> _paymentOptions;
         private FakeObjectSet<FreeTrialPeriod> _freeTrialPeriods;
         private FakeObjectSet<FeatureType> _featureTypes;
+        private FakeObjectSet<ThumbnailDocumentType> _thumbnailDocumentTypes;
+        private FakeObjectSet<ThumbnailDocument> _thumbnailDocuments;
 
         #region ICloudCompareEntities Members
 
@@ -275,6 +277,30 @@ namespace CloudCompare.POCOQueryRepository
             }
         }
 
+        public IDbSet<ThumbnailDocument> ThumbnailDocuments
+        {
+            get
+            {
+                return _thumbnailDocuments ?? (_thumbnailDocuments = new FakeObjectSet<ThumbnailDocument>());
+            }
+            set
+            {
+                _thumbnailDocuments = value as FakeObjectSet<ThumbnailDocument>;
+            }
+        }
+
+        public IDbSet<ThumbnailDocumentType> ThumbnailDocumentTypes
+        {
+            get
+            {
+                return _thumbnailDocumentTypes ?? (_thumbnailDocumentTypes = new FakeObjectSet<ThumbnailDocumentType>());
+            }
+            set
+            {
+                _thumbnailDocumentTypes = value as FakeObjectSet<ThumbnailDocumentType>;
+            }
+        }
+
         public int SaveChanges()
         {
             foreach (var cloudApplication in CloudApplications)
@@ -313,5 +339,7 @@ namespace CloudCompare.POCOQueryRepository
         {
             throw new NotImplementedException();
         }
+
+
     }
 }

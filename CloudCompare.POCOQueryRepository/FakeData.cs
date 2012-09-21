@@ -63,6 +63,8 @@ namespace CloudCompare.POCOQueryRepository
             PaymentOption po;
             FreeTrialPeriod ftp;
             Vendor v;
+            ThumbnailDocument td;
+            ThumbnailDocumentType tdt;
 
             #region CATEGORIES
             c = new Category()
@@ -2434,6 +2436,19 @@ namespace CloudCompare.POCOQueryRepository
             repository.AddVendor(v);
             #endregion
 
+            #region THUMBNAIL DOCUMENT TYPES
+            tdt = new ThumbnailDocumentType()
+            {
+                ThumbnailDocumentTypeName = "Case Study"
+            };
+            repository.AddThumbnailDocumentType(tdt);
+            tdt = new ThumbnailDocumentType()
+            {
+                ThumbnailDocumentTypeName = "White Paper"
+            };
+            repository.AddThumbnailDocumentType(tdt);
+            #endregion
+
             //// Mock the Products Repository using Moq
             //Mock<ICloudCompareContext> mockCloudCompareRepository = new Mock<ICloudCompareContext>();
 
@@ -2525,6 +2540,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("SKYPE"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -2598,6 +2702,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("Vonage"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -2686,6 +2879,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("Vodafone"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -2774,6 +3056,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("VoIPtalk"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -2856,6 +3227,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("Gradwell"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -2937,6 +3397,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("RingCentral"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -3019,6 +3568,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("BT"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -3101,6 +3739,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("Tpad"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -3184,6 +3911,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("yourCHOICE"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -3269,6 +4085,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("freespeech.co.uk"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -3354,6 +4259,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("magicJack"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -3439,6 +4433,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("Press1.co.uk"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -3524,6 +4607,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("usomo"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -3609,6 +4781,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("colt"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -3694,6 +4955,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("sureVoIP"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -3779,6 +5129,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("NTA:LTD"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -3864,6 +5303,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("sipgate"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -3950,6 +5478,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("Salesforce"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -4037,6 +5654,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("SUGARCRM"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -4124,6 +5830,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("ZOHOCRM"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -4211,6 +6006,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("Workbooks.com"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -4293,6 +6177,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("Microsoft Dynamics"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -4380,6 +6353,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("Maximizer"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -4467,6 +6529,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("opencrm"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -4556,6 +6707,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("TactileCRM"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -4643,6 +6883,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("wecandobiz"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -4732,6 +7061,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("Buddy"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -4819,6 +7237,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("sage"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -4906,6 +7413,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("webCRM"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -4993,6 +7589,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("capsule"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -5080,6 +7765,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("SohoOS"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -5174,6 +7948,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("Cisco webex"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -5265,6 +8128,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("GoToMeeting"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -5356,6 +8308,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("Microsoft Lync Online"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -5447,6 +8488,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("LotusLive"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -5538,6 +8668,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("Infinite"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -5629,6 +8848,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("ZOHO Meeting"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -5720,6 +9028,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("FUZE Meeting"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -5812,6 +9209,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("Yugma"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -5903,6 +9389,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("POWWOWNOW"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -5994,6 +9569,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("MegaMeeting"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -6085,6 +9749,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("meetingzone"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -6176,6 +9929,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("InterCall"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -6267,6 +10109,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("OnSync"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -6364,6 +10295,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("YAHOO Small Business"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -6457,6 +10477,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("Microsoft Exchange Online"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -6550,6 +10659,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("ZOHO Mail"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -6643,6 +10841,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("SMS"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -6736,6 +11023,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("BlueTie"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -6829,6 +11205,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("GMail"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -6922,6 +11387,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("Star"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -7015,6 +11569,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("HyperOffice"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -7109,6 +11752,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("FastMail"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -7202,6 +11934,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("webfusion"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -7295,6 +12116,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("rackspace"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -7388,6 +12298,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("eclipse"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -7481,6 +12480,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("FuseMail"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -7574,6 +12662,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("fasthosts"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -7667,6 +12844,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("INTERMEDIA"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -7760,6 +13026,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("1&1"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -7871,6 +13226,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("Microsoft Office 365"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -7978,6 +13422,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("Google Apps for Business"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -8085,6 +13618,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("ZOHO docs"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -8192,6 +13814,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("Think Free"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -8299,6 +14010,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("feng OFFICE"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -8406,6 +14206,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("Z CUBES"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -8513,6 +14402,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("HyperOffice"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -8621,6 +14599,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("myoffice"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -8728,6 +14795,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("Quickoffice"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -8836,6 +14992,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("Live Documents"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -8945,6 +15190,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("EVERNOTE"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -9053,6 +15387,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("sliderocket"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -9162,6 +15585,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("PREZI"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -9262,6 +15774,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("CARBONITE"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -9358,6 +15959,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("box"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -9454,6 +16144,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("OpenDrive"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -9550,6 +16329,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("ADrive"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -9646,6 +16514,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("storegate"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -9742,6 +16699,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("SugarSync"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -9838,6 +16884,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("FLIPDRIVE"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -9934,6 +17069,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("mozy"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -10030,6 +17254,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("Dropbox"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -10126,6 +17439,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("CRASHPLAN"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -10222,6 +17624,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("elephantdrive"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -10318,6 +17809,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("iDrive"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -10414,6 +17994,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("livedrive"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -10510,6 +18179,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("iBackup"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -10606,6 +18364,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("backupify"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -10706,6 +18553,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("ZOHO Projects"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -10802,6 +18738,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("@task"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -10898,6 +18923,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("mavenlink"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -10994,6 +19108,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("clarizen"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -11090,6 +19293,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("ProWorkflow"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -11186,6 +19478,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("HyperOffice"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -11282,6 +19663,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("WORKetc"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -11378,6 +19848,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("LiquidPlanner"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -11474,6 +20033,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("CELOXIS"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -11570,6 +20218,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("blue camroo"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -11666,6 +20403,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("PROJECTMANAGER.com"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -11762,6 +20588,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("CollaborateCloud"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -11858,6 +20773,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("copper"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -11954,6 +20958,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("projectplace"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -12050,6 +21143,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("Basecamp"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -12146,6 +21328,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("trafficLIVE"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -12242,6 +21513,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("iManageProject"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -12338,6 +21698,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("intervals"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -12434,6 +21883,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("Geniusproject"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -12530,6 +22068,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("glasscubes"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -12630,6 +22257,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("xero"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -12726,6 +22442,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("SageOne"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -12822,6 +22627,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("e-conomic"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -12918,6 +22812,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("ARITHMO"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -13014,6 +22997,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("liquid"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -13110,6 +23182,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("kashoo"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -13206,6 +23367,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("FRSHBOOKS"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -13302,6 +23552,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("ClearBooks"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -13398,6 +23737,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("ledgerble"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -13494,6 +23922,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("KashFlow"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -13590,6 +24107,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("FreeAgent"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -13686,6 +24292,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("outright"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -13782,6 +24477,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("ZOHO Books"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -13878,6 +24662,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("iCashbook"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -13974,6 +24847,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("Yendo"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);
@@ -14070,6 +25032,95 @@ namespace CloudCompare.POCOQueryRepository
                 Vendor = repository.FindVendorByName("intuit"),
                 Description = repository.GetDescription(),
                 AddDate = DateTime.Now,
+                #region Ratings,Reviews,Case Studies,White Papers
+                Ratings = new List<CloudApplicationRating>()
+                {
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                    new CloudApplicationRating()
+                    {
+                        CloudApplicationRatingText = repository.GetDescription(),
+                        CloudApplicationRatingReviewerCompany = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerName = repository.GetDescription(3),
+                        CloudApplicationRatingReviewerTitle = repository.GetDescription(3),
+                    },
+                },
+                Reviews = new List<CloudApplicationReview>()
+                {
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                    new CloudApplicationReview()
+                    {
+                        CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewDate = DateTime.Now,
+                    },
+                },
+                ThumbnailDocuments = new List<ThumbnailDocument>()
+                {
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                    new ThumbnailDocument()
+                    {
+                        ThumbnailDocumentTitle = repository.GetDescription(4),
+                        ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                    },
+                },
+                #endregion
             };
 
             repository.AddCloudApplication(ca);

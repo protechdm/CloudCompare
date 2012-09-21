@@ -34,6 +34,10 @@ namespace CloudCompare.POCOQueryRepository
         public IDbSet<CloudApplicationFeature> CloudApplicationFeatures { get; set; }
         public IDbSet<SimpleSearchInputs> SimpleSearchInputs { get; set; }
         public IDbSet<FeatureType> FeatureTypes { get; set; }
+        public IDbSet<CloudApplicationReview> CloudApplicationReviews { get; set; }
+        public IDbSet<CloudApplicationRating> CloudApplicationRatings { get; set; }
+        public IDbSet<ThumbnailDocument> ThumbnailDocuments { get; set; }
+        public IDbSet<ThumbnailDocumentType> ThumbnailDocumentTypes { get; set; }
 
         public CloudCompareContext()
             : base()
@@ -73,6 +77,10 @@ namespace CloudCompare.POCOQueryRepository
             modelBuilder.Configurations.Add(new FreeTrialPeriodConfiguration());
             modelBuilder.Configurations.Add(new CloudApplicationFeatureConfiguration());
             modelBuilder.Configurations.Add(new FeatureTypeConfiguration());
+            modelBuilder.Configurations.Add(new CloudApplicationReviewConfiguration());
+            modelBuilder.Configurations.Add(new CloudApplicationRatingConfiguration());
+            modelBuilder.Configurations.Add(new ThumbnailDocumentConfiguration());
+            modelBuilder.Configurations.Add(new ThumbnailDocumentTypeConfiguration());
             modelBuilder.Ignore<SearchResult>();
             modelBuilder.Ignore<TabbedSearchResults>();
             modelBuilder.Ignore<SimpleSearchInputs>();
