@@ -1,0 +1,9 @@
+Commit to GITHUB via UI
+
+$ cd cloudcompare
+
+$ git ftp init ftp://localhost/cloudcompareftp
+$ git ftp push ftp://localhost/cloudcompareftp
+
+$ git ftp init ftp://server/cloudcompareftp -u 'SERVER\FTP' -p 'ftp' -a (FIRST TIME SETUP)
+$ git ftp push ftp://server/cloudcompareftp -u 'SERVER\FTP' -p 'ftp'
