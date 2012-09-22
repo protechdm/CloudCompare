@@ -207,6 +207,9 @@
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\CategoryModel.cs" />
     <Compile Include="Models\CloudApplicationModel.cs" />
+    <Compile Include="Models\CloudApplicationReviewModel.cs" />
+    <Compile Include="Models\CloudApplicationRatingModel.cs" />
+    <Compile Include="Models\SearchInputModel.cs" />
     <Compile Include="Models\FreeTrialModel.cs" />
     <Compile Include="Models\SearchFiltersForFeatureTypeModel.cs">
       <SubType>Code</SubType>
@@ -378,6 +381,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Home\PartialPages\WithScript\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -405,7 +409,7 @@
     <Content Include="Views\Shared\SearchResultsFeaturedCloudware.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Shared\SearchResults.cshtml" />
+    <Content Include="Views\Shared\xSearchResults.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\HomePage.cshtml" />
@@ -478,7 +482,7 @@
     <Content Include="Views\Home\xSearchFiltersModel.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Home\DisplayTemplates\SearchResultModel.cshtml" />
+    <Content Include="Views\Home\DisplayTemplates\CloudApplicationModel.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Shared\SearchFilterModelTwoColumnEnumerable.cshtml" />
@@ -490,10 +494,25 @@
     <Content Include="Views\Home\Carousel.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Home\PartialPages\WithScript\SearchInputSimple.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\SearchInputModel.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\DisplayTemplates\FreeTrialModel.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\DisplayTemplates\SearchResultModel.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\xForceDisplayTemplate.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\ForceDisplayTemplate.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\DisplayTemplates\CloudApplicationReviewModel.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\DisplayTemplates\CloudApplicationRatingModel.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
@@ -512,7 +531,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>3214</DevelopmentServerPort>
+          <DevelopmentServerPort>3785</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>

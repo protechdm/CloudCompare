@@ -1,0 +1,47 @@
+﻿@model CloudCompare.Web.Models.CloudApplicationRatingModel
+@using CloudCompare.Domain.Models
+@*home display TEST template
+*@
+<link href="../../../Content/overflow-text-ellipsis.css" rel="stylesheet" type="text/css" />
+<div id="main6" style="width:100%;height:auto;overflow:hidden;position:inherit;">
+    <div>
+        <div style="float:left">
+                <table>
+                    <tr>
+                        <td>
+                            @Html.Label("Rating review")
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            @Html.LabelFor(x => x.CloudApplicationRatingReviewerName, Model.CloudApplicationRatingReviewerName)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            @Html.LabelFor(x => x.CloudApplicationRatingReviewerTitle, Model.CloudApplicationRatingReviewerTitle)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            @Html.LabelFor(x => x.CloudApplicationRatingReviewerCompany, Model.CloudApplicationRatingReviewerCompany)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                <div class="ellipsify">
+                    <div class="pre-dots">
+                    </div>
+                    <div class="dots">
+                        &hellip;</div>
+                    @Html.LabelFor(x => x.CloudApplicationRatingText, Model.CloudApplicationRatingText)
+                    <span class="hidedots1"></span>
+                    <div class="hidedots2">
+                    </div>
+                </div>
+                        </td>
+                    </tr>
+                </table>
+        </div>
+    </div>
+</div>

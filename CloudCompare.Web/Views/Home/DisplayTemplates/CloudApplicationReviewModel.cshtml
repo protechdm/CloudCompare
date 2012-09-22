@@ -1,0 +1,42 @@
+﻿@model CloudCompare.Web.Models.CloudApplicationReviewModel
+@using CloudCompare.Domain.Models
+@*home display TEST template
+*@
+<link href="../../../Content/overflow-text-ellipsis.css" rel="stylesheet" type="text/css" />
+<div id="main5" style="width:50%;height:auto;overflow:hidden;float:left;">
+    <div>
+        <div style="float:left;">
+                <table>
+                    <tr>
+                        <td>
+                            @Html.Label("Product review")
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            @Html.Label(Model.CloudApplicationReviewPublisherName.Trim() + " - " + Model.CloudApplicationReviewDate.ToShortDateString())
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            @Html.Label(Model.CloudApplicationReviewHeadline)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                <div class="ellipsify">
+                    <div class="pre-dots">
+                    </div>
+                    <div class="dots">
+                        &hellip;</div>
+                    @Model.CloudApplicationReviewText
+                    <span class="hidedots1"></span>
+                    <div class="hidedots2">
+                    </div>
+                </div>
+                        </td>
+                    </tr>
+                </table>
+        </div>
+    </div>
+</div>

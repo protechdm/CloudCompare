@@ -120,11 +120,12 @@ namespace CloudCompare.Web.Controllers
         public ActionResult HomePage()
         {
             var model = new HomePageModel();
-            model.Categories = _repository.GetCategories();
-            model.OperatingSystems = _repository.GetOperatingSystems();
-            model.ChosenOperatingSystemID = 2;
-            model.ChosenCategoryID = 6;
-            model.Name = "aaa";
+            model.SearchInputModel = new SearchInputModel();
+            model.SearchInputModel.Categories = _repository.GetCategories();
+            model.SearchInputModel.OperatingSystems = _repository.GetOperatingSystems();
+            model.SearchInputModel.ChosenOperatingSystemID = 2;
+            model.SearchInputModel.ChosenCategoryID = 6;
+            model.SearchInputModel.Name = "aaa";
 
             model.TabbedSearchResults = new Domain.Models.TabbedSearchResults();
             model.TabbedSearchResults.FeaturedCloudware = _repository.GetFeaturedCloudware();
@@ -160,14 +161,105 @@ namespace CloudCompare.Web.Controllers
         }
 
         [HttpPost]
-        public ActionResult HomePage(string tab)
+        public ActionResult HomePage(HomePageModel model)
+        {
+            model.SearchInputModel.Categories = _repository.GetCategories();
+            ViewBag.JavaScriptEnabled = CustomSession.JavaScriptEnabled;
+            model.SearchInputModel.OperatingSystems = _repository.GetOperatingSystems();
+            var twoCols = _repository.Test(model.SearchInputModel.ChosenCategoryID);
+
+            //get all the search filters which need to be rendered as one column
+            var filtersOneColumn =
+                //_repository.GetSearchOptions(3)
+                twoCols
+                .Where(x => x.SearchFilterTypeNameCol1 == FILTER_FEATURES)
+                .Select(x => new SearchFilterModelOneColumn()
+                {
+                    Category = x.CategoryCol1 != null ? x.CategoryCol1 : null,
+                    //SearchFilterID = x.Category.CategoryID,
+                    SearchFilterName = x.SearchFilterNameCol1,
+                    SearchFilterType = x.SearchFilterTypeNameCol1,
+                    Selected = false,
+                }
+                );
+
+            //get all the search filters which need to be rendered as two column
+            var filtersTwoColumn =
+                //_repository.GetSearchOptions(3)
+                twoCols
+                .Where(x => x.SearchFilterTypeNameCol1 != FILTER_FEATURES)
+                .Select(x => new SearchFilterModelTwoColumn()
+                {
+                    //Category = x.Category != null ? x.Category : null,
+                    //SearchFilterID = x.Category.CategoryID,
+                    Col1SearchFilterName = x.SearchFilterNameCol1,
+                    Col1SearchFilterType = x.SearchFilterTypeNameCol1,
+                    Col1Selected = false,
+                    Col2SearchFilterName = x.SearchFilterNameCol2,
+                    Col2SearchFilterType = x.SearchFilterTypeNameCol2,
+                    Col2Selected = false
+                }
+                );
+
+            var searchModel = new SearchModel();
+            searchModel.SearchFiltersModel.CategoryID = model.SearchInputModel.ChosenCategoryID;
+            //model3.SearchFiltersModel.SearchFilters = features;
+            searchModel.SearchFiltersModel.SearchFiltersBrowsers = filtersTwoColumn.Where(x => x.Col1SearchFilterType == FILTER_BROWSERS);
+            searchModel.SearchFiltersModel.SearchFiltersFeatures = filtersOneColumn.Where(x => x.SearchFilterType == FILTER_FEATURES);
+            //model3.SearchFiltersModel.SearchFiltersFeatures.FeatureFilters = filters.Where(x => x.SearchFilterType == FILTER_FEATURES);
+            searchModel.SearchFiltersModel.SearchFiltersLanguages = filtersTwoColumn.Where(x => x.Col1SearchFilterType == FILTER_LANGUAGES);
+            searchModel.SearchFiltersModel.SearchFiltersMobilePlatforms = filtersTwoColumn.Where(x => x.Col1SearchFilterType == FILTER_MOBILEPLATFORMS);
+            //model3.SearchFiltersModel.SearchFiltersOperatingSystems = new SearchFiltersForFeatureTypeModel();
+            searchModel.SearchFiltersModel.SearchFiltersOperatingSystems = filtersTwoColumn.Where(x => x.Col1SearchFilterType == FILTER_OPERATINGSYSTEMS).ToList();
+            searchModel.SearchFiltersModel.SearchFiltersSupportDays = filtersTwoColumn.Where(x => x.Col1SearchFilterType == FILTER_SUPPORTDAYS);
+            searchModel.SearchFiltersModel.SearchFiltersSupportHours = filtersTwoColumn.Where(x => x.Col1SearchFilterType == FILTER_SUPPORTHOURS);
+            searchModel.SearchFiltersModel.SearchFiltersSupportTypes = filtersTwoColumn.Where(x => x.Col1SearchFilterType == FILTER_SUPPORTTYPES);
+
+            var searchResults = this.SearchProducts(searchModel.SearchFiltersModel, null).ToList();
+
+            var searchResultsForModel = searchResults
+    .Select(y => new SearchResultModel()
+    {
+        CloudApplicationID = y.CloudApplicationID,
+        Description = y.Description,
+        SearchResultID = y.CloudApplicationID,
+        ServiceName = y.ServiceName,
+        VendorLogoURL = y.Vendor.VendorLogoURL.AddImagePath(),
+        VendorName = y.Vendor.VendorName,
+        ApplicationCostOneOff = y.ApplicationCostOneOff,
+        ApplicationCostPerAnnum = y.ApplicationCostPerAnnum,
+        ApplicationCostPerMonth = y.ApplicationCostPerMonth,
+        ApplicationCostPerMonthExtra = y.ApplicationCostPerMonthExtra,
+        CallsPackageCostPerMonth = y.CallsPackageCostPerMonth,
+        FreeTrialPeriod = y.FreeTrialPeriod.FreeTrialPeriodName,
+        SetupFee = y.SetupFee != null ? y.SetupFee.SetupFeeName : null,
+    }
+);
+            searchModel.SearchResultsModel.SearchResults = searchResultsForModel.ToList();
+
+
+            ViewBag.JavaScriptEnabled = CustomSession.JavaScriptEnabled;
+            ViewBag.VisibleResultsTab = 1;
+            return View("SearchPage",searchModel);
+        }
+
+        [HttpPost]
+        public ActionResult xHomePage(SearchInputModel model)
+        {
+            ViewBag.JavaScriptEnabled = CustomSession.JavaScriptEnabled;
+            return View(model);
+        }
+
+        #region HomePage with selected tab
+        [HttpPost]
+        public ActionResult xHomePage(string tab)
         {
             var model = new HomePageModel();
-            model.Categories = _repository.GetCategories();
-            model.OperatingSystems = _repository.GetOperatingSystems();
-            model.ChosenOperatingSystemID = 2;
-            model.ChosenCategoryID = 6;
-            model.Name = "aaa";
+            model.SearchInputModel.Categories = _repository.GetCategories();
+            model.SearchInputModel.OperatingSystems = _repository.GetOperatingSystems();
+            model.SearchInputModel.ChosenOperatingSystemID = 2;
+            model.SearchInputModel.ChosenCategoryID = 6;
+            model.SearchInputModel.Name = "aaa";
             model.TabbedSearchResults = new Domain.Models.TabbedSearchResults();
             model.TabbedSearchResults.FeaturedCloudware = _repository.GetFeaturedCloudware();
             model.TabbedSearchResults.TopTenCloudware = _repository.GetTopTenCloudware();
@@ -187,12 +279,13 @@ namespace CloudCompare.Web.Controllers
             //return View("Index");
             return View(model);
         }
+        #endregion
 
         #region SearchPage
         public ActionResult SearchPage()
         {
 
-            var twoCols = _repository.Test();
+            var twoCols = _repository.Test(3);
             
             //var query = from x in Enumerable.Range(0, twoCols.GetUpperBound(0))
             //from y in Enumerable.Range(0, twoCols.GetUpperBound(1))
@@ -323,45 +416,145 @@ namespace CloudCompare.Web.Controllers
         #endregion
 
         [HttpPost]
-        public ActionResult xSearchPage(SearchModel model2)
+        public ActionResult SearchPageMoreInfo(string buttonID)
         {
             ViewBag.JavaScriptEnabled = CustomSession.JavaScriptEnabled;
             return View();
         }
 
         [HttpPost]
-        public ActionResult SearchPage(SearchModel model3)
+        public ActionResult SearchPage(SearchModel model3, FormCollection formCollection)
         {
+            //PROCEED_BUTTON_APPLICATION_ID_
 
-            var results = this.SearchProducts(model3.SearchFiltersModel, null).ToList();
-            //var temp = results.Where(x => x.SetupFee == null).ToList();
+            var textButton = formCollection
+                .Keys
+                .OfType<string>()
+                .Where(x => x.StartsWith("PROCEED_BUTTON_APPLICATION_ID_"))
+                //.SingleOrDefault()
+                ;
 
-            //var results = _repository.GetSearchResults()
-            var results2 = results
-                .Select(y => new SearchResultModel()
+            if (textButton.Count() == 0)
+            {
+                //must have come in via the filter button
+                var results = this.SearchProducts(model3.SearchFiltersModel, null).ToList();
+                //var temp = results.Where(x => x.SetupFee == null).ToList();
+
+                //var results = _repository.GetSearchResults()
+                var results2 = results
+                    .Select(y => new SearchResultModel()
+                    {
+                        CloudApplicationID = y.CloudApplicationID,
+                        Description = y.Description,
+                        SearchResultID = y.CloudApplicationID,
+                        ServiceName = y.ServiceName,
+                        VendorLogoURL = y.Vendor.VendorLogoURL.AddImagePath(),
+                        VendorName = y.Vendor.VendorName,
+                        ApplicationCostOneOff = y.ApplicationCostOneOff,
+                        ApplicationCostPerAnnum = y.ApplicationCostPerAnnum,
+                        ApplicationCostPerMonth = y.ApplicationCostPerMonth,
+                        ApplicationCostPerMonthExtra = y.ApplicationCostPerMonthExtra,
+                        CallsPackageCostPerMonth = y.CallsPackageCostPerMonth,
+                        FreeTrialPeriod = y.FreeTrialPeriod.FreeTrialPeriodName,
+                        SetupFee = y.SetupFee != null ? y.SetupFee.SetupFeeName : null,
+
+                    }
+                );
+                model3.SearchResultsModel.SearchResults = results2.ToList();
+
+
+
+                ViewBag.JavaScriptEnabled = CustomSession.JavaScriptEnabled;
+                return View(model3);
+            }
+            else
+            {
+                if (textButton.Count() > 1)
                 {
-                    CloudApplicationID = y.CloudApplicationID,
-                    Description = y.Description,
-                    SearchResultID = y.CloudApplicationID,
-                    ServiceName = y.ServiceName,
-                    VendorLogoURL = y.Vendor.VendorLogoURL.AddImagePath(),
-                    VendorName = y.Vendor.VendorName,
-                    ApplicationCostOneOff = y.ApplicationCostOneOff,
-                    ApplicationCostPerAnnum = y.ApplicationCostPerAnnum,
-                    ApplicationCostPerMonth = y.ApplicationCostPerMonth,
-                    ApplicationCostPerMonthExtra = y.ApplicationCostPerMonthExtra,
-                    CallsPackageCostPerMonth = y.CallsPackageCostPerMonth,
-                    FreeTrialPeriod = y.FreeTrialPeriod.FreeTrialPeriodName,
-                    SetupFee = y.SetupFee != null ? y.SetupFee.SetupFeeName : null,
-
+                    throw new Exception("Internal server error");
                 }
-            );
-            model3.SearchResultsModel.SearchResults = results2.ToList();
-
-            
-            
-            ViewBag.JavaScriptEnabled = CustomSession.JavaScriptEnabled;
-            return View(model3);
+                else
+                {
+                    var pressedButton = textButton.ElementAt(0);
+                    int cloudApplicationID = int.Parse(pressedButton.Replace("PROCEED_BUTTON_APPLICATION_ID_",""));
+                    CloudApplication ca = _repository.GetCloudApplication(cloudApplicationID);
+                    CloudApplicationModel cam = new CloudApplicationModel()
+                    {
+                        AddDate = ca.AddDate,
+                        ApplicationContentStatusID = ca.ApplicationContentStatusID,
+                        ApplicationCostOneOff = ca.ApplicationCostOneOff,
+                        ApplicationCostPerAnnum = ca.ApplicationCostPerAnnum,
+                        ApplicationCostPerMonth = ca.ApplicationCostPerMonth,
+                        ApplicationCostPerMonthExtra = ca.ApplicationCostPerMonthExtra,
+                        ApprovalAssignedPersonID = ca.ApprovalAssignedPersonID,
+                        ApprovalStatusID = ca.ApprovalStatusID,
+                        AverageEaseOfUse = ca.AverageEaseOfUse,
+                        AverageFunctionality = ca.AverageFunctionality,
+                        AverageOverallRating = ca.AverageOverallRating,
+                        AverageValueForMoney = ca.AverageValueForMoney,
+                        Brand = ca.Brand,
+                        Browsers = ca.Browsers,
+                        CallsPackageCostPerMonth = ca.CallsPackageCostPerMonth,
+                        Category = ca.Category,
+                        CloudApplicationFeatures = ca.CloudApplicationFeatures,
+                        CloudApplicationID = ca.CloudApplicationID,
+                        CloudApplicationLogo = ca.CloudApplicationLogo,
+                        CompanyURL = ca.CompanyURL,
+                        Description = ca.Description,
+                        FacebookFollowers = ca.FacebookFollowers,
+                        FacebookURL = ca.FacebookURL,
+                        FreeTrialPeriod = ca.FreeTrialPeriod,
+                        IsPromotional = ca.IsPromotional,
+                        Languages = ca.Languages,
+                        LicenceTypeMaximum = ca.LicenceTypeMaximum,
+                        LicenceTypeMinimum = ca.LicenceTypeMinimum,
+                        LinkedInFollowers = ca.LinkedInFollowers,
+                        LinkedInURL = ca.LinkedInURL,
+                        MaximumMeetingAttendees = ca.MaximumMeetingAttendees,
+                        MaximumWebinarAttendees = ca.MaximumWebinarAttendees,
+                        MinimumContract = ca.MinimumContract,
+                        MobilePlatforms = ca.MobilePlatforms,
+                        OperatingSystems = ca.OperatingSystems,
+                        PaymentFrequency = ca.PaymentFrequency,
+                        PaymentOptions = ca.PaymentOptions,
+                        Ratings = ca.Ratings.Select(x => new CloudApplicationRatingModel()
+                        {
+                            CloudApplicationEaseOfUse = x.CloudApplicationEaseOfUse,
+                            CloudApplicationFunctionality = x.CloudApplicationFunctionality,
+                            CloudApplicationOverallRating = x.CloudApplicationOverallRating,
+                            CloudApplicationRatingID = x.CloudApplicationRatingID,
+                            CloudApplicationRatingReviewerCompany = x.CloudApplicationRatingReviewerCompany,
+                            CloudApplicationRatingReviewerName = x.CloudApplicationRatingReviewerName,
+                            CloudApplicationRatingReviewerTitle = x.CloudApplicationRatingReviewerTitle,
+                            CloudApplicationRatingText = x.CloudApplicationRatingText,
+                            CloudApplicationValueForMoney = x.CloudApplicationValueForMoney,
+                        }).Take(2).ToList(),
+                        Reviews = ca.Reviews.Select(x => new CloudApplicationReviewModel()
+                            { 
+                            CloudApplicationReviewDate = x.CloudApplicationReviewDate,
+                            CloudApplicationReviewHeadline = x.CloudApplicationReviewHeadline,
+                            CloudApplicationReviewID = x.CloudApplicationReviewID,
+                            CloudApplicationReviewPublisherName = x.CloudApplicationReviewPublisherName,
+                            CloudApplicationReviewText = x.CloudApplicationReviewText,
+                            CloudApplicationReviewURL = x.CloudApplicationReviewURL,
+                            }).Take(2).ToList()
+                        ,
+                        ServiceName = ca.ServiceName,
+                        SetupFee = ca.SetupFee,
+                        SupportDays = ca.SupportDays,
+                        SupportHours = ca.SupportHours,
+                        SupportTerritories = ca.SupportTerritories,
+                        SupportTypes = ca.SupportTypes,
+                        ThumbnailDocuments = ca.ThumbnailDocuments,
+                        Title = ca.Title,
+                        TwitterFollowers = ca.TwitterFollowers,
+                        TwitterURL = ca.TwitterURL,
+                        Vendor = ca.Vendor,
+                        VideoTrainingSupport = ca.VideoTrainingSupport,
+                    };
+                    return ForceDisplayTemplateViewFor(cam);
+                }
+            }
         }
 
         #region SearchPage POST
@@ -463,6 +656,7 @@ namespace CloudCompare.Web.Controllers
         IQueryable<CloudCompare.Domain.Models.CloudApplication> SearchProducts(SearchFiltersModel model, params string[] keywords)
         {
             System.Linq.Expressions.Expression<Func<CloudApplication, bool>> allPredicate;
+            System.Linq.Expressions.Expression<Func<CloudApplication, bool>> categoryPredicate;
             System.Linq.Expressions.Expression<Func<CloudApplication, bool>> browsersPredicate;
             System.Linq.Expressions.Expression<Func<CloudApplication, bool>> featuresPredicate;
             System.Linq.Expressions.Expression<Func<CloudApplication, bool>> operatingSystemsPredicate;
@@ -486,6 +680,7 @@ namespace CloudCompare.Web.Controllers
             {
                 allPredicate = PredicateBuilder.True<CloudCompare.Domain.Models.CloudApplication>();
                 browsersPredicate = PredicateBuilder.True<CloudCompare.Domain.Models.CloudApplication>();
+                categoryPredicate = PredicateBuilder.True<CloudCompare.Domain.Models.CloudApplication>();
                 featuresPredicate = PredicateBuilder.True<CloudCompare.Domain.Models.CloudApplication>();
                 operatingSystemsPredicate = PredicateBuilder.True<CloudCompare.Domain.Models.CloudApplication>();
                 supportTypesPredicate = PredicateBuilder.True<CloudCompare.Domain.Models.CloudApplication>();
@@ -497,6 +692,7 @@ namespace CloudCompare.Web.Controllers
             else
             {
                 allPredicate = LinqKit.PredicateBuilder.False<CloudCompare.Domain.Models.CloudApplication>();
+                categoryPredicate = PredicateBuilder.True<CloudCompare.Domain.Models.CloudApplication>();
                 if (model.SearchFiltersBrowsers.Where(x => x.Col1Selected == true).Any(x => x.Col1SearchFilterType.StartsWith("BROWSERS")))
                 {
                     browsersPredicate = PredicateBuilder.False<CloudCompare.Domain.Models.CloudApplication>();
@@ -547,6 +743,7 @@ namespace CloudCompare.Web.Controllers
             //model.SearchFilters.ToList().ForEach(x => action(x,x.SearchFilterName));
             //model.SearchFilters.ForEachMatch(s => s.SearchFilterType.StartsWith("a"), s => Console.WriteLine(s));
 
+            InsertCategoryFilterClause(model.CategoryID,ref categoryPredicate);
             model.SearchFiltersBrowsers.Where(x => x.Col1Selected == true).ForEachMatch(x => x.Col1SearchFilterType.StartsWith("BROWSERS"), x => InsertBrowserFilterClause(x, ref browsersPredicate));
             //model.SearchFiltersFeatures.FeatureFilters.Where(x => x.Selected == true).ForEachMatch(x => x.SearchFilterType.StartsWith("FEATURES"), x => InsertFeatureFilterClause(x, ref featuresPredicate));
             model.SearchFiltersFeatures.Where(x => x.Selected == true).ForEachMatch(x => x.SearchFilterType.StartsWith("FEATURES"), x => InsertFeatureFilterClause(x, ref featuresPredicate));
@@ -559,9 +756,8 @@ namespace CloudCompare.Web.Controllers
             model.SearchFiltersMobilePlatforms.Where(x => x.Col1Selected == true).ForEachMatch(x => x.Col1SearchFilterType.StartsWith("MOBILEPLATFORMS"), x => InsertMobilePlatformFilterClause(x, ref mobilePlatformsPredicate));
 
             allPredicate = allPredicate.Or(browsersPredicate.Expand());
+            
             allPredicate = allPredicate.And(featuresPredicate.Expand());
-
-
             allPredicate = allPredicate.And(operatingSystemsPredicate.Expand());
             allPredicate = allPredicate.And(supportTypesPredicate.Expand());
             allPredicate = allPredicate.And(supportDaysPredicate.Expand());
@@ -585,6 +781,15 @@ namespace CloudCompare.Web.Controllers
         //        act(value);
         //    }
         //}
+
+        public System.Linq.Expressions.Expression<Func<CloudApplication, bool>> InsertCategoryFilterClause(int? categoryID, ref System.Linq.Expressions.Expression<Func<CloudApplication, bool>> predicate)
+        {
+            if (Convert.ToInt32(categoryID ?? 0) != 0)
+            {
+                predicate = predicate.Or(p => p.Category.CategoryID == categoryID);
+            }
+            return predicate;
+        }
 
         public System.Linq.Expressions.Expression<Func<CloudApplication, bool>> InsertBrowserFilterClause(SearchFilterModelTwoColumn element, ref System.Linq.Expressions.Expression<Func<CloudApplication, bool>> predicate)
         {
@@ -632,6 +837,11 @@ namespace CloudCompare.Web.Controllers
             predicate = predicate.And(p => p.MobilePlatforms.Any(x => x.MobilePlatformName.Trim().ToUpper() == element.Col1SearchFilterName.ToUpper().Trim()));
         }
         #endregion
+
+        protected ViewResult ForceDisplayTemplateViewFor(object model)
+        {
+            return View("ForceDisplayTemplate", model);
+        }
 
     }
 

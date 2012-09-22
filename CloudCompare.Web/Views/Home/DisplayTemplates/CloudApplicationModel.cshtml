@@ -1,0 +1,203 @@
+﻿@model CloudCompare.Web.Models.CloudApplicationModel
+@using CloudCompare.Domain.Models
+@*home display TEST template
+*@
+<link href="/Content/overflow-text-ellipsis.css" rel="stylesheet" type="text/css" />
+<div id="main1" style="overflow:hidden;height:auto">
+    <div id="main2" style="overflow:hidden;height:auto;width:60%;">
+
+    <table id="dataTable" style="width: 100%;">
+        <tr>
+            <td style="width: 30%">
+                <img src="@Model.CloudApplicationLogo"/>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 20%">@Model.ApplicationCostPerMonth
+            </td>
+            <td style="width: 20%">@Model.ApplicationCostPerAnnum
+            </td>
+            <td style="width: 20%">@Model.SetupFee.SetupFeeName
+            </td>
+            <td style="width: 40%">@Model.FreeTrialPeriod.FreeTrialPeriodName
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 20%">per month
+            </td>
+            <td style="width: 20%">per annum
+            </td>
+            <td style="width: 20%">Set-up fee
+            </td>
+            <td style="width: 40%">FREE trial
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 100%" colspan="4">@Model.ServiceName
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 70%" colspan="4">
+                <div class="ellipsify">
+                    <div class="pre-dots">
+                    </div>
+                    <div class="dots">
+                        &hellip;</div>
+                    @Model.Description
+                    <span class="hidedots1"></span>
+                    <div class="hidedots2">
+                    </div>
+                </div>
+            </td>
+            <td>
+            </td>
+        </tr>
+    </table>
+
+    </div>
+
+
+    <hr />
+    <label>Summary</label>
+
+    <table>
+        <tr>
+            <td style="width:60%;">
+    <div id="main3" style="overflow:hidden;height:auto;width:100%;">
+        <div style="float:left">
+                <table>
+                    <tr>
+                        <td>
+                            @Html.Label("Operating system:")
+                        </td>
+                    </tr>
+                    @foreach (CloudCompare.Domain.Models.OperatingSystem os in Model.OperatingSystems)
+                    {
+                    <tr>
+                        <td>
+                            @Html.Label(os.OperatingSystemName)
+                        </td>
+                    </tr>
+                    }
+
+                    <tr>
+                        <td>
+                            @Html.Label("Support type:")
+                        </td>
+                    </tr>
+                    @foreach (CloudCompare.Domain.Models.SupportType st in Model.SupportTypes)
+                    {
+                    <tr>
+                        <td>
+                            @Html.Label(st.SupportTypeName)
+                        </td>
+                    </tr>
+                    }
+
+                    <tr>
+                        <td>
+                            @Html.Label("Support days:")
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            @Html.Label(Model.SupportDays.SupportDaysName)
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            @Html.Label("Support hours:")
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            @Html.Label(Model.SupportHours.SupportHoursName)
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            @Html.Label("Language:")
+                        </td>
+                    </tr>
+                    @foreach (CloudCompare.Domain.Models.Language l in Model.Languages)
+                    {
+                    <tr>
+                        <td>
+                            @Html.Label(l.LanguageName)
+                        </td>
+                    </tr>
+                    }
+                    
+                </table>
+        </div>
+        <div style="float:left">
+                <table>
+                    <tr>
+                        <td>
+                             @Html.Label("Features:")
+                        </td>
+                    </tr>
+                    @{
+                        int i = 0;
+                        do
+                        { 
+                    @:<tr>
+                        <td>
+                            @Model.CloudApplicationFeatures[i].Feature.FeatureName
+                        </td>
+                        i ++;
+                        if (i < Model.CloudApplicationFeatures.Count)
+                        {
+                        <td>
+                            @Model.CloudApplicationFeatures[i].Feature.FeatureName
+                        </td>                                
+                        }
+                        i++;
+                    @:</tr>    
+                        } while (i < Model.CloudApplicationFeatures.Count);
+                        } 
+                </table>
+        </div>
+    </div>
+    <div id="main4" style="height:auto;overflow:hidden;width:100%;">
+    @Html.DisplayFor(x => x.Reviews)
+    </div>
+            
+            </td>
+            <td style="width:60%;" valign="bottom">
+    <div id="main5" style="height:100%;overflow:hidden;width:100%;float:right;">
+    @Html.DisplayFor(x => x.Ratings)
+    </div>
+            
+            </td>
+        </tr>
+    </table>
+
+
+    <div id="main6" style="overflow:hidden;height:auto;width:60%;">
+
+    <table>
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="submit" value="More Info &gt;" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" value="Proceed &gt;" />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    </div>
+</div>

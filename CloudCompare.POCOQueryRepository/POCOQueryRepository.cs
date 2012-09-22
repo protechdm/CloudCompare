@@ -252,13 +252,6 @@ namespace CloudCompare.POCOQueryRepository
         }
         #endregion
 
-        #region FindCloudApplicationById
-        public CloudApplication FindCloudApplicationById(int cloudApplicationId)
-        {
-            return _context.FindById(cloudApplicationId);
-        }
-        #endregion
-
         #region FindCategoryByName
         public Category FindCategoryByName(string categoryName)
         {
@@ -515,7 +508,7 @@ namespace CloudCompare.POCOQueryRepository
         #endregion
 
         #region test
-        public IList<SearchFilterTwoColumn> Test()
+        public IList<SearchFilterTwoColumn> Test(int categoryID)
         {
             #region Crap
             //Data Source=.\SQLEXPRESS;Initial Catalog=CloudCompare.POCOQueryRepository.CloudCompareContext;Integrated Security=True;MultipleActiveResultSets=True
@@ -550,7 +543,7 @@ namespace CloudCompare.POCOQueryRepository
 
 
             //List<Browser> featurelist = _context.Browsers.ToList();
-            IList<SearchFilterTwoColumn> allFeatures = GetSearchOptions(3);
+            IList<SearchFilterTwoColumn> allFeatures = GetSearchOptions(categoryID);
             //List<Browser> featurelist = _context.Browsers.ToList();
             
             IList<SearchFilterTwoColumn> browserList = GetSearchFiltersForFilterType<SearchFilterTwoColumn,SearchFilterTwoColumn>(allFeatures,FILTER_BROWSERS);
@@ -1019,27 +1012,38 @@ namespace CloudCompare.POCOQueryRepository
         {
             var retVal = _context.CloudApplications.AsExpandable().Where(predicate.Expand());
 
-            var retVal2 = _context.CloudApplications.Where(x => x.Browsers.Any(y => y.BrowserName == "Firefox")).ToList();
-            var retVal3 = _context.CloudApplications
-                .Where(x => x.CloudApplicationFeatures.Any(y => y.Feature.FeatureName == "High Definition Video"))
-                .Where(x => x.CloudApplicationFeatures.Any(y => y.Feature.FeatureName == "Multiple Meeting Hosts/Chairperson"))
-                .Select(y => new CloudApplication()
-                {
-                    CloudApplicationID = y.CloudApplicationID,
-                    Description = y.Description,
-                    ServiceName = y.ServiceName,
-                    Vendor = y.Vendor,
-                    ApplicationCostOneOff = y.ApplicationCostOneOff,
-                    ApplicationCostPerAnnum = y.ApplicationCostPerAnnum,
-                    ApplicationCostPerMonth = y.ApplicationCostPerMonth,
-                    ApplicationCostPerMonthExtra = y.ApplicationCostPerMonthExtra,
-                    CallsPackageCostPerMonth = y.CallsPackageCostPerMonth,
-                    FreeTrialPeriod = y.FreeTrialPeriod,
-                    SetupFee = y.SetupFee,
+            //var retVal2 = _context.CloudApplications.Where(x => x.Browsers.Any(y => y.BrowserName == "Firefox")).ToList();
+            //var retVal3 = _context.CloudApplications
+            //    .Where(x => x.CloudApplicationFeatures.Any(y => y.Feature.FeatureName == "High Definition Video"))
+            //    .Where(x => x.CloudApplicationFeatures.Any(y => y.Feature.FeatureName == "Multiple Meeting Hosts/Chairperson"))
+            //    .Select(y => new CloudApplication()
+            //    {
+            //        CloudApplicationID = y.CloudApplicationID,
+            //        Description = y.Description,
+            //        ServiceName = y.ServiceName,
+            //        Vendor = y.Vendor,
+            //        ApplicationCostOneOff = y.ApplicationCostOneOff,
+            //        ApplicationCostPerAnnum = y.ApplicationCostPerAnnum,
+            //        ApplicationCostPerMonth = y.ApplicationCostPerMonth,
+            //        ApplicationCostPerMonthExtra = y.ApplicationCostPerMonthExtra,
+            //        CallsPackageCostPerMonth = y.CallsPackageCostPerMonth,
+            //        FreeTrialPeriod = y.FreeTrialPeriod,
+            //        SetupFee = y.SetupFee,
 
-                }
-                );
+            //    }
+            //    );
+            
             return retVal.ToList();
+        }
+        #endregion
+
+        #region GetCloudApplication
+        public CloudApplication GetCloudApplication(int cloudApplicationID)
+        {
+            //return _context.FindById(cloudApplicationID);
+            var terVal1 = _context.CloudApplications.Where(x => x.CloudApplicationID == cloudApplicationID);
+            var retVal2 = (from ca in _context.CloudApplications where ca.CloudApplicationID == cloudApplicationID select ca).FirstOrDefault();
+            return retVal2;
         }
         #endregion
     }

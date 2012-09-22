@@ -8,7 +8,7 @@ namespace CloudCompare.Domain.Contracts.Repositories
 {
     public interface ICloudCompareRepository : IBaseRepository
     {
-        IList<SearchFilterTwoColumn> Test();
+        IList<SearchFilterTwoColumn> Test(int categoryID);
         IList<Category> GetCategories();
         IList<Domain.Models.OperatingSystem> GetOperatingSystems();
         IList<SearchResult> GetFeaturedCloudware();
@@ -16,6 +16,7 @@ namespace CloudCompare.Domain.Contracts.Repositories
         IList<SearchResult> GetNewCloudware();
         IList<SearchFilterTwoColumn> GetSearchOptions(int categoryID);
         IList<CloudApplication> GetSearchResults(System.Linq.Expressions.Expression<Func<CloudApplication, bool>> predicate);
+        CloudApplication GetCloudApplication(int cloudApplicationID);
         //bool InsertCase(string userId, string hostAddress, string hostName, string insertAction, Case model);
         //QueueAndUserID GetQueueAndUserIDBasedOnRA(Case inputCase, string country, string invoiceNumber);
         //IList<User> GetUsers(string EMailAddress, string passWord);

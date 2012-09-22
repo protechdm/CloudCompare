@@ -15,6 +15,7 @@ namespace CloudCompare.Web.Models
         {
         }
 
+        public int? CategoryID { get; set; }
         //[Display(Name = "Categories", ResourceType = typeof(App_LocalResources.ENG_Case))]
         [Display(Name = "Search Filters")]
         //[UIHint("SearchFilter")]

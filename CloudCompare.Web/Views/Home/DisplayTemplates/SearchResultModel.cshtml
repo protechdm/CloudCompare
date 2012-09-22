@@ -31,17 +31,20 @@
                 <table>
                     <tr>
                         <td>
-                            <input type="submit" value="More Info &gt;" />
-                        </td>
+                            
+                            <input type="submit" name=@Html.Encode("PROCEED_BUTTON_APPLICATION_ID_" + Model.CloudApplicationID.ToString()) value="More Info &gt;" />
+                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <input type="submit" value="Proceed &gt;" />
+                            <input type="submit" name="searchresultbutton" value="Proceed &gt;" />
                         </td>
                     </tr>
                 </table>
+                
             </td>
         </tr>
     </table>
 </div>
 
+                

@@ -13,6 +13,7 @@ namespace CloudCompare.Domain.Models
         public virtual string Brand { get; set; }
         public virtual string ServiceName { get; set; }
         public virtual string CompanyURL { get; set; }
+        public virtual byte[] CloudApplicationLogo { get; set; }
         //[Required]
         //[MaxLength(101)]
         public virtual string Title { get; set; }

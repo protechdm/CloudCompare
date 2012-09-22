@@ -7,7 +7,7 @@
 
 <link href="@Url.Content("~/Content/search-page.css")" rel="stylesheet" type="text/css" />
 
-@using (Html.BeginForm())
+@using (Html.BeginForm("SearchPage","Home", new { buttonID="" }, FormMethod.Post))
 {
 
     <style>

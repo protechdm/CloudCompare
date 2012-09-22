@@ -1,8 +1,12 @@
 ﻿@model CloudCompare.Web.Models.HomePageModel
 
-    @{ Html.RenderPartial("Carousel"); }
+@*    @{ Html.RenderPartial("Carousel"); }
+*@
+@using (Html.BeginForm())
+{
+    
 
-@if (ViewBag.JavaScriptEnabled)
+if (ViewBag.JavaScriptEnabled)
 {
     <p>ENABLED!</p>
     //Html.RenderPartial("SearchResults", @Model);
@@ -11,6 +15,8 @@
 else
 {
     <p>DISABLED!</p>
-    Html.RenderPartial("SearchInputSimple", new ViewDataDictionary(@Model));
+    //Html.RenderPartial("SearchInputSimple", new ViewDataDictionary(@Model.SearchInputModel));
+    @Html.DisplayFor(x => x.SearchInputModel)
     Html.RenderPartial("SearchResultsNoScriptIE", @Model);
+}
 }

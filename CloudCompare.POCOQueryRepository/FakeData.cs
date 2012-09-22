@@ -2578,21 +2578,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -2740,21 +2748,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -2917,21 +2933,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -3094,21 +3118,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -3265,21 +3297,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -3435,21 +3475,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -3606,21 +3654,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -3777,21 +3833,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -3949,21 +4013,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -4123,21 +4195,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -4297,21 +4377,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -4471,21 +4559,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -4645,21 +4741,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -4819,21 +4923,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -4993,21 +5105,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -5167,21 +5287,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -5341,21 +5469,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -5516,21 +5652,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -5692,21 +5836,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -5868,21 +6020,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -6044,21 +6204,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -6215,21 +6383,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -6391,21 +6567,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -6567,21 +6751,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -6745,21 +6937,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -6921,21 +7121,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -7099,21 +7307,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -7275,21 +7491,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -7451,21 +7675,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -7627,21 +7859,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -7803,21 +8043,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -7986,21 +8234,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -8166,21 +8422,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -8346,21 +8610,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -8526,21 +8798,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -8706,21 +8986,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -8886,21 +9174,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -9066,21 +9362,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -9247,21 +9551,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -9427,21 +9739,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -9607,21 +9927,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -9787,21 +10115,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -9967,21 +10303,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -10147,21 +10491,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -10333,21 +10685,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -10515,21 +10875,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -10697,21 +11065,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -10879,21 +11255,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -11061,21 +11445,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -11243,21 +11635,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -11425,21 +11825,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -11607,21 +12015,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -11790,21 +12206,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -11972,21 +12396,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -12154,21 +12586,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -12336,21 +12776,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -12518,21 +12966,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -12700,21 +13156,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -12882,21 +13346,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -13064,21 +13536,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -13264,21 +13744,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -13460,21 +13948,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -13656,21 +14152,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -13852,21 +14356,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -14048,21 +14560,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -14244,21 +14764,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -14440,21 +14968,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -14637,21 +15173,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -14833,21 +15377,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -15030,21 +15582,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -15228,21 +15788,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -15425,21 +15993,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -15623,21 +16199,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -15812,21 +16396,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -15997,21 +16589,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -16182,21 +16782,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -16367,21 +16975,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -16552,21 +17168,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -16737,21 +17361,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -16922,21 +17554,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -17107,21 +17747,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -17292,21 +17940,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -17477,21 +18133,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -17662,21 +18326,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -17847,21 +18519,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -18032,21 +18712,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -18217,21 +18905,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -18402,21 +19098,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -18591,21 +19295,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -18776,21 +19488,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -18961,21 +19681,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -19146,21 +19874,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -19331,21 +20067,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -19516,21 +20260,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -19701,21 +20453,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -19886,21 +20646,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -20071,20 +20839,28 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                         CloudApplicationReviewDate = DateTime.Now,
                     },
                 },
@@ -20256,21 +21032,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -20441,21 +21225,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -20626,21 +21418,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -20811,21 +21611,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -20996,21 +21804,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -21181,21 +21997,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -21366,21 +22190,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -21551,21 +22383,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -21736,21 +22576,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -21921,21 +22769,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -22106,21 +22962,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -22295,21 +23159,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -22480,21 +23352,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -22665,21 +23545,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -22850,21 +23738,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -23035,21 +23931,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -23220,21 +24124,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -23405,21 +24317,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -23590,21 +24510,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -23775,21 +24703,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -23960,21 +24896,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -24145,21 +25089,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -24330,21 +25282,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -24515,21 +25475,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -24700,21 +25668,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -24885,21 +25861,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()
@@ -25070,21 +26054,29 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                     new CloudApplicationReview()
                     {
                         CloudApplicationReviewText = repository.GetDescription(),
                         CloudApplicationReviewDate = DateTime.Now,
+                        CloudApplicationReviewPublisherName = "Wilson Miller Business Edition",
+                        CloudApplicationReviewHeadline = "CloudCompare buys Microsoft after shares rocket 173% on launch of comparison website",
                     },
                 },
                 ThumbnailDocuments = new List<ThumbnailDocument>()

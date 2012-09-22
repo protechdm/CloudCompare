@@ -14,7 +14,8 @@ namespace CloudCompare.Web.Plumbing
     {
         private static string[] NoScriptPartialFormats = new[] {
             //"~/Views/{1}/Shared/NoScript/{1}/{0}.cshtml",
-            "~/Views/Shared/NoScript/{0}.cshtml"
+            "~/Views/Shared/NoScript/{0}.cshtml",
+            "~/Views/{1}/PartialPages/NoScript/{0}.cshtml",
         };
 
         public NoScriptRazorViewEngine()
