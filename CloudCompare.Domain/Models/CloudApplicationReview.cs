@@ -14,6 +14,7 @@ namespace CloudCompare.Domain.Models
         public virtual string CloudApplicationReviewText { get; set; }
         public virtual DateTime CloudApplicationReviewDate { get; set; }
         public virtual string CloudApplicationReviewURL { get; set; }
+        public virtual string CloudApplicationReviewPhysicalFileName { get; set; }
         public virtual byte[] RowVersion { get; set; }
         public virtual CloudApplication CloudApplication { get; set; }
     }

@@ -12,3 +12,14 @@ J:\CloudCompare\CloudCompare.Console\bin\Debug\CloudCompare.POCOQueryRepository.
 J:\CloudCompare\CloudCompare.Console\bin\Debug\Castle.Core.dll
 J:\CloudCompare\CloudCompare.Console\bin\Debug\Castle.Core.xml
 J:\CloudCompare\CloudCompare.Console\bin\Debug\LinqKit.dll
+J:\CloudCompare\CloudCompare.Console\bin\Debug\Microsoft.WindowsAPICodePack.dll
+J:\CloudCompare\CloudCompare.Console\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll
+J:\CloudCompare\CloudCompare.Console\bin\Debug\Microsoft.WindowsAPICodePack.pdb
+J:\CloudCompare\CloudCompare.Console\bin\Debug\Microsoft.WindowsAPICodePack.xml
+J:\CloudCompare\CloudCompare.Console\bin\Debug\Microsoft.WindowsAPICodePack.Shell.pdb
+J:\CloudCompare\CloudCompare.Console\bin\Debug\Microsoft.WindowsAPICodePack.Shell.xml
+J:\CloudCompare\CloudCompare.Console\bin\Debug\ManagedWinapi.dll
+J:\CloudCompare\CloudCompare.Console\bin\Debug\ManagedWinapi.pdb
+J:\CloudCompare\CloudCompare.Console\bin\Debug\ManagedWinapi.xml
+J:\CloudCompare\CloudCompare.Console\bin\Debug\GhostscriptSharp.dll
+J:\CloudCompare\CloudCompare.Console\bin\Debug\GhostscriptSharp.pdb

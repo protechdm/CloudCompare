@@ -17,6 +17,7 @@ namespace CloudCompare.Domain.Contracts.Repositories
         IList<SearchFilterTwoColumn> GetSearchOptions(int categoryID);
         IList<CloudApplication> GetSearchResults(System.Linq.Expressions.Expression<Func<CloudApplication, bool>> predicate);
         CloudApplication GetCloudApplication(int cloudApplicationID);
+        ThumbnailDocument GetCloudApplicationThumbnailDocument(int thumbnailDocumentID);
         //bool InsertCase(string userId, string hostAddress, string hostName, string insertAction, Case model);
         //QueueAndUserID GetQueueAndUserIDBasedOnRA(Case inputCase, string country, string invoiceNumber);
         //IList<User> GetUsers(string EMailAddress, string passWord);

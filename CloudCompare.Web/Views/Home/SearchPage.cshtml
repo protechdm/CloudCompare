@@ -7,7 +7,7 @@
 
 <link href="@Url.Content("~/Content/search-page.css")" rel="stylesheet" type="text/css" />
 
-@using (Html.BeginForm("SearchPage","Home", new { buttonID="" }, FormMethod.Post))
+@using (Html.BeginForm("SearchPage", "Home", new { buttonID = "" }, FormMethod.Post))
 {
 
     <style>
@@ -38,7 +38,64 @@
         ENABLED!</p>
         //Html.RenderPartial("SearchResults", @Model);
         //Html.RenderPartial("SearchInputSimple", new ViewDataDictionary(@Model));
-        Html.RenderPartial("SearchFilters", @Model);
+        //Html.RenderPartial("SearchFilters", @Model);
+        
+            <div class="search-page-div">
+        <div class="search-filters-div">
+            @*        var test = Model.SearchFiltersModel.SearchFilters.Where(y => y.SearchFilterType == "OPERATINGSYSTEM")
+         .Select<SearchFilterModel, SearchFilterModel>(z => new SearchFilterModel() { })
+             ;
+
+
+
+
+        Html.DisplayFor(x => x.SearchFiltersModel.SearchFilters.Where(y => y.SearchFilterType == "OPERATINGSYSTEM").Select<SearchFilterModel, SearchFilterModel>(z => new SearchFilterModel() { }))
+
+        foreach(var item in Model.SearchFiltersModel.SearchFiltersOperatingSystems)
+        {
+            Html.RenderPartial("SearchFilterModelTwoColumn", item);
+        }
+*@
+            <div class="demo-show">
+                <h3>Operating Systems</h3>
+                <div>
+                    @Html.DisplayFor(x => x.SearchFiltersModel.SearchFiltersOperatingSystems)
+                </div>
+                <h3>Browsers</h3>
+                <div>
+                            @Html.DisplayFor(x => x.SearchFiltersModel.SearchFiltersBrowsers)
+                </div>
+                <h3>Mobile Platforms</h3>
+                <div>
+                            @Html.DisplayFor(x => x.SearchFiltersModel.SearchFiltersMobilePlatforms)
+                </div>
+                <h3>Features</h3>
+                <div>
+                            @Html.DisplayFor(x => x.SearchFiltersModel.SearchFiltersFeatures)
+                </div>
+                <h3>Support Types</h3>
+                <div>
+                            @Html.DisplayFor(x => x.SearchFiltersModel.SearchFiltersSupportTypes)
+                </div>
+                <h3>Support Days</h3>
+                <div>
+                            @Html.DisplayFor(x => x.SearchFiltersModel.SearchFiltersSupportDays)
+                </div>
+                <h3>Support Hours</h3>
+                <div>
+                            @Html.DisplayFor(x => x.SearchFiltersModel.SearchFiltersSupportHours)
+                </div>
+                <h3>Languages</h3>
+                <div>
+                            @Html.DisplayFor(x => x.SearchFiltersModel.SearchFiltersLanguages)
+                </div>
+            </div>
+        </div>
+        <div class="search-results-div">
+            @Html.DisplayFor(x => x.SearchResultsModel.SearchResults)
+        </div>
+    </div>
+
     }
     else
     {

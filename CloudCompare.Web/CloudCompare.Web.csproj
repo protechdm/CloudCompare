@@ -381,6 +381,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Documents\CaseStudies\" />
+    <Folder Include="Documents\WhitePapers\" />
     <Folder Include="Views\Home\PartialPages\WithScript\" />
   </ItemGroup>
   <ItemGroup>
@@ -409,7 +411,7 @@
     <Content Include="Views\Shared\SearchResultsFeaturedCloudware.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Shared\xSearchResults.cshtml" />
+    <Content Include="Views\Shared\SearchResults.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\HomePage.cshtml" />

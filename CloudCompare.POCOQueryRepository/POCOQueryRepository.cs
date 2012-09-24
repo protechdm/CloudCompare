@@ -1046,6 +1046,17 @@ namespace CloudCompare.POCOQueryRepository
             return retVal2;
         }
         #endregion
+
+        #region GetCloudApplicationThumbnailDocument
+        public ThumbnailDocument GetCloudApplicationThumbnailDocument(int thumbnailDocumentID)
+        {
+            //return _context.FindById(cloudApplicationID);
+            var retVal1 = _context.ThumbnailDocuments.Where(x => x.ThumbnailDocumentID == thumbnailDocumentID);
+            var retVal2 = (from ca in _context.ThumbnailDocuments where ca.ThumbnailDocumentID == thumbnailDocumentID select ca).FirstOrDefault();
+            return retVal2;
+        }
+        #endregion
+
     }
 
 

@@ -10,3 +10,5 @@ J:\CloudCompare\CloudCompare.POCOQueryRepository\obj\Debug\CloudCompare.POCOQuer
 J:\CloudCompare\CloudCompare.POCOQueryRepository\bin\Debug\Castle.Core.dll
 J:\CloudCompare\CloudCompare.POCOQueryRepository\bin\Debug\Castle.Core.xml
 J:\CloudCompare\CloudCompare.POCOQueryRepository\bin\Debug\LinqKit.dll
+J:\CloudCompare\CloudCompare.POCOQueryRepository\bin\Debug\GhostscriptSharp.dll
+J:\CloudCompare\CloudCompare.POCOQueryRepository\bin\Debug\GhostscriptSharp.pdb

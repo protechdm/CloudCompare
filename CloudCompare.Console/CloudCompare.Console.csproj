@@ -37,6 +37,15 @@
     <Reference Include="EntityFramework">
       <HintPath>..\packages\EntityFramework.4.1.10331.0\lib\EntityFramework.dll</HintPath>
     </Reference>
+    <Reference Include="ManagedWinapi">
+      <HintPath>..\packages\ManagedWinapi.0.3\ManagedWinapi.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack">
+      <HintPath>..\..\Windows API Code Pack 1.1\source\WindowsAPICodePack\Shell\bin\Debug\Microsoft.WindowsAPICodePack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack.Shell">
+      <HintPath>..\..\Windows API Code Pack 1.1\source\WindowsAPICodePack\Shell\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -50,6 +59,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\mephraim-ghostscriptsharp-1cdb015\GhostScriptSharp\GhostscriptSharp.csproj">
+      <Project>{56605627-E6FA-4F47-9440-FB877CEA5C84}</Project>
+      <Name>GhostscriptSharp</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CloudCompare.Domain\CloudCompare.Domain.csproj">
       <Project>{9586A4AA-25C3-40AB-B851-0BCEEB0D7098}</Project>
       <Name>CloudCompare.Domain</Name>

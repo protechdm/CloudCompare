@@ -65,6 +65,7 @@ namespace CloudCompare.Web.Controllers
         public ActionResult Index(string id, string javascriptenabled)
         {
             Logger.Debug("Entered site");
+            CustomSession.JavaScriptEnabled = true;
 
             var bc = Request.Browser;
             int x = bc.EcmaScriptVersion.Major;
@@ -843,6 +844,49 @@ namespace CloudCompare.Web.Controllers
             return View("ForceDisplayTemplate", model);
         }
 
+        public ActionResult ShowImage(int thumbnailDocumentID)
+        {
+            ThumbnailDocument td = _repository.GetCloudApplicationThumbnailDocument(thumbnailDocumentID);
+            return File(td.ThumbnailImage, "image/jpg");
+        }
+
+        public ActionResult RedirectInCloudCompareWebsiteToShowDocument(int thumbnailDocumentID)
+        {
+            ThumbnailDocument td = _repository.GetCloudApplicationThumbnailDocument(thumbnailDocumentID);
+            //td.ThumbnailDocumentURL = "http://www.bbc.co.uk";
+            PdfResult pr = new PdfResult(td);
+            return pr;
+            //td.ThumbnailDocumentURL;
+        }
+
+        public ActionResult RedirectToDocumentOwnerWebsiteToShowDocument(int thumbnailDocumentID)
+        {
+            ThumbnailDocument td = _repository.GetCloudApplicationThumbnailDocument(thumbnailDocumentID);
+            td.ThumbnailDocumentURL = "http://www.bbc.co.uk";
+            //return View();
+            //td.ThumbnailDocumentURL;
+            RedirectResult rr = new RedirectResult(td.ThumbnailDocumentURL);
+            return rr;
+        }
+
+        
+        public FileResult DownloadFile(int thumbnailDocumentID)
+        {
+            ThumbnailDocument td = _repository.GetCloudApplicationThumbnailDocument(thumbnailDocumentID);
+            //int fid = Convert.ToInt32(id);
+            //var files = objData.GetFiles();
+            //string filename = (from f in files
+            //                   where f.FileId == fid
+            //                   select f.FilePath).First();
+            string fileName = td.ThumbnailDocumentPhysicalFilePath + td.ThumbnailDocumentFileName;
+            string contentType = "application/pdf";
+            //Parameters to file are
+            //1. The File Path on the File Server
+            //2. The content type MIME type
+            //3. The parameter for the file save by the browser
+            //return File(fileName, contentType, "Report.pdf");
+            return File(fileName, contentType, td.ThumbnailDocumentFileName);
+        }
     }
 
     static class IEnumerableForEachExtensions
@@ -861,6 +905,33 @@ namespace CloudCompare.Web.Controllers
             {
                 action(item);
             }
+        }
+    }
+
+    public class PdfResult : ActionResult
+    {
+        //private members
+        private byte[] pdfBytes;
+        public PdfResult(ThumbnailDocument td) 
+        {
+            //System.IO.FileStream fs = new System.IO.FileStream(td.ThumbnailDocumentPhysicalFilePath + td.ThumbnailDocumentFileName,System.IO.FileMode.Open);
+            //using (System.IO.FileStream fs = System.IO.File.OpenRead(td.ThumbnailDocumentPhysicalFilePath + td.ThumbnailDocumentFileName))
+            {
+                //System.IO.MemoryStream ms = new System.IO.MemoryStream((int)fs.Length);
+                //int read = fs.Read(ms.GetBuffer(), 0, (int)fs.Length);
+                pdfBytes = System.IO.File.ReadAllBytes(td.ThumbnailDocumentPhysicalFilePath + td.ThumbnailDocumentFileName);
+            }
+            
+        }
+        public override void ExecuteResult(ControllerContext context) 
+        {
+            //create the pdf in a byte array then drop it into the response
+            context.HttpContext.Response.Clear();
+            context.HttpContext.Response.ContentType = "application/pdf";
+            //context.HttpContext.Response.AddHeader("content-disposition", "attachment;filename=xxx.pdf");
+            context.HttpContext.Response.AddHeader("content-disposition", "inline;");
+            context.HttpContext.Response.OutputStream.Write(pdfBytes.ToArray(), 0, pdfBytes.ToArray().Length);
+            context.HttpContext.Response.End();
         }
     }
 

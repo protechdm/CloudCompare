@@ -5,6 +5,7 @@ using System.Text;
 using CloudCompare.Domain.Contracts.Repositories;
 using CloudCompare.POCOQueryRepository;
 using CloudCompare.Domain.Models;
+using GhostscriptSharp;
 
 //using Moq;
 //using NUnit.Framework;
@@ -14,6 +15,18 @@ namespace CloudCompare.POCOQueryRepository
     public class FakeData
     {
         private ICloudCompareContext testContextInstance;
+
+        string PDF_TEST_CASE_STUDY_FILEPATH = "J:\\CloudCompare\\CloudCompare.Web\\Documents\\CaseStudies\\";
+        string PDF_TEST_CASE_STUDY_FILENAME = "pdftown.com_986_ac-electrics.pdf";
+        int PDF_TEST_WHITE_PAPER_PAGE_COUNT = 257;
+        string PDF_TEST_WHITE_PAPER_FILEPATH = "J:\\CloudCompare\\CloudCompare.Web\\Documents\\WhitePapers\\";
+        string PDF_TEST_WHITE_PAPER_FILENAME = "grohe_bathroom_brochure.pdf";
+        int PDF_TEST_CASE_STUDY_PAGE_COUNT = 146;
+        string OUTPUT_FILE_LOCATION = "J:\\CloudCompare\\CloudCompare.Web\\Documents\\";
+        int IMAGE_FILE_HEIGHT = 100;
+        int IMAGE_FILE_WIDTH = 100;
+
+        //string MULTIPLE_FILE_LOCATION = "J:\\CloudCompare\\CloudCompare.Web\\Documents\\WhitePapers\\output%d.jpg";
 
         /// <summary>
         ///Gets or sets the test context which provides
@@ -2609,31 +2622,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.ebay.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.facebook.com",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.ebay.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.facebook.com",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILENAME,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion

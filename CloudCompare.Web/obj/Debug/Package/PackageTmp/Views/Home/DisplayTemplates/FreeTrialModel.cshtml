@@ -1,0 +1,89 @@
+﻿@model CloudCompare.Web.Models.FreeTrialModel
+@using CloudCompare.Web.Helpers
+
+<!--[if IE]>
+	<link rel="stylesheet" type="text/css" href="all-ie-only.css" />
+<![endif]-->
+<!--[if !IE]>
+	<link rel="stylesheet" type="text/css" href="not-ie.css" />
+<![endif]-->
+<!--[if IE 7]>
+	<link rel="stylesheet" type="text/css" href="ie7.css">
+<![endif]-->
+<!--[if IE 6]>
+	<link rel="stylesheet" type="text/css" href="ie6.css" />
+<![endif]-->
+<!--[if lt IE 9]>
+	<link rel="stylesheet" type="text/css" href="ie8-and-down.css" />
+<![endif]-->
+<!--[if lte IE 8]>
+	<link rel="stylesheet" type="text/css" href="ie8-and-down.css" />
+<![endif]-->
+<!--[if gt IE 6]>
+	<link rel="stylesheet" type="text/css" href="ie7-and-up.css" />
+<![endif]-->
+<!--[if gte IE 7]>
+	<link rel="stylesheet" type="text/css" href="ie7-and-up.css" />
+<![endif]-->
+
+    <link href="../../../../Content/DisabledJavaScript/simple-search-input.css" rel="stylesheet" type="text/css" />    
+
+
+@using (Html.BeginForm("Index", "Home", FormMethod.Post, new { id = "InsertCaseForm" }))
+{
+    
+    <div id="searchinput">
+    <div id="imagediv">
+    <img src="../../Images/Cloud-icon-16x32.png" />
+    </div>
+    <div id="searchinputdata">
+        <div id="title" class="add-margins">
+            <label class="large-white-text">Submit your details below to access the FREE trial or buy now</label>
+        </div>
+        <div id="criteria" class="add-margins">
+            <div class="simple-search-first-column">
+                <div class="add-margins">
+                    @Html.TextBoxFor(x => x.FirstName)
+                    @Html.ValidationMessageFor(model => model.FirstName)
+                </div>
+                <div class="add-margins">
+                    @Html.TextBoxFor(x => x.Surname)
+                    @Html.ValidationMessageFor(model => model.Surname)
+                </div>
+                <div class="add-margins">
+                    @Html.TextBoxFor(x => x.EMailAddress)
+                    @Html.ValidationMessageFor(model => model.EMailAddress)
+                </div>
+                <div class="add-margins">
+                    @Html.TextBoxFor(x => x.Telephone)
+                    @Html.ValidationMessageFor(model => model.Telephone)
+                </div>
+                <div class="add-margins">
+                    @Html.TextBoxFor(x => x.Company)
+                    @Html.ValidationMessageFor(model => model.Company)
+                </div>
+                <div class="add-margins">
+                    @Html.TextBoxFor(x => x.NumberOfEmployees)
+                    @Html.ValidationMessageFor(model => model.NumberOfEmployees)
+                </div>
+                <div class="add-margins">
+                    @Html.CheckBoxFor(x => x.FreeTrial)
+                </div>
+                <div class="add-margins">
+                    @Html.CheckBoxFor(x => x.BuyNow)
+                </div>
+                <div class="add-margins">
+                    <input type="submit" value="Compare Cloudware" />
+                </div>
+             </div>
+        </div>
+    </div>
+    </div>
+    
+    <div style="clear:both; display:block;">
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    </div>
+}
+
