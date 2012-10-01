@@ -1,0 +1,10 @@
+J:\mephraim-ghostscriptsharp-1cdb015\GhostScriptSharp\bin\Debug\GhostscriptSharp.dll
+J:\mephraim-ghostscriptsharp-1cdb015\GhostScriptSharp\bin\Debug\GhostscriptSharp.pdb
+J:\mephraim-ghostscriptsharp-1cdb015\GhostScriptSharp\obj\Debug\ResolveAssemblyReference.cache
+J:\mephraim-ghostscriptsharp-1cdb015\GhostScriptSharp\obj\Debug\GhostscriptSharp.dll
+J:\mephraim-ghostscriptsharp-1cdb015\GhostScriptSharp\obj\Debug\GhostscriptSharp.pdb
+J:\CloudCompare\GhostScriptSharp\bin\Debug\GhostscriptSharp.dll
+J:\CloudCompare\GhostScriptSharp\bin\Debug\GhostscriptSharp.pdb
+J:\CloudCompare\GhostScriptSharp\obj\Debug\ResolveAssemblyReference.cache
+J:\CloudCompare\GhostScriptSharp\obj\Debug\GhostscriptSharp.dll
+J:\CloudCompare\GhostScriptSharp\obj\Debug\GhostscriptSharp.pdb

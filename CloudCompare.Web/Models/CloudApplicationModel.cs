@@ -11,6 +11,8 @@ namespace CloudCompare.Web.Models
     #region CloudApplication
     public class CloudApplicationModel
     {
+        public SearchResultModel SearchResultModel { get; set; }
+
         [DataType(DataType.Text)]
         [Display(Name = "Buy now")]
         public int CloudApplicationID { get; set; }
@@ -72,6 +74,8 @@ namespace CloudCompare.Web.Models
 
         public List<CloudApplicationReviewModel> Reviews { get; set; }
         public List<CloudApplicationRatingModel> Ratings { get; set; }
+
+        public FreeTrialBuyNowModel FreeTrialBuyNow { get; set; }
 
         public virtual byte[] RowVersion { get; set; }
 

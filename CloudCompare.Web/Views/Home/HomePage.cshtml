@@ -8,16 +8,31 @@
 
 if (ViewBag.JavaScriptEnabled)
 {
-    <p>ENABLED!</p>
-    @Html.DisplayFor(x => x.SearchInputModel)
+    <p>JavaScript ENABLED</p>
+    Html.RenderPartial("CarouselModel");
+    <div style="clear:both;"></div>
+    <div style="background-color:#EBEBEB;">
+    @{
+        @Html.DisplayFor(x => x.SearchInputModel)
+        Html.RenderPartial("SearchResults", @Model);
+        }
+    </div>
+
+    
+    
     //Html.RenderPartial("SearchInputSimple", new ViewDataDictionary(@Model));
-    Html.RenderPartial("SearchResults", @Model);
 }
 else
 {
-    <p>DISABLED!</p>
+    <p>JavaScript DISABLED</p>
+    Html.RenderPartial("CarouselModel");
     //Html.RenderPartial("SearchInputSimple", new ViewDataDictionary(@Model.SearchInputModel));
-    @Html.DisplayFor(x => x.SearchInputModel)
-    Html.RenderPartial("SearchResultsNoScriptIE", @Model);
+    
+    
+    //Html.RenderPartial("SearchResultsNoScriptIE", @Model);
+
+    
+    //@Html.DisplayFor(x => x.SearchInputModel)
+    Html.RenderPartial("SearchResultsNoScript", @Model);
 }
 }

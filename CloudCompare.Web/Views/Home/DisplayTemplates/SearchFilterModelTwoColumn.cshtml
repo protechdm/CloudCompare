@@ -19,7 +19,8 @@
 
             
             
-            
+            @if (Model.Col2SearchFilterName != null)
+            {            
             <td style="width:10%">
                 @Html.CheckBoxFor(x => x.Col2Selected)
             </td>
@@ -32,6 +33,15 @@
             <td style="width:0%">
                 @Html.HiddenFor(x => x.Col2SearchFilterType)
             </td>
+            }
+            else
+            {
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+
+            }
         </tr> 
     </table>
 </div>

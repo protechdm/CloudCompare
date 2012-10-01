@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="GhostscriptSharpTests">
+</Property><Property Name="Solution File" Value="J:\mephraim-ghostscriptsharp-1cdb015\Tests\GhostscriptSharpTests.sln">
+</Property><Property Name="Date" Value="22 September 2012">
+</Property><Property Name="Time" Value="17:53">
+</Property></Properties><Event ErrorLevel="0" Project="GhostscriptSharpTests" Source="GhostscriptSharpTests\GhostscriptSharpTests.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="GhostscriptSharpTests" Source="GhostscriptSharpTests\GhostscriptSharpTests.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="GhostscriptSharp" Source="..\GhostscriptSharp\GhostscriptSharp.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="GhostscriptSharp" Source="..\GhostscriptSharp\GhostscriptSharp.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="GhostscriptSharpTests.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="GhostscriptSharpTests.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="GhostscriptSharpTests" Source="GhostscriptSharpTests\GhostscriptSharpTests.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="GhostscriptSharp" Source="..\GhostscriptSharp\GhostscriptSharp.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

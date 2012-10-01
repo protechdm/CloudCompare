@@ -27,3 +27,4 @@ J:\CloudCompare\CloudCompare.Web\obj\Debug\GenerateResource.write.1.tlog
 J:\CloudCompare\CloudCompare.Web\bin\LinqKit.dll
 J:\CloudCompare\CloudCompare.Web\bin\GhostscriptSharp.dll
 J:\CloudCompare\CloudCompare.Web\bin\GhostscriptSharp.pdb
+J:\CloudCompare\CloudCompare.Web\bin\Microsoft.Web.Mvc.dll

@@ -2,11 +2,10 @@
 @using CloudCompare.Domain.Models
 @*home display TEST template
 *@
-<link href="/Content/overflow-text-ellipsis.css" rel="stylesheet" type="text/css" />
-
+<link href="@Url.Content("~/Content/search-page.css")" rel="stylesheet" type="text/css" />
 <script language="javascript" type="text/javascript">
-$(document).ready(function () {
-    //function detectAcrobat() {
+    $(document).ready(function () {
+        //function detectAcrobat() {
         var acrobat = new Object();
 
         acrobat.installed = false;
@@ -58,196 +57,183 @@ $(document).ready(function () {
         //alert(acrobat.installed);
         //alert(acrobat.version);
 
-    //}
+        //}
     });
 </script>
+<div class="search-page-title-bar font-normal-11px">
+</div>
 
 
-<div id="main1" style="overflow:hidden;height:auto">
-    <div id="main2" style="overflow:hidden;height:auto;width:60%;">
+<div class="search-result-page-div font-normal-11px">
+    <div class="search-result-div">
+        @Html.DisplayFor(x => x.SearchResultModel)
+        <div class="search-results-table-outer">
+    
+            <hr />
 
-    <table id="dataTable" style="width: 100%;">
-        <tr>
-            <td style="width: 30%">
-                <img src="@Model.CloudApplicationLogo"/>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 20%">@Model.ApplicationCostPerMonth
-            </td>
-            <td style="width: 20%">@Model.ApplicationCostPerAnnum
-            </td>
-            <td style="width: 20%">@Model.SetupFee.SetupFeeName
-            </td>
-            <td style="width: 40%">@Model.FreeTrialPeriod.FreeTrialPeriodName
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 20%">per month
-            </td>
-            <td style="width: 20%">per annum
-            </td>
-            <td style="width: 20%">Set-up fee
-            </td>
-            <td style="width: 40%">FREE trial
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 100%" colspan="4">@Model.ServiceName
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 70%" colspan="4">
-                <div class="ellipsify">
-                    <div class="pre-dots">
+            <label class="font-normal-22px-purple search-result-header">Summary</label>
+    
+            <table>
+                <tr>
+                    <td style="width: 60%;">
+                        <div id="main3" style="overflow: hidden; height: auto; width: 100%;">
+                    <div class="search-result-summary-div">
+                        <table>
+                            <!-- OPERATING SYSTEMS -->
+                            <tr>
+                                <td>
+                                    <label class="font-bold-11px-purple search-result-header">Operating system:</label>
+                                </td>
+                            </tr>
+                            @foreach (CloudCompare.Domain.Models.OperatingSystem os in Model.OperatingSystems)
+                            {
+                                <tr>
+                                    <td>
+                                        <label class="font-normal-11px-black search-result-header">@os.OperatingSystemName</label>
+                                    </td>
+                                </tr>
+                            }
+                            <!-- SUPPORT TYPES -->
+                            <tr>
+                                <td>
+                                    <label class="font-bold-11px-purple search-result-header">Support type:</label>
+                                </td>
+                            </tr>
+                            @foreach (CloudCompare.Domain.Models.SupportType st in Model.SupportTypes)
+                            {
+                                <tr>
+                                    <td>
+                                        <label class="font-normal-11px-black search-result-header">@st.SupportTypeName</label>
+                                    </td>
+                                </tr>
+                            }
+                            <!-- SUPPORT DAYS -->
+                            <tr>
+                                <td>
+                                    <label class="font-bold-11px-purple search-result-header">Support days:</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="font-normal-11px-black search-result-header">@Model.SupportDays.SupportDaysName</label>
+                                </td>
+                            </tr>
+                            <!-- SUPPORT HOURS -->
+                            <tr>
+                                <td>
+                                    <label class="font-bold-11px-purple search-result-header">Support hours:</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="font-normal-11px-black search-result-header">@Model.SupportHours.SupportHoursName</label>
+                                </td>
+                            </tr>
+                            <!-- LANGUAGES -->
+                            <tr>
+                                <td>
+                                    <label class="font-bold-11px-purple search-result-header">Language:</label>
+                                </td>
+                            </tr>
+                            @foreach (CloudCompare.Domain.Models.Language l in Model.Languages)
+                            {
+                                <tr>
+                                    <td>
+                                        <label class="font-normal-11px-black search-result-header">@l.LanguageName</label>
+                                    </td>
+                                </tr>
+                            }
+                        </table>
                     </div>
-                    <div class="dots">
-                        &hellip;</div>
-                    @Model.Description
-                    <span class="hidedots1"></span>
-                    <div class="hidedots2">
+                    <!-- FEATURES -->
+                    <div class="search-result-summary-div">
+                        <table>
+                            <tr>
+                                <td>
+                                    <label class="font-bold-11px-purple search-result-header">Features:</label>
+                                </td>
+                            </tr>
+                            @{
+                                int i = 0;
+                                do
+                                { 
+                                @:<tr> 
+                                    <td style="padding-right:20px;">
+                                        <label class="font-normal-11px-black search-result-header">@Model.CloudApplicationFeatures[i].Feature.FeatureName</label>
+                                    </td> 
+                                    i++;
+                                    if (i < Model.CloudApplicationFeatures.Count)
+                                    { 
+                                        @:<td style="margin-right:0px;">
+                                            <label class="font-normal-11px-black search-result-header">@Model.CloudApplicationFeatures[i].Feature.FeatureName</label>
+                                        @:</td> 
+                                    }
+                                    i++; 
+                                @:</tr>
+                                } while (i < Model.CloudApplicationFeatures.Count);
+                            }
+                        </table>
                     </div>
                 </div>
-            </td>
-            <td>
-            </td>
-        </tr>
-    </table>
+                    </td>
+                </tr>
+            </table>
 
-    </div>
+            <hr />
 
+            <label class="font-normal-22px-purple search-result-header">Discover more about @Model.ServiceName</label>
 
-    <hr />
-    <label>Summary</label>
+            <!-- THUMBNAIL DOCUMENTS -->
+            <table style="width:100%;">
+                <!-- CASE STUDIES -->
+                <tr>
+                    <td>
+                        <label class="font-bold-11px-purple search-result-header">Case Studies</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="thumbnail-documents" style="float: left;">
 
-    <table>
-        <tr>
-            <td style="width:60%;">
-                <div id="main3" style="overflow:hidden;height:auto;width:100%;">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     <div style="float:left">
-                <table>
-                    <tr>
-                        <td>
-                            @Html.Label("Operating system:")
-                        </td>
-                    </tr>
-                    @foreach (CloudCompare.Domain.Models.OperatingSystem os in Model.OperatingSystems)
-                    {
-                    <tr>
-                        <td>
-                            @Html.Label(os.OperatingSystemName)
-                        </td>
-                    </tr>
-                    }
-
-                    <tr>
-                        <td>
-                            @Html.Label("Support type:")
-                        </td>
-                    </tr>
-                    @foreach (CloudCompare.Domain.Models.SupportType st in Model.SupportTypes)
-                    {
-                    <tr>
-                        <td>
-                            @Html.Label(st.SupportTypeName)
-                        </td>
-                    </tr>
-                    }
-
-                    <tr>
-                        <td>
-                            @Html.Label("Support days:")
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            @Html.Label(Model.SupportDays.SupportDaysName)
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            @Html.Label("Support hours:")
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            @Html.Label(Model.SupportHours.SupportHoursName)
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            @Html.Label("Language:")
-                        </td>
-                    </tr>
-                    @foreach (CloudCompare.Domain.Models.Language l in Model.Languages)
-                    {
-                    <tr>
-                        <td>
-                            @Html.Label(l.LanguageName)
-                        </td>
-                    </tr>
-                    }
-                    
-                </table>
-        </div>
-                    <div style="float:left">
-                <table>
-                    <tr>
-                        <td>
-                             @Html.Label("Features:")
-                        </td>
-                    </tr>
-                    @{
-                        int i = 0;
-                        do
-                        { 
-                    @:<tr>
-                        <td>
-                            @Model.CloudApplicationFeatures[i].Feature.FeatureName
-                        </td>
-                        i ++;
-                        if (i < Model.CloudApplicationFeatures.Count)
+                        @for (int td = 1; td <= Model.ThumbnailDocuments.Count; td++)
                         {
-                        <td>
-                            @Model.CloudApplicationFeatures[i].Feature.FeatureName
-                        </td>                                
+                            if (Model.ThumbnailDocuments[td - 1].ThumbnailDocumentType.ThumbnailDocumentTypeName.ToUpperInvariant().StartsWith("CASE"))
+                            {
+                                <div class="thumbnail-document">
+                                    <div class="thumbnail-document-image">
+                                        <a href="http://www.adobe.com" target="_blank" 
+
+@*        onclick="window.open('{@Url.Action("ShowDocument", "Home", new { thumbnailDocumentID = td })}',this.target,'width=900,height=700');return false;"
+*@
+@*                                            onclick="window.open('@Html.Encode("http://")@Request.Url.Authority@Request.ApplicationPath@Html.Encode("Home/ShowImage?thumbnailDocumentID=")@td');return false;">
+*@                                            onclick="window.open('@Html.Encode("http://")@Request.Url.Authority@Request.ApplicationPath@Html.Encode("Home/RedirectInCloudCompareWebsiteToShowDocument?thumbnailDocumentID=")@td');return false;">
+                                            <img src='@Url.Action("ShowImage", "Home", new { thumbnailDocumentID = td })' class="thumbnail-image" />
+                                        </a>
+                                    </div>
+                                    <div class="thumbnail-document-text">
+                                        <label class="font-bold-11px-purple">@Model.ThumbnailDocuments[td - 1].ThumbnailDocumentTitle</label>
+                                        <br />
+                                        <a href="http://www.adobe.com" target="_blank" 
+                                        onclick="window.open('@Html.Encode("http://")@Request.Url.Authority@Request.ApplicationPath@Html.Encode("Home/RedirectInCloudCompareWebsiteToShowDocument?thumbnailDocumentID=")@td');return false;">
+                                        <label class="font-bold-11px-purple search-result-header">Download now</label>
+                                        </a>
+                                    </div>
+                                </div>
+                            }
                         }
-                        i++;
-                    @:</tr>    
-                        } while (i < Model.CloudApplicationFeatures.Count);
-                        } 
-                </table>
-        </div>
-                </div>
-
-                <hr />
-
-                <label>Discover more about @Model.ServiceName</label>
-
-                <div id="thumbnail-documents">
-                    <div id="case-studies">
-                @for (int td = 1; td <= Model.ThumbnailDocuments.Count; td++)
-                {
-                    if (Model.ThumbnailDocuments[td - 1].ThumbnailDocumentType.ThumbnailDocumentTypeName.ToUpperInvariant().StartsWith("CASE"))
-                    {
-                        <div id="case-study" style="float:left;">
-                            <img src='@Url.Action("ShowImage", "Home", new { thumbnailDocumentID = td })' height="100px" width="100px" />
                         </div>
-                    }
-                }
-            
-            </div>
-                    <div id="white-papers" style="float:none;">
-                @for (int td = 1; td <= Model.ThumbnailDocuments.Count; td++)
-                {
-                    if (Model.ThumbnailDocuments[td-1].ThumbnailDocumentType.ThumbnailDocumentTypeName.ToUpperInvariant().StartsWith("WHITE"))
-                    {
-                        <div id="white-paper" style="float:left;">
-                            <table>
+                    </td>
+                </tr>
+                <!-- WHITE PAPERS -->
+                <tr>
+                    <td>
+                        <label class="font-bold-11px-purple search-result-header">White Papers</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table>
+@*                                
                                 <tr>
                                     <td rowspan="4">
                                         <a href ='@Url.Action("ShowDocument", "Home", new { thumbnailDocumentID = td })'>
@@ -268,63 +254,63 @@ $(document).ready(function () {
                                         @Html.ActionLink("Redirect in this website to display document", "RedirectInCloudCompareWebsiteToShowDocument", new { thumbnailDocumentID = td })
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td>
-                                        In new window....     
+*@                              
+                            </table>
+
+                        <div class="thumbnail-documents" style="float: left;">
+                            @for (int td = 1; td <= Model.ThumbnailDocuments.Count; td++)
+                            {
+                                if (Model.ThumbnailDocuments[td - 1].ThumbnailDocumentType.ThumbnailDocumentTypeName.ToUpperInvariant().StartsWith("WHITE"))
+                                {
+                                <div class="thumbnail-document">
+                                    <div class="thumbnail-document-image">
                                         <a href="http://www.adobe.com" target="_blank" 
 
 @*        onclick="window.open('{@Url.Action("ShowDocument", "Home", new { thumbnailDocumentID = td })}',this.target,'width=900,height=700');return false;"
 *@
 @*                                            onclick="window.open('@Html.Encode("http://")@Request.Url.Authority@Request.ApplicationPath@Html.Encode("Home/ShowImage?thumbnailDocumentID=")@td');return false;">
 *@                                            onclick="window.open('@Html.Encode("http://")@Request.Url.Authority@Request.ApplicationPath@Html.Encode("Home/RedirectInCloudCompareWebsiteToShowDocument?thumbnailDocumentID=")@td');return false;">
-                                            Go to www.adobe.com
+                                            <img src='@Url.Action("ShowImage", "Home", new { thumbnailDocumentID = td })' class="thumbnail-image" />
                                         </a>
-                                    </td>
-                                </tr>
-                            </table>
-
-                        
+                                    </div>
+                                    <div class="thumbnail-document-text">
+                                        <label class="font-bold-11px-purple">@Model.ThumbnailDocuments[td - 1].ThumbnailDocumentTitle</label>
+                                        <br />
+                                        <a href="http://www.adobe.com" target="_blank" 
+                                        onclick="window.open('@Html.Encode("http://")@Request.Url.Authority@Request.ApplicationPath@Html.Encode("Home/RedirectInCloudCompareWebsiteToShowDocument?thumbnailDocumentID=")@td');return false;">
+                                        <label class="font-bold-11px-purple search-result-header">Download now</label>
+                                        </a>
+                                    </div>
+                                </div>
+                                }
+                            }
                         </div>
-                    }
-                }
-            
-            </div>        
-                </div>
-
-                <div id="main6" style="overflow:hidden;height:auto;width:60%;">
-                    <table>
-                <tr>
-                    <td>
-                        <table>
-                            <tr>
-                                <td>
-                                    <input type="submit" value="More Info &gt;" />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input type="submit" value="Proceed &gt;" />
-                                </td>
-                            </tr>
-                        </table>
                     </td>
                 </tr>
             </table>
-                </div>
+            
+            @Request.Url.Authority
+            @Request.ApplicationPath
+        </div>
+    </div>
 
-                <div id="main4" style="height:auto;overflow:hidden;width:100%;">
-                    @Html.DisplayFor(x => x.Reviews)
-                </div>
+    <div class="search-page-title-bar font-normal-11px">
+        @{Html.RenderPartial("SearchResultButtons");}
+    </div>
+
+    <div class="search-result-product-reviews-div">
+        @Html.DisplayFor(x => x.Reviews)
+    </div>
+
+</div>
 
 
-            </td>
-            <td style="width:60%;" valign="bottom">
-                <div id="main5" style="height:100%;overflow:hidden;width:100%;float:right;">
-                    @Html.DisplayFor(x => x.Ratings)
-                </div>
-            </td>
-        </tr>
-    </table>
-    @Request.Url.Authority
-    @Request.ApplicationPath
+<div class="search-result-product-ratings-div">
+    @Html.DisplayFor(x => x.FreeTrialBuyNow)
+
+    @{Html.RenderPartial("CloudApplicationOverallRating", Model); }
+
+    <input class="cloud-compare-button-red" type="submit" value="Create review >" />
+
+    @Html.DisplayFor(x => x.Ratings)
 </div>

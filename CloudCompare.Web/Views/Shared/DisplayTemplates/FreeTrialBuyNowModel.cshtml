@@ -1,0 +1,95 @@
+﻿@model CloudCompare.Web.Models.FreeTrialBuyNowModel
+@using CloudCompare.Web.Helpers
+<!--[if IE]>
+	<link rel="stylesheet" type="text/css" href="all-ie-only.css" />
+<![endif]-->
+<!--[if !IE]>
+	<link rel="stylesheet" type="text/css" href="not-ie.css" />
+<![endif]-->
+<!--[if IE 7]>
+	<link rel="stylesheet" type="text/css" href="ie7.css">
+<![endif]-->
+<!--[if IE 6]>
+	<link rel="stylesheet" type="text/css" href="ie6.css" />
+<![endif]-->
+<!--[if lt IE 9]>
+	<link rel="stylesheet" type="text/css" href="ie8-and-down.css" />
+<![endif]-->
+<!--[if lte IE 8]>
+	<link rel="stylesheet" type="text/css" href="ie8-and-down.css" />
+<![endif]-->
+<!--[if gt IE 6]>
+	<link rel="stylesheet" type="text/css" href="ie7-and-up.css" />
+<![endif]-->
+<!--[if gte IE 7]>
+	<link rel="stylesheet" type="text/css" href="ie7-and-up.css" />
+<![endif]-->
+
+@using (Html.BeginForm("Index", "Home", FormMethod.Post, new { id = "InsertCaseForm" }))
+{
+
+
+<div class="free-trial-buy-now">
+    <div class="free-trial-buy-now-input-data">
+        <div class="free-trial-buy-now-input-data-first-column">
+            <label class="large-white-text">
+                Submit your details below to access the FREE trial or buy now
+            </label>
+                <div class="free-trial-input-text add-margins">
+                    @Html.TextBoxFor(x => x.FirstName, new { @class = "font-13px-white" })
+                    @Html.ValidationMessageFor(model => model.FirstName)
+                </div>
+                <div class="free-trial-input-text add-margins">
+                    @Html.TextBoxFor(x => x.Surname, new { @class = "font-13px-white" })
+                    @Html.ValidationMessageFor(model => model.Surname)
+                </div>
+                <div class="free-trial-input-text add-margins">
+                    @Html.TextBoxFor(x => x.EMailAddress, new { @class = "font-13px-white" })
+                    @Html.ValidationMessageFor(model => model.EMailAddress)
+                </div>
+                <div class="free-trial-input-text add-margins">
+                    @Html.TextBoxFor(x => x.Telephone, new { @class = "font-13px-white" })
+                    @Html.ValidationMessageFor(model => model.Telephone)
+                </div>
+                <div class="free-trial-input-text add-margins">
+                    @Html.TextBoxFor(x => x.Company, new { @class = "font-13px-white" })
+                    @Html.ValidationMessageFor(model => model.Company)
+                </div>
+                <div class="free-trial-input-text add-margins">
+                    @Html.TextBoxFor(x => x.NumberOfEmployees, new { @class = "font-13px-white" })
+                    @Html.ValidationMessageFor(model => model.NumberOfEmployees)
+                </div>
+                <div class="add-margins">
+                    <div style="width:100%;position:relative;height:auto;overflow:hidden;">
+                        <div style="float:left;position:relative">
+                            @Html.CheckBoxFor(x => x.FreeTrial, new { @class = "font-13px-white" })
+                        </div>
+                        <div style="float:left;position:relative">
+                            @Html.LabelFor(x => x.FreeTrial, new { @class = "font-13px-white" })
+                        </div>
+                    </div>
+                </div>
+                <div class="add-margins">
+                    <div style="width:100%;position:relative;height:auto;overflow:hidden;">
+                        <div style="float:left;position:relative">
+                            @Html.CheckBoxFor(x => x.BuyNow, new { @class = "font-13px-white" })
+                        </div>
+                        <div style="float:left;position:relative">
+                            @Html.LabelFor(x => x.BuyNow, new { @class = "font-13px-white" })
+                        </div>
+                    </div>
+                </div>
+                <div class="add-margins">
+                    <input class="cloud-compare-button-red" type="submit" value="Submit >" />
+                </div>
+
+@*    @{Html.RenderPartial("CreatureWithTextOnLeft");}
+        <div id="title" class="add-margins">
+        </div>
+*@
+        </div>
+    </div>
+</div>
+
+
+}

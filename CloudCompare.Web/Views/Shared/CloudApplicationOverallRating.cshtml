@@ -1,0 +1,50 @@
+﻿@model CloudCompare.Web.Models.CloudApplicationModel
+@using CloudCompare.Domain.Models
+@*home display TEST template
+*@
+
+
+
+<div class="product-overall-rating">
+        <div style="float:left;width:100%;">
+            <table width="100%">
+                <tr>
+                    <td class="product-overall-rating-header" colspan="2">
+                        <label class="font-normal-22px-purple">Rating and reviews</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="font-bold-11px-black">Overall rating:</label>
+                    </td>
+                    <td>
+                        <label class="font-bold-11px-black">@Model.AverageOverallRating</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="font-bold-11px-black">Ease of use:</label>
+                    </td>
+                    <td>
+                        <label class="font-bold-11px-black">@Model.AverageEaseOfUse</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="font-bold-11px-black">Value for money:</label>
+                    </td>
+                    <td>
+                        <label class="font-bold-11px-black">@Model.AverageValueForMoney</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="font-bold-11px-black">Functionality:</label>
+                    </td>
+                    <td>
+                        <label class="font-bold-11px-black">@Model.AverageFunctionality</label>
+                    </td>
+                </tr>
+            </table>
+        </div>
+</div>

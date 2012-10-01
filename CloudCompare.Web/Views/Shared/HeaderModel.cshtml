@@ -1,0 +1,244 @@
+﻿@model CloudCompare.Web.Models.HeaderModel
+@using (Html.BeginForm("HeaderModel", "Home", new { tab = "1" }))
+{
+    <div style="width: inherit;">
+        @Html.EditorFor(x => x.SearchText, new { @class = ".ui-icon-search .ui-icon tb11" })
+        <div>
+            <div style="float: right;">
+                <span class="ui-icon-search ui-icon">&nbsp;</span>
+            </div>
+        </div>
+        <div>
+            <div style="float: right;">
+                <span class="ui-icon-close ui-icon"></span>
+            </div>
+        </div>
+        <div>
+            <div style="float: right;">
+                <span class="ui-icon-play ui-icon"></span>
+            </div>
+        </div>
+        <div>
+            <div style="float: right;">
+                <span class="ui-icon-stop ui-icon"></span>
+            </div>
+        </div>
+        <div>
+            <div style="float: right;">
+                <span class="ui-icon-signal ui-icon"></span>
+            </div>
+        </div>
+        <div style="clear: both;">
+        </div>
+        <div>
+            <div style="float: right;">
+                <input type="image" name="twitter" value="twitter" class="ui-icon ui-icon-search" />
+            </div>
+        </div>
+        <div>
+            <div style="float: right;">
+                <input type="image" name="twitter" value="twitter" class="ui-icon ui-icon-close" />
+            </div>
+        </div>
+        <div>
+            <div style="float: right;">
+                <input type="image" name="twitter" value="twitter" class="ui-icon ui-icon-play" />
+            </div>
+        </div>
+        <div>
+            <div style="float: right;">
+                <input type="image" name="twitter" value="twitter" class="ui-icon ui-icon-stop" />
+            </div>
+        </div>
+        <div>
+            <div style="float: right;">
+                <input type="image" name="twitter" value="twitter" class="ui-icon ui-icon-signal" />
+            </div>
+        </div>
+        <div style="clear: both;">
+        </div>
+        <table width="100%">
+            <tr>
+                <td align="center">
+                    <table>
+                        <tr>
+                            <td align="center">
+                                <div style="float: right;">
+                                    <input type="button" value="Conferencing" />
+                                </div>
+                                <div style="float: right;">
+                                    <input type="button" value="Email" />
+                                </div>
+                                <div style="float: right;">
+                                    <input type="button" value="Storage & back-up" />
+                                </div>
+                                <div style="float: right;">
+                                    <input type="button" value="Voice" />
+                                </div>
+                                <div style="float: right;">
+                                    <input type="button" value="Office" />
+                                </div>
+                                <div style="float: right;">
+                                    <input type="button" value="Financial" />
+                                </div>
+                                <div style="float: right;">
+                                    <input type="button" value="Customer management" />
+                                </div>
+                                <div style="float: right;">
+                                    <input type="button" value="Project management" />
+                                </div>
+                                <div style="float: right;">
+                                    <input type="button" value="Security" />
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div style="clear: both;">
+    </div>
+
+}
+@*
+        <table style="width: inherit;">
+            <tr>
+                <td align="right">
+                    @Html.EditorFor(x => x.SearchText, new { @class = ".ui-icon-search .ui-icon tb11" })
+                </td>
+            </tr>
+
+            <tr>
+                <td align="right">
+                    <table>
+                        <tr>
+                            <td align="right">
+                                <div>
+                                    <div>
+                                        <span class="ui-icon-grip-dotted-vertical ui-icon"></span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td align="right">
+                                <div>
+                                    <div>
+                                        <span class="ui-icon-grip-dotted-horizontal ui-icon"></span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td align="right">
+                                <div style="">
+                                    <div>
+                                        <span class="ui-icon-grip-solid-vertical ui-icon"></span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td align="right">
+                                <div>
+                                    <div style="">
+                                        <span class="ui-icon-grip-solid-horizontal ui-icon"></span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td align="right">
+                                <div>
+                                    <div style="">
+                                        <span class="ui-icon-gripsmall-diagonal-se ui-icon"></span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    <table>
+                        <tr>
+                            <td>
+                                <div>
+                                    <div style="">
+                                        <input type="image" name="twitter" value="twitter" class="ui-icon ui-icon-circle-check" />
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <div style="">
+                                        <input type="image" name="facebook" value="twitter" class="ui-icon-grip-dotted-vertical ui-icon" />
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <div style="">
+                                        <input type="image" name="google" value="twitter" class="ui-icon-grip-dotted-vertical ui-icon" />
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <div style="">
+                                        <input type="image" name="linkedin" value="twitter" class="ui-icon-grip-dotted-vertical ui-icon" />
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <div style="">
+                                        <input type="image" name="yahoo" value="twitter" class="ui-icon-grip-dotted-vertical ui-icon" />
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <table>
+                        <tr>
+                            <td>
+                    <input type="button" value="Conferencing" />
+                            
+                            </td>
+                            <td>
+                    <input type="button" value="Email" />
+                            
+                            </td>
+                            <td>
+                    <input type="button" value="Storage & back-up" />
+                            
+                            </td>
+                            <td>
+                    <input type="button" value="Voice" />
+                            
+                            </td>
+                            <td>
+                    <input type="button" value="Office" />
+                            
+                            </td>
+                            <td>
+                    <input type="button" value="Financial" />
+                            
+                            </td>
+                            <td>
+                    <input type="button" value="Customer management" />
+                            
+                            </td>
+                            <td>
+                    <input type="button" value="Project management" />
+                            
+                            </td>
+                            <td>
+                    <input type="button" value="Security" />
+                            
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+*@ 

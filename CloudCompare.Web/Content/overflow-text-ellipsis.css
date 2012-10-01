@@ -22,7 +22,7 @@
     width: 100%;
     overflow: hidden;
     position: relative; /* so we're a positioning parent for the dot hiders */
-    background: white;
+    /*background: white;*/
     z-index:inherit;
 }
 
@@ -38,20 +38,20 @@
     border-color: inherit;
     float: right;
     height: 54px; /* 3x line height (one less than visible lines) */
-    background: white;
+    /*background: white;*/
     z-index: inherit;
 }
 
 .dots {
     float: right; /* to make the text wrap around the dots */
     clear: right; /* to push us below (not next to) .pre-dots */
-    background-color: white;
+    /*background-color: white;*/
 }
 
 /* hides the dots if the text has *exactly* 3 lines */
 .hidedots1
 {
-    background: #FF00FF;
+    /*background: #FF00FF;*/
     width: 100%;
     height: 18px; /* line height */
     position: absolute; /* otherwise, because of the width, it'll be wrapped */
@@ -59,7 +59,7 @@
 
 /* hides the dots if the text has *less than* 3 lines */
 .hidedots2 {
-    background: white; 
+    /*background: white; */
     width: 100%;
     height: 72px;       /* 3x line height, to ensure hiding even if empty */
     position: absolute; /* ensures we're above the dots */

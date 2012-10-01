@@ -5,6 +5,7 @@ using System.Globalization;
 using System.Web.Mvc;
 using System.Web.Security;
 using CloudCompare.Domain.Models;
+using CloudCompare.Web.Helpers;
 
 namespace CloudCompare.Web.Models
 {
@@ -39,6 +40,7 @@ namespace CloudCompare.Web.Models
         public decimal CallsPackageCostPerMonth { get; set; }
         public string SetupFee { get; set; }
         public string FreeTrialPeriod { get; set; }
+        public SearchResultDisplayFormat ResultDisplayFormat { get; set; }
 
     }
 

@@ -93,13 +93,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\mephraim-ghostscriptsharp-1cdb015\GhostScriptSharp\GhostscriptSharp.csproj">
-      <Project>{56605627-E6FA-4F47-9440-FB877CEA5C84}</Project>
-      <Name>GhostscriptSharp</Name>
-    </ProjectReference>
     <ProjectReference Include="..\CloudCompare.Domain\CloudCompare.Domain.csproj">
       <Project>{9586A4AA-25C3-40AB-B851-0BCEEB0D7098}</Project>
       <Name>CloudCompare.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GhostScriptSharp\GhostscriptSharp.csproj">
+      <Project>{56605627-E6FA-4F47-9440-FB877CEA5C84}</Project>
+      <Name>GhostscriptSharp</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -1,0 +1,91 @@
+﻿.font-normal-11px-black
+{
+    font-size: 11px;
+    font-weight: normal;
+    font-style: normal;
+    color: #000000;
+}
+
+.font-normal-11px-purple
+{
+    font-size: 11px;
+    font-weight: normal;
+    font-style: normal;
+    color: #800080;
+}
+
+.font-normal-22px-purple
+{
+    font-size: 22px;
+    font-weight: normal;
+    font-style: normal;
+    color: #800080;
+}
+
+.font-bold-11px-purple
+{
+    font-size: 11px;
+    font-weight: bold;
+    font-style: normal;
+    color: #800080;
+}
+
+.font-bold-22px-purple
+{
+    font-size: 22px;
+    font-weight: bold;
+    font-style: normal;
+    color: #800080;
+}
+
+.font-bold-13px
+{
+    font-size: 13px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+
+
+/* ADD FONT COLOUR */
+.font-13px-blue
+{
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    color: #6699FF;
+}
+
+.font-bold-13px-purple
+{
+    font-size: 13px;
+    font-weight: bold;
+    font-style: normal;
+    color: #800080;
+}
+
+.font-bold-11px-black
+{
+    font-size: 11px;
+    font-weight: bold;
+    font-style: normal;
+    color: #000000;
+}
+
+.font-bold-13px-black
+{
+    font-size: 13px;
+    font-weight: bold;
+    font-style: normal;
+    color: #000000;
+}
+
+.font-13px-white
+{
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    color: #FFFFFF;
+}

@@ -4,9 +4,7 @@
 @using CloudCompare.Web.Models;
 @*@using (Html.BeginForm("SearchPage1", "Home", FormMethod.Post, new { id = "InsertCaseForm" }))
 *@
-
 <link href="@Url.Content("~/Content/search-page.css")" rel="stylesheet" type="text/css" />
-
 @using (Html.BeginForm("SearchPage", "Home", new { buttonID = "" }, FormMethod.Post))
 {
 
@@ -21,14 +19,20 @@
 
 
         $(document).ready(function () {
-            $('div.demo-show:eq(0)> div').show();
-            
-            $('div.demo-show:eq(0)> h3').click(function () {
-                //$(this).next().slideToggle('fast');
+            //$('div.search-filters-show:eq(0)> div').show();
+            $('div.search-filters-show:eq(0)> div.search-filter-group-header').show();
+
+            $('div.search-filters-show:eq(0)> div.search-filter-group-header').click(function () {
+                $(this).next().slideToggle('fast');
             });
+
+            $('div.demo-show:eq(0)> h3').click(function () {
+                $(this).next().slideToggle('fast');
+            });
+
         });
 
-</script>
+    </script>
 
     <input type="submit" value="Compare Cloudware" />
 
@@ -39,8 +43,10 @@
         //Html.RenderPartial("SearchResults", @Model);
         //Html.RenderPartial("SearchInputSimple", new ViewDataDictionary(@Model));
         //Html.RenderPartial("SearchFilters", @Model);
+    <div class="search-page-title-bar font-normal-11px">
+    </div>
         
-            <div class="search-page-div">
+    <div class="search-page-div font-normal-11px">
         <div class="search-filters-div">
             @*        var test = Model.SearchFiltersModel.SearchFilters.Where(y => y.SearchFilterType == "OPERATINGSYSTEM")
          .Select<SearchFilterModel, SearchFilterModel>(z => new SearchFilterModel() { })
@@ -56,38 +62,141 @@
             Html.RenderPartial("SearchFilterModelTwoColumn", item);
         }
 *@
-            <div class="demo-show">
-                <h3>Operating Systems</h3>
+            <div class="search-filters-show">
+                <table id="header" class="search-header-filters-table" style="width: 100%;">
+                    <tr>
+                        <td style="width: 100%;">
+                            Customise search
+                        </td>
+                    </tr>
+                </table>
+
+            @{Html.RenderPartial("CreatureWithTextOnRight",Model);}
+                
+                <div class="search-filter-group-header">
+                    <div style="float: right;">
+                        <div class="ui-icon-triangle-1-s ui-icon"></div>
+                    </div>
+                    <div style="width:100%;">
+                        <label class="font-bold-11px-purple">Category</label>
+                    </div>
+                </div>
+                
+                <div>
+                    @Html.HiddenFor(x => x.SearchFiltersModel.PreviouslyChosenCategoryID)
+                    @Html.DropDownListFor(x => x.SearchFiltersModel.ChosenCategoryID,
+                       new SelectList(Model.SearchFiltersModel.Categories, "CategoryID", "CategoryName", Model.SearchFiltersModel.ChosenCategoryID)
+             , new { @class = "set-combo-width" })
+                </div>
+
+                <div class="search-filter-group-header">
+                    <div style="float:right;">
+                        <div class="ui-icon-triangle-1-s ui-icon"></div>
+                    </div>
+                    <div style="width:100%">
+                        <label class="font-bold-11px-purple">Users</label>
+                    </div>
+                </div>
+
+                <div>
+                    @Html.DropDownListFor(x => x.SearchFiltersModel.ChosenNumberOfUsers,
+                       new SelectList(Model.SearchFiltersModel.NumberOfUsers, "UserValue", "UserValue", Model.SearchFiltersModel.ChosenNumberOfUsers)
+             , new { @class = "set-combo-width" })
+                </div>
+                <div class="search-filter-group-header">
+                    <div style="float: right;">
+                        <span class="ui-icon-triangle-1-s ui-icon">&nbsp;</span>
+                    </div>
+                    <div style="width:100%;">
+                        <label class="font-bold-11px-purple">Operating system</label>
+                    </div>
+                </div>
                 <div>
                     @Html.DisplayFor(x => x.SearchFiltersModel.SearchFiltersOperatingSystems)
                 </div>
-                <h3>Browsers</h3>
-                <div>
-                            @Html.DisplayFor(x => x.SearchFiltersModel.SearchFiltersBrowsers)
+                <div class="search-filter-group-header">
+                    <div style="float: right;">
+                        <span class="ui-icon-triangle-1-s ui-icon">&nbsp;</span>
+                    </div>
+                    <div style="width:100%;">
+                        <label class="font-bold-11px-purple">Internet browsers</label>
+                    </div>
                 </div>
-                <h3>Mobile Platforms</h3>
                 <div>
-                            @Html.DisplayFor(x => x.SearchFiltersModel.SearchFiltersMobilePlatforms)
+                    @Html.DisplayFor(x => x.SearchFiltersModel.SearchFiltersBrowsers)
                 </div>
-                <h3>Features</h3>
-                <div>
-                            @Html.DisplayFor(x => x.SearchFiltersModel.SearchFiltersFeatures)
+                <div class="search-filter-group-header">
+                    <div style="float: right;">
+                        <span class="ui-icon-triangle-1-s ui-icon">&nbsp;</span>
+                    </div>
+                    <div style="width:100%;">
+                        <label class="font-bold-11px-purple">Mobile platforms</label>
+                    </div>
                 </div>
-                <h3>Support Types</h3>
                 <div>
-                            @Html.DisplayFor(x => x.SearchFiltersModel.SearchFiltersSupportTypes)
+                    @Html.DisplayFor(x => x.SearchFiltersModel.SearchFiltersMobilePlatforms)
                 </div>
-                <h3>Support Days</h3>
-                <div>
-                            @Html.DisplayFor(x => x.SearchFiltersModel.SearchFiltersSupportDays)
+                <div class="search-filter-group-header">
+                    <div style="float: right;">
+                        <span class="ui-icon-triangle-1-s ui-icon">&nbsp;</span>
+                    </div>
+                    <div style="width:100%;">
+                        <label class="font-bold-11px-purple">Features</label>
+                    </div>
                 </div>
-                <h3>Support Hours</h3>
                 <div>
-                            @Html.DisplayFor(x => x.SearchFiltersModel.SearchFiltersSupportHours)
+                    @Html.DisplayFor(x => x.SearchFiltersModel.SearchFiltersFeatures)
                 </div>
-                <h3>Languages</h3>
+                <div class="search-filter-group-header">
+                    <div style="float: right;">
+                        <span class="ui-icon-triangle-1-s ui-icon">&nbsp;</span>
+                    </div>
+                    <div style="width:100%;">
+                        <label class="font-bold-11px-purple">Support type</label>
+                    </div>
+                </div>
                 <div>
-                            @Html.DisplayFor(x => x.SearchFiltersModel.SearchFiltersLanguages)
+                    @Html.DisplayFor(x => x.SearchFiltersModel.SearchFiltersSupportTypes)
+                </div>
+
+
+
+                <div class="search-filter-group-header">
+                    <div style="float: right;">
+                        <span class="ui-icon-triangle-1-s ui-icon">&nbsp;</span>
+                    </div>
+                    <div style="width:100%;">
+                        <label class="font-bold-11px-purple">Support days</label>
+                    </div>
+                </div>
+                <div>
+                    @Html.DisplayFor(x => x.SearchFiltersModel.SearchFiltersSupportDays)
+                </div>
+                
+                
+                <div class="search-filter-group-header">
+                    <div style="float: right;">
+                        <span class="ui-icon-triangle-1-s ui-icon">&nbsp;</span>
+                    </div>
+                    <div style="width:100%;">
+                        <label class="font-bold-11px-purple">Support hours</label>
+                    </div>
+                </div>
+                <div>
+                    @Html.DisplayFor(x => x.SearchFiltersModel.SearchFiltersSupportHours)
+                </div>
+                
+                
+                <div class="search-filter-group-header">
+                    <div style="float: right;">
+                        <span class="ui-icon-triangle-1-s ui-icon">&nbsp;</span>
+                    </div>
+                    <div style="width:100%;">
+                        <label class="font-bold-11px-purple">Language</label>
+                    </div>
+                </div>
+                <div>
+                    @Html.DisplayFor(x => x.SearchFiltersModel.SearchFiltersLanguages)
                 </div>
             </div>
         </div>
@@ -123,37 +232,45 @@
         }
 *@
             <div class="demo-show">
-                <h3>Operating Systems</h3>
+                <h3>
+                    Operating Systems</h3>
                 <div>
                     @Html.DisplayFor(x => x.SearchFiltersModel.SearchFiltersOperatingSystems)
                 </div>
-                <h3>Browsers</h3>
+                <h3>
+                    Browsers</h3>
                 <div>
-                            @Html.DisplayFor(x => x.SearchFiltersModel.SearchFiltersBrowsers)
+                    @Html.DisplayFor(x => x.SearchFiltersModel.SearchFiltersBrowsers)
                 </div>
-                <h3>Mobile Platforms</h3>
+                <h3>
+                    Mobile Platforms</h3>
                 <div>
-                            @Html.DisplayFor(x => x.SearchFiltersModel.SearchFiltersMobilePlatforms)
+                    @Html.DisplayFor(x => x.SearchFiltersModel.SearchFiltersMobilePlatforms)
                 </div>
-                <h3>Features</h3>
+                <h3>
+                    Features</h3>
                 <div>
-                            @Html.DisplayFor(x => x.SearchFiltersModel.SearchFiltersFeatures)
+                    @Html.DisplayFor(x => x.SearchFiltersModel.SearchFiltersFeatures)
                 </div>
-                <h3>Support Types</h3>
+                <h3>
+                    Support Types</h3>
                 <div>
-                            @Html.DisplayFor(x => x.SearchFiltersModel.SearchFiltersSupportTypes)
+                    @Html.DisplayFor(x => x.SearchFiltersModel.SearchFiltersSupportTypes)
                 </div>
-                <h3>Support Days</h3>
+                <h3>
+                    Support Days</h3>
                 <div>
-                            @Html.DisplayFor(x => x.SearchFiltersModel.SearchFiltersSupportDays)
+                    @Html.DisplayFor(x => x.SearchFiltersModel.SearchFiltersSupportDays)
                 </div>
-                <h3>Support Hours</h3>
+                <h3>
+                    Support Hours</h3>
                 <div>
-                            @Html.DisplayFor(x => x.SearchFiltersModel.SearchFiltersSupportHours)
+                    @Html.DisplayFor(x => x.SearchFiltersModel.SearchFiltersSupportHours)
                 </div>
-                <h3>Languages</h3>
+                <h3>
+                    Languages</h3>
                 <div>
-                            @Html.DisplayFor(x => x.SearchFiltersModel.SearchFiltersLanguages)
+                    @Html.DisplayFor(x => x.SearchFiltersModel.SearchFiltersLanguages)
                 </div>
             </div>
         </div>

@@ -23,8 +23,8 @@ namespace CloudCompare.POCOQueryRepository
         string PDF_TEST_WHITE_PAPER_FILENAME = "grohe_bathroom_brochure.pdf";
         int PDF_TEST_CASE_STUDY_PAGE_COUNT = 146;
         string OUTPUT_FILE_LOCATION = "J:\\CloudCompare\\CloudCompare.Web\\Documents\\";
-        int IMAGE_FILE_HEIGHT = 100;
-        int IMAGE_FILE_WIDTH = 100;
+        int IMAGE_FILE_HEIGHT = 50;
+        int IMAGE_FILE_WIDTH = 50;
 
         //string MULTIPLE_FILE_LOCATION = "J:\\CloudCompare\\CloudCompare.Web\\Documents\\WhitePapers\\output%d.jpg";
 
@@ -189,128 +189,170 @@ namespace CloudCompare.POCOQueryRepository
             f = new Feature()
             {
                 FeatureName = "Use Existing Handset",
-                Category = repository.FindCategoryByName("VOICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("VOICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("VOICE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Keep Existing Number",
-                Category = repository.FindCategoryByName("VOICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("VOICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("VOICE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Emergency Calls",
-                Category = repository.FindCategoryByName("VOICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("VOICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("VOICE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "PC Required (for Calls)",
-                Category = repository.FindCategoryByName("VOICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("VOICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("VOICE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Inclusive UK Landline Calls",
-                Category = repository.FindCategoryByName("VOICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("VOICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("VOICE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Inclusive Mobile Calls",
-                Category = repository.FindCategoryByName("VOICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("VOICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("VOICE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Inclusive International Calls (Landline Only)",
-                Category = repository.FindCategoryByName("VOICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("VOICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("VOICE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Virtual Landline Number",
-                Category = repository.FindCategoryByName("VOICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("VOICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("VOICE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Local Dialling Code",
-                Category = repository.FindCategoryByName("VOICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("VOICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("VOICE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Freephone/Local Rate Number",
-                Category = repository.FindCategoryByName("VOICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("VOICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("VOICE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Dial-by-name Directory",
-                Category = repository.FindCategoryByName("VOICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("VOICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("VOICE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Video Calling",
-                Category = repository.FindCategoryByName("VOICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("VOICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("VOICE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Auto-Reception/Call Handling",
-                Category = repository.FindCategoryByName("VOICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("VOICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("VOICE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Answering Rules",
-                Category = repository.FindCategoryByName("VOICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("VOICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("VOICE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Call Centre/Interactive Voice Response",
-                Category = repository.FindCategoryByName("VOICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("VOICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("VOICE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Music-on-hold",
-                Category = repository.FindCategoryByName("VOICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("VOICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("VOICE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Voicemail",
-                Category = repository.FindCategoryByName("VOICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("VOICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("VOICE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "SMS Sending",
-                Category = repository.FindCategoryByName("VOICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("VOICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("VOICE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Call Forwarding",
-                Category = repository.FindCategoryByName("VOICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("VOICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("VOICE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Fixed-to-mobile Integration",
-                Category = repository.FindCategoryByName("VOICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("VOICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("VOICE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Hardware Supplied",
-                Category = repository.FindCategoryByName("VOICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("VOICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("VOICE"));
             repository.AddFeature(f);
             #endregion
 
@@ -318,122 +360,162 @@ namespace CloudCompare.POCOQueryRepository
             f = new Feature()
             {
                 FeatureName = "Unlimited Contacts",
-                Category = repository.FindCategoryByName("CUSTOMER MANAGEMENT"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("CUSTOMER MANAGEMENT"),
             };
+            f.Categories.Add(repository.FindCategoryByName("CUSTOMER MANAGEMENT"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Unlimited Storage (for Documents, PPTs, PDFs)",
-                Category = repository.FindCategoryByName("CUSTOMER MANAGEMENT"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("CUSTOMER MANAGEMENT"),
             };
+            f.Categories.Add(repository.FindCategoryByName("CUSTOMER MANAGEMENT"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Sales Opportunity Management",
-                Category = repository.FindCategoryByName("CUSTOMER MANAGEMENT"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("CUSTOMER MANAGEMENT"),
             };
+            f.Categories.Add(repository.FindCategoryByName("CUSTOMER MANAGEMENT"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Sales Forecasting",
-                Category = repository.FindCategoryByName("CUSTOMER MANAGEMENT"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("CUSTOMER MANAGEMENT"),
             };
+            f.Categories.Add(repository.FindCategoryByName("CUSTOMER MANAGEMENT"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Web to Lead Form",
-                Category = repository.FindCategoryByName("CUSTOMER MANAGEMENT"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("CUSTOMER MANAGEMENT"),
             };
+            f.Categories.Add(repository.FindCategoryByName("CUSTOMER MANAGEMENT"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Email Marketing",
-                Category = repository.FindCategoryByName("CUSTOMER MANAGEMENT"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("CUSTOMER MANAGEMENT"),
             };
+            f.Categories.Add(repository.FindCategoryByName("CUSTOMER MANAGEMENT"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Campaign Tracking and Management",
-                Category = repository.FindCategoryByName("CUSTOMER MANAGEMENT"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("CUSTOMER MANAGEMENT"),
             };
+            f.Categories.Add(repository.FindCategoryByName("CUSTOMER MANAGEMENT"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Email Integration",
-                Category = repository.FindCategoryByName("CUSTOMER MANAGEMENT"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("CUSTOMER MANAGEMENT"),
             };
+            f.Categories.Add(repository.FindCategoryByName("CUSTOMER MANAGEMENT"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Customer Helpdesk",
-                Category = repository.FindCategoryByName("CUSTOMER MANAGEMENT"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("CUSTOMER MANAGEMENT"),
             };
+            f.Categories.Add(repository.FindCategoryByName("CUSTOMER MANAGEMENT"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Case Queueing & Tracking",
-                Category = repository.FindCategoryByName("CUSTOMER MANAGEMENT"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("CUSTOMER MANAGEMENT"),
             };
+            f.Categories.Add(repository.FindCategoryByName("CUSTOMER MANAGEMENT"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Unlimited Cases",
-                Category = repository.FindCategoryByName("CUSTOMER MANAGEMENT"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("CUSTOMER MANAGEMENT"),
             };
+            f.Categories.Add(repository.FindCategoryByName("CUSTOMER MANAGEMENT"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Document Management",
-                Category = repository.FindCategoryByName("CUSTOMER MANAGEMENT"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("CUSTOMER MANAGEMENT"),
             };
+            f.Categories.Add(repository.FindCategoryByName("CUSTOMER MANAGEMENT"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Custom Reports",
-                Category = repository.FindCategoryByName("CUSTOMER MANAGEMENT"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("CUSTOMER MANAGEMENT"),
             };
+            f.Categories.Add(repository.FindCategoryByName("CUSTOMER MANAGEMENT"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Full SSL Security",
-                Category = repository.FindCategoryByName("CUSTOMER MANAGEMENT"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("CUSTOMER MANAGEMENT"),
             };
+            f.Categories.Add(repository.FindCategoryByName("CUSTOMER MANAGEMENT"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Mobile Integration",
-                Category = repository.FindCategoryByName("CUSTOMER MANAGEMENT"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("CUSTOMER MANAGEMENT"),
             };
+            f.Categories.Add(repository.FindCategoryByName("CUSTOMER MANAGEMENT"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Invoice Creation & Management",
-                Category = repository.FindCategoryByName("CUSTOMER MANAGEMENT"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("CUSTOMER MANAGEMENT"),
             };
+            f.Categories.Add(repository.FindCategoryByName("CUSTOMER MANAGEMENT"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Inventory & Order Management",
-                Category = repository.FindCategoryByName("CUSTOMER MANAGEMENT"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("CUSTOMER MANAGEMENT"),
             };
+            f.Categories.Add(repository.FindCategoryByName("CUSTOMER MANAGEMENT"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Open API/3rd Party Integration",
-                Category = repository.FindCategoryByName("CUSTOMER MANAGEMENT"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("CUSTOMER MANAGEMENT"),
             };
+            f.Categories.Add(repository.FindCategoryByName("CUSTOMER MANAGEMENT"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Social Media Integration",
-                Category = repository.FindCategoryByName("CUSTOMER MANAGEMENT"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("CUSTOMER MANAGEMENT"),
             };
+            f.Categories.Add(repository.FindCategoryByName("CUSTOMER MANAGEMENT"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "User Customization",
-                Category = repository.FindCategoryByName("CUSTOMER MANAGEMENT"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("CUSTOMER MANAGEMENT"),
             };
+            f.Categories.Add(repository.FindCategoryByName("CUSTOMER MANAGEMENT"));
             repository.AddFeature(f);
             #endregion
 
@@ -441,122 +523,162 @@ namespace CloudCompare.POCOQueryRepository
             f = new Feature()
             {
                 FeatureName = "Maximum Meeting Attendees",
-                Category = repository.FindCategoryByName("WEB CONFERENCE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("WEB CONFERENCE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("WEB CONFERENCE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Maximum Webinar/Event Attendees",
-                Category = repository.FindCategoryByName("WEB CONFERENCE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("WEB CONFERENCE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("WEB CONFERENCE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "High Definition Video",
-                Category = repository.FindCategoryByName("WEB CONFERENCE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("WEB CONFERENCE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("WEB CONFERENCE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Presenter Preparation Mode",
-                Category = repository.FindCategoryByName("WEB CONFERENCE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("WEB CONFERENCE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("WEB CONFERENCE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Multiple Meeting Hosts/Chairperson",
-                Category = repository.FindCategoryByName("WEB CONFERENCE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("WEB CONFERENCE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("WEB CONFERENCE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Individual Usage Reports",
-                Category = repository.FindCategoryByName("WEB CONFERENCE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("WEB CONFERENCE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("WEB CONFERENCE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "'On The Fly' Invitations For Additional Participants",
-                Category = repository.FindCategoryByName("WEB CONFERENCE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("WEB CONFERENCE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("WEB CONFERENCE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Instant Meeting Function",
-                Category = repository.FindCategoryByName("WEB CONFERENCE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("WEB CONFERENCE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("WEB CONFERENCE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Active Speaker Video Switching",
-                Category = repository.FindCategoryByName("WEB CONFERENCE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("WEB CONFERENCE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("WEB CONFERENCE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Full Desktop Sharing",
-                Category = repository.FindCategoryByName("WEB CONFERENCE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("WEB CONFERENCE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("WEB CONFERENCE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Single Application Share",
-                Category = repository.FindCategoryByName("WEB CONFERENCE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("WEB CONFERENCE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("WEB CONFERENCE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Upload Multiple Presentations",
-                Category = repository.FindCategoryByName("WEB CONFERENCE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("WEB CONFERENCE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("WEB CONFERENCE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Private Chat Mode",
-                Category = repository.FindCategoryByName("WEB CONFERENCE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("WEB CONFERENCE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("WEB CONFERENCE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "SSL Security",
-                Category = repository.FindCategoryByName("WEB CONFERENCE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("WEB CONFERENCE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("WEB CONFERENCE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Record & Replay Service",
-                Category = repository.FindCategoryByName("WEB CONFERENCE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("WEB CONFERENCE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("WEB CONFERENCE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Interface Company Branding",
-                Category = repository.FindCategoryByName("WEB CONFERENCE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("WEB CONFERENCE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("WEB CONFERENCE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Inactivity Time Out",
-                Category = repository.FindCategoryByName("WEB CONFERENCE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("WEB CONFERENCE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("WEB CONFERENCE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Fixed Line & Mobile Dial-In",
-                Category = repository.FindCategoryByName("WEB CONFERENCE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("WEB CONFERENCE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("WEB CONFERENCE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Free VoIP Calling",
-                Category = repository.FindCategoryByName("WEB CONFERENCE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("WEB CONFERENCE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("WEB CONFERENCE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "MS Outlook Integration (to book meetings)",
-                Category = repository.FindCategoryByName("WEB CONFERENCE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("WEB CONFERENCE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("WEB CONFERENCE"));
             repository.AddFeature(f);
             #endregion
 
@@ -564,122 +686,162 @@ namespace CloudCompare.POCOQueryRepository
             f = new Feature()
             {
                 FeatureName = "Number of Mailboxes/Email Addresses",
-                Category = repository.FindCategoryByName("EMAIL"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("EMAIL"),
             };
+            f.Categories.Add(repository.FindCategoryByName("EMAIL"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Storage Limit",
-                Category = repository.FindCategoryByName("EMAIL"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("EMAIL"),
             };
+            f.Categories.Add(repository.FindCategoryByName("EMAIL"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Individual File Size Limit (Attachments)",
-                Category = repository.FindCategoryByName("EMAIL"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("EMAIL"),
             };
+            f.Categories.Add(repository.FindCategoryByName("EMAIL"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "No Daily Mail Limits (Inbox/Outbox)",
-                Category = repository.FindCategoryByName("EMAIL"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("EMAIL"),
             };
+            f.Categories.Add(repository.FindCategoryByName("EMAIL"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Migrate Company Domain",
-                Category = repository.FindCategoryByName("EMAIL"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("EMAIL"),
             };
+            f.Categories.Add(repository.FindCategoryByName("EMAIL"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Anti-Virus",
-                Category = repository.FindCategoryByName("EMAIL"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("EMAIL"),
             };
+            f.Categories.Add(repository.FindCategoryByName("EMAIL"));
             repository.AddFeature(f);
             f = new Feature()
             {
-                FeatureName = "Spam Guard / Anti Phishing",
-                Category = repository.FindCategoryByName("EMAIL"),
+                FeatureName = "Spam Guard / Anti-Phishing",
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("EMAIL"),
             };
+            f.Categories.Add(repository.FindCategoryByName("EMAIL"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Block Addresses / Blacklist",
-                Category = repository.FindCategoryByName("EMAIL"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("EMAIL"),
             };
+            f.Categories.Add(repository.FindCategoryByName("EMAIL"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Aliases",
-                Category = repository.FindCategoryByName("EMAIL"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("EMAIL"),
             };
+            f.Categories.Add(repository.FindCategoryByName("EMAIL"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Ad-free",
-                Category = repository.FindCategoryByName("EMAIL"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("EMAIL"),
             };
+            f.Categories.Add(repository.FindCategoryByName("EMAIL"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Email Archiving",
-                Category = repository.FindCategoryByName("EMAIL"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("EMAIL"),
             };
+            f.Categories.Add(repository.FindCategoryByName("EMAIL"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Quick Filter Toolbar",
-                Category = repository.FindCategoryByName("EMAIL"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("EMAIL"),
             };
+            f.Categories.Add(repository.FindCategoryByName("EMAIL"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Smart Folders",
-                Category = repository.FindCategoryByName("EMAIL"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("EMAIL"),
             };
+            f.Categories.Add(repository.FindCategoryByName("EMAIL"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Account Groups",
-                Category = repository.FindCategoryByName("EMAIL"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("EMAIL"),
             };
+            f.Categories.Add(repository.FindCategoryByName("EMAIL"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Instant Messaging (IM)",
-                Category = repository.FindCategoryByName("EMAIL"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("EMAIL"),
             };
+            f.Categories.Add(repository.FindCategoryByName("EMAIL"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Track Conversations",
-                Category = repository.FindCategoryByName("EMAIL"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("EMAIL"),
             };
+            f.Categories.Add(repository.FindCategoryByName("EMAIL"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Social Media Integration",
-                Category = repository.FindCategoryByName("EMAIL"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("EMAIL"),
             };
+            f.Categories.Add(repository.FindCategoryByName("EMAIL"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "MS Outlook Compatible",
-                Category = repository.FindCategoryByName("EMAIL"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("EMAIL"),
             };
+            f.Categories.Add(repository.FindCategoryByName("EMAIL"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Email Migration Service",
-                Category = repository.FindCategoryByName("EMAIL"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("EMAIL"),
             };
+            f.Categories.Add(repository.FindCategoryByName("EMAIL"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "SSL Security",
-                Category = repository.FindCategoryByName("EMAIL"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("EMAIL"),
             };
+            f.Categories.Add(repository.FindCategoryByName("EMAIL"));
             repository.AddFeature(f);
             #endregion
 
@@ -687,218 +849,290 @@ namespace CloudCompare.POCOQueryRepository
             f = new Feature()
             {
                 FeatureName = "Advanced Proofing & Editing",
-                Category = repository.FindCategoryByName("OFFICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("OFFICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("OFFICE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Advanced Referencing & Indexing",
-                Category = repository.FindCategoryByName("OFFICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("OFFICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("OFFICE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Mailing Features",
-                Category = repository.FindCategoryByName("OFFICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("OFFICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("OFFICE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Formula Management",
-                Category = repository.FindCategoryByName("OFFICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("OFFICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("OFFICE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Data Management",
-                Category = repository.FindCategoryByName("OFFICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("OFFICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("OFFICE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Advanced Charting & Tables",
-                Category = repository.FindCategoryByName("OFFICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("OFFICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("OFFICE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Advanced Design & Animation",
-                Category = repository.FindCategoryByName("OFFICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("OFFICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("OFFICE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Real-Time Collaboration",
-                Category = repository.FindCategoryByName("OFFICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("OFFICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("OFFICE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Automatic Version Management",
-                Category = repository.FindCategoryByName("OFFICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("OFFICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("OFFICE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Large Video Files >50MB",
-                Category = repository.FindCategoryByName("OFFICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("OFFICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("OFFICE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Own Branding",
-                Category = repository.FindCategoryByName("OFFICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("OFFICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("OFFICE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Shared/Collaboration Workspace",
-                Category = repository.FindCategoryByName("OFFICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("OFFICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("OFFICE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Email Client",
-                Category = repository.FindCategoryByName("OFFICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("OFFICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("OFFICE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Contact Management",
-                Category = repository.FindCategoryByName("OFFICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("OFFICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("OFFICE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Shared Calendar",
-                Category = repository.FindCategoryByName("OFFICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("OFFICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("OFFICE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Web Meetings",
-                Category = repository.FindCategoryByName("OFFICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("OFFICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("OFFICE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Project Management / Task Manager",
-                Category = repository.FindCategoryByName("OFFICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("OFFICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("OFFICE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Internet Tools",
-                Category = repository.FindCategoryByName("OFFICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("OFFICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("OFFICE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Web Publishing e.g. Blog",
-                Category = repository.FindCategoryByName("OFFICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("OFFICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("OFFICE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Social Media Integration",
-                Category = repository.FindCategoryByName("OFFICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("OFFICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("OFFICE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Internal Website (Intranet)",
-                Category = repository.FindCategoryByName("OFFICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("OFFICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("OFFICE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "External Customer Website (Extranet)",
-                Category = repository.FindCategoryByName("OFFICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("OFFICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("OFFICE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Notes",
-                Category = repository.FindCategoryByName("OFFICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("OFFICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("OFFICE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Read & Edit",
-                Category = repository.FindCategoryByName("OFFICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("OFFICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("OFFICE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Save Web Content",
-                Category = repository.FindCategoryByName("OFFICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("OFFICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("OFFICE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Image Capture",
-                Category = repository.FindCategoryByName("OFFICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("OFFICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("OFFICE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Automatic Sync (for use on other devices)",
-                Category = repository.FindCategoryByName("OFFICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("OFFICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("OFFICE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "MS Office Compatible",
-                Category = repository.FindCategoryByName("OFFICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("OFFICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("OFFICE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Offline Mode (for desktop editing)",
-                Category = repository.FindCategoryByName("OFFICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("OFFICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("OFFICE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Unlimited Document Storage",
-                Category = repository.FindCategoryByName("OFFICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("OFFICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("OFFICE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Document Revision History",
-                Category = repository.FindCategoryByName("OFFICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("OFFICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("OFFICE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Document Password Protection",
-                Category = repository.FindCategoryByName("OFFICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("OFFICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("OFFICE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Mobile/Browser Editing",
-                Category = repository.FindCategoryByName("OFFICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("OFFICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("OFFICE"));
             repository.AddFeature(f);
             f = new Feature()
             {
-                FeatureName = "Multi-User/Guest User",
-                Category = repository.FindCategoryByName("OFFICE"),
+                FeatureName = "Multi-User / Guest User",
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("OFFICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("OFFICE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "3rd Party APIs",
-                Category = repository.FindCategoryByName("OFFICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("OFFICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("OFFICE"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "SSL Security/Encryption",
-                Category = repository.FindCategoryByName("OFFICE"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("OFFICE"),
             };
+            f.Categories.Add(repository.FindCategoryByName("OFFICE"));
             repository.AddFeature(f);
             #endregion
 
@@ -906,122 +1140,162 @@ namespace CloudCompare.POCOQueryRepository
             f = new Feature()
             {
                 FeatureName = "Storage Limit",
-                Category = repository.FindCategoryByName("STORAGE & BACKUP"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("STORAGE & BACKUP"),
             };
+            f.Categories.Add(repository.FindCategoryByName("STORAGE & BACKUP"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Individual File Limit",
-                Category = repository.FindCategoryByName("STORAGE & BACKUP"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("STORAGE & BACKUP"),
             };
+            f.Categories.Add(repository.FindCategoryByName("STORAGE & BACKUP"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Adjust Transfer Speed / Bandwidth Used",
-                Category = repository.FindCategoryByName("STORAGE & BACKUP"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("STORAGE & BACKUP"),
             };
+            f.Categories.Add(repository.FindCategoryByName("STORAGE & BACKUP"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Military Grade Data Transfer",
-                Category = repository.FindCategoryByName("STORAGE & BACKUP"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("STORAGE & BACKUP"),
             };
+            f.Categories.Add(repository.FindCategoryByName("STORAGE & BACKUP"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Military Grade Storage",
-                Category = repository.FindCategoryByName("STORAGE & BACKUP"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("STORAGE & BACKUP"),
             };
+            f.Categories.Add(repository.FindCategoryByName("STORAGE & BACKUP"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Version History",
-                Category = repository.FindCategoryByName("STORAGE & BACKUP"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("STORAGE & BACKUP"),
             };
+            f.Categories.Add(repository.FindCategoryByName("STORAGE & BACKUP"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Undelete Files (up to 30 days)",
-                Category = repository.FindCategoryByName("STORAGE & BACKUP"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("STORAGE & BACKUP"),
             };
+            f.Categories.Add(repository.FindCategoryByName("STORAGE & BACKUP"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "No Bandwidth Throttling",
-                Category = repository.FindCategoryByName("STORAGE & BACKUP"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("STORAGE & BACKUP"),
             };
+            f.Categories.Add(repository.FindCategoryByName("STORAGE & BACKUP"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "One-Click Sharing",
-                Category = repository.FindCategoryByName("STORAGE & BACKUP"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("STORAGE & BACKUP"),
             };
+            f.Categories.Add(repository.FindCategoryByName("STORAGE & BACKUP"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Drag & Drop Multiple Files",
-                Category = repository.FindCategoryByName("STORAGE & BACKUP"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("STORAGE & BACKUP"),
             };
+            f.Categories.Add(repository.FindCategoryByName("STORAGE & BACKUP"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Multi-User Access",
-                Category = repository.FindCategoryByName("STORAGE & BACKUP"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("STORAGE & BACKUP"),
             };
+            f.Categories.Add(repository.FindCategoryByName("STORAGE & BACKUP"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Password Protected Folder Sharing",
-                Category = repository.FindCategoryByName("STORAGE & BACKUP"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("STORAGE & BACKUP"),
             };
+            f.Categories.Add(repository.FindCategoryByName("STORAGE & BACKUP"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Role Based Access",
-                Category = repository.FindCategoryByName("STORAGE & BACKUP"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("STORAGE & BACKUP"),
             };
+            f.Categories.Add(repository.FindCategoryByName("STORAGE & BACKUP"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Search Within Documents",
-                Category = repository.FindCategoryByName("STORAGE & BACKUP"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("STORAGE & BACKUP"),
             };
+            f.Categories.Add(repository.FindCategoryByName("STORAGE & BACKUP"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Local Back-Up",
-                Category = repository.FindCategoryByName("STORAGE & BACKUP"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("STORAGE & BACKUP"),
             };
+            f.Categories.Add(repository.FindCategoryByName("STORAGE & BACKUP"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Server Back-Up",
-                Category = repository.FindCategoryByName("STORAGE & BACKUP"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("STORAGE & BACKUP"),
             };
+            f.Categories.Add(repository.FindCategoryByName("STORAGE & BACKUP"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Automatic Back-Up",
-                Category = repository.FindCategoryByName("STORAGE & BACKUP"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("STORAGE & BACKUP"),
             };
+            f.Categories.Add(repository.FindCategoryByName("STORAGE & BACKUP"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Store Video e.g. Movies",
-                Category = repository.FindCategoryByName("STORAGE & BACKUP"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("STORAGE & BACKUP"),
             };
+            f.Categories.Add(repository.FindCategoryByName("STORAGE & BACKUP"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Guaranteed Restore",
-                Category = repository.FindCategoryByName("STORAGE & BACKUP"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("STORAGE & BACKUP"),
             };
+            f.Categories.Add(repository.FindCategoryByName("STORAGE & BACKUP"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Social Media Back-Up",
-                Category = repository.FindCategoryByName("STORAGE & BACKUP"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("STORAGE & BACKUP"),
             };
+            f.Categories.Add(repository.FindCategoryByName("STORAGE & BACKUP"));
             repository.AddFeature(f);
             #endregion
 
@@ -1029,122 +1303,162 @@ namespace CloudCompare.POCOQueryRepository
             f = new Feature()
             {
                 FeatureName = "Number Of Projects",
-                Category = repository.FindCategoryByName("PROJECT MANAGEMENT"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("PROJECT MANAGEMENT"),
             };
+            f.Categories.Add(repository.FindCategoryByName("PROJECT MANAGEMENT"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "File Storage",
-                Category = repository.FindCategoryByName("PROJECT MANAGEMENT"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("PROJECT MANAGEMENT"),
             };
+            f.Categories.Add(repository.FindCategoryByName("PROJECT MANAGEMENT"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Multi-Users Per Account",
-                Category = repository.FindCategoryByName("PROJECT MANAGEMENT"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("PROJECT MANAGEMENT"),
             };
+            f.Categories.Add(repository.FindCategoryByName("PROJECT MANAGEMENT"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Document Sharing",
-                Category = repository.FindCategoryByName("PROJECT MANAGEMENT"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("PROJECT MANAGEMENT"),
             };
+            f.Categories.Add(repository.FindCategoryByName("PROJECT MANAGEMENT"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Shared Workspace",
-                Category = repository.FindCategoryByName("PROJECT MANAGEMENT"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("PROJECT MANAGEMENT"),
             };
+            f.Categories.Add(repository.FindCategoryByName("PROJECT MANAGEMENT"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Edited Document Tracking",
-                Category = repository.FindCategoryByName("PROJECT MANAGEMENT"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("PROJECT MANAGEMENT"),
             };
+            f.Categories.Add(repository.FindCategoryByName("PROJECT MANAGEMENT"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Lockfiles",
-                Category = repository.FindCategoryByName("PROJECT MANAGEMENT"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("PROJECT MANAGEMENT"),
             };
+            f.Categories.Add(repository.FindCategoryByName("PROJECT MANAGEMENT"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Update & Deadline Alerts",
-                Category = repository.FindCategoryByName("PROJECT MANAGEMENT"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("PROJECT MANAGEMENT"),
             };
+            f.Categories.Add(repository.FindCategoryByName("PROJECT MANAGEMENT"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Interactive GANTT Charts",
-                Category = repository.FindCategoryByName("PROJECT MANAGEMENT"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("PROJECT MANAGEMENT"),
             };
+            f.Categories.Add(repository.FindCategoryByName("PROJECT MANAGEMENT"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Budget Tracking",
-                Category = repository.FindCategoryByName("PROJECT MANAGEMENT"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("PROJECT MANAGEMENT"),
             };
+            f.Categories.Add(repository.FindCategoryByName("PROJECT MANAGEMENT"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Client Invoicing",
-                Category = repository.FindCategoryByName("PROJECT MANAGEMENT"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("PROJECT MANAGEMENT"),
             };
+            f.Categories.Add(repository.FindCategoryByName("PROJECT MANAGEMENT"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Project Wiki",
-                Category = repository.FindCategoryByName("PROJECT MANAGEMENT"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("PROJECT MANAGEMENT"),
             };
+            f.Categories.Add(repository.FindCategoryByName("PROJECT MANAGEMENT"));
             repository.AddFeature(f);
             f = new Feature()
             {
-                FeatureName = "Customized Reports",
-                Category = repository.FindCategoryByName("PROJECT MANAGEMENT"),
+                FeatureName = "Customised Reports",
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("PROJECT MANAGEMENT"),
             };
+            f.Categories.Add(repository.FindCategoryByName("PROJECT MANAGEMENT"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "MS Project Compatible",
-                Category = repository.FindCategoryByName("PROJECT MANAGEMENT"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("PROJECT MANAGEMENT"),
             };
+            f.Categories.Add(repository.FindCategoryByName("PROJECT MANAGEMENT"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "SSL Security",
-                Category = repository.FindCategoryByName("PROJECT MANAGEMENT"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("PROJECT MANAGEMENT"),
             };
+            f.Categories.Add(repository.FindCategoryByName("PROJECT MANAGEMENT"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Military Grade Document Security",
-                Category = repository.FindCategoryByName("PROJECT MANAGEMENT"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("PROJECT MANAGEMENT"),
             };
+            f.Categories.Add(repository.FindCategoryByName("PROJECT MANAGEMENT"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Guaranteed Restore",
-                Category = repository.FindCategoryByName("PROJECT MANAGEMENT"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("PROJECT MANAGEMENT"),
             };
+            f.Categories.Add(repository.FindCategoryByName("PROJECT MANAGEMENT"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Offline Mode",
-                Category = repository.FindCategoryByName("PROJECT MANAGEMENT"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("PROJECT MANAGEMENT"),
             };
+            f.Categories.Add(repository.FindCategoryByName("PROJECT MANAGEMENT"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "3rd Party APIs",
-                Category = repository.FindCategoryByName("PROJECT MANAGEMENT"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("PROJECT MANAGEMENT"),
             };
+            f.Categories.Add(repository.FindCategoryByName("PROJECT MANAGEMENT"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Bug Tracker",
-                Category = repository.FindCategoryByName("PROJECT MANAGEMENT"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("PROJECT MANAGEMENT"),
             };
+            f.Categories.Add(repository.FindCategoryByName("PROJECT MANAGEMENT"));
             repository.AddFeature(f);
             #endregion
 
@@ -1152,122 +1466,162 @@ namespace CloudCompare.POCOQueryRepository
             f = new Feature()
             {
                 FeatureName = "Unlimited Transactions",
-                Category = repository.FindCategoryByName("FINANCIAL"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("FINANCIAL"),
             };
+            f.Categories.Add(repository.FindCategoryByName("FINANCIAL"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Unlimited Customer Records",
-                Category = repository.FindCategoryByName("FINANCIAL"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("FINANCIAL"),
             };
+            f.Categories.Add(repository.FindCategoryByName("FINANCIAL"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Unlimited Supplier Records",
-                Category = repository.FindCategoryByName("FINANCIAL"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("FINANCIAL"),
             };
+            f.Categories.Add(repository.FindCategoryByName("FINANCIAL"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Unlimited Product & Service Descriptions",
-                Category = repository.FindCategoryByName("FINANCIAL"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("FINANCIAL"),
             };
+            f.Categories.Add(repository.FindCategoryByName("FINANCIAL"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Create Invoices",
-                Category = repository.FindCategoryByName("FINANCIAL"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("FINANCIAL"),
             };
+            f.Categories.Add(repository.FindCategoryByName("FINANCIAL"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Invoice-to-Payment Matching",
-                Category = repository.FindCategoryByName("FINANCIAL"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("FINANCIAL"),
             };
+            f.Categories.Add(repository.FindCategoryByName("FINANCIAL"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Multi-Currency Invoicing",
-                Category = repository.FindCategoryByName("FINANCIAL"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("FINANCIAL"),
             };
+            f.Categories.Add(repository.FindCategoryByName("FINANCIAL"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Record Bank Payments",
-                Category = repository.FindCategoryByName("FINANCIAL"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("FINANCIAL"),
             };
+            f.Categories.Add(repository.FindCategoryByName("FINANCIAL"));
             repository.AddFeature(f);
             f = new Feature()
             {
-                FeatureName = "Customized Reports",
-                Category = repository.FindCategoryByName("FINANCIAL"),
+                FeatureName = "Customised Reports",
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("FINANCIAL"),
             };
+            f.Categories.Add(repository.FindCategoryByName("FINANCIAL"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "SSL Security",
-                Category = repository.FindCategoryByName("FINANCIAL"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("FINANCIAL"),
             };
+            f.Categories.Add(repository.FindCategoryByName("FINANCIAL"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Project Accounting",
-                Category = repository.FindCategoryByName("FINANCIAL"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("FINANCIAL"),
             };
+            f.Categories.Add(repository.FindCategoryByName("FINANCIAL"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "External Access (for Accountants)",
-                Category = repository.FindCategoryByName("FINANCIAL"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("FINANCIAL"),
             };
+            f.Categories.Add(repository.FindCategoryByName("FINANCIAL"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Multi-User Access",
-                Category = repository.FindCategoryByName("FINANCIAL"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("FINANCIAL"),
             };
+            f.Categories.Add(repository.FindCategoryByName("FINANCIAL"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "MS Excel Compatible",
-                Category = repository.FindCategoryByName("FINANCIAL"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("FINANCIAL"),
             };
+            f.Categories.Add(repository.FindCategoryByName("FINANCIAL"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Fixed Asset Depreciation Tool",
-                Category = repository.FindCategoryByName("FINANCIAL"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("FINANCIAL"),
             };
+            f.Categories.Add(repository.FindCategoryByName("FINANCIAL"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Customer Statements",
-                Category = repository.FindCategoryByName("FINANCIAL"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("FINANCIAL"),
             };
+            f.Categories.Add(repository.FindCategoryByName("FINANCIAL"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Purchase Order System",
-                Category = repository.FindCategoryByName("FINANCIAL"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("FINANCIAL"),
             };
+            f.Categories.Add(repository.FindCategoryByName("FINANCIAL"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "Payroll",
-                Category = repository.FindCategoryByName("FINANCIAL"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("FINANCIAL"),
             };
+            f.Categories.Add(repository.FindCategoryByName("FINANCIAL"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "VAT Filing",
-                Category = repository.FindCategoryByName("FINANCIAL"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("FINANCIAL"),
             };
+            f.Categories.Add(repository.FindCategoryByName("FINANCIAL"));
             repository.AddFeature(f);
             f = new Feature()
             {
                 FeatureName = "3rd Party API",
-                Category = repository.FindCategoryByName("FINANCIAL"),
+                Categories = new List<Category>(),
+                //Category = repository.FindCategoryByName("FINANCIAL"),
             };
+            f.Categories.Add(repository.FindCategoryByName("FINANCIAL"));
             repository.AddFeature(f);
             #endregion
 
@@ -1390,22 +1744,22 @@ namespace CloudCompare.POCOQueryRepository
             #region LICENCE TYPE MINIMUM
             ltMin = new LicenceTypeMinimum()
             {
-                LicenceTypeMinimumName = "1"
+                LicenceTypeMinimumName = 1
             };
             repository.AddLicenceTypeMinimum(ltMin);
             ltMin = new LicenceTypeMinimum()
             {
-                LicenceTypeMinimumName = "2"
+                LicenceTypeMinimumName = 2
             };
             repository.AddLicenceTypeMinimum(ltMin);
             ltMin = new LicenceTypeMinimum()
             {
-                LicenceTypeMinimumName = "5"
+                LicenceTypeMinimumName = 5
             };
             repository.AddLicenceTypeMinimum(ltMin);
             ltMin = new LicenceTypeMinimum()
             {
-                LicenceTypeMinimumName = "3"
+                LicenceTypeMinimumName = 3
             };
             repository.AddLicenceTypeMinimum(ltMin);
             #endregion
@@ -1413,72 +1767,72 @@ namespace CloudCompare.POCOQueryRepository
             #region LICENCE TYPE MAXIMUM
             ltMax = new LicenceTypeMaximum()
             {
-                LicenceTypeMaximumName = "1"
+                LicenceTypeMaximumName = 1
             };
             repository.AddLicenceTypeMaximum(ltMax);
             ltMax = new LicenceTypeMaximum()
             {
-                LicenceTypeMaximumName = "2"
+                LicenceTypeMaximumName = 2
             };
             repository.AddLicenceTypeMaximum(ltMax);
             ltMax = new LicenceTypeMaximum()
             {
-                LicenceTypeMaximumName = "3"
+                LicenceTypeMaximumName = 3
             };
             repository.AddLicenceTypeMaximum(ltMax);
             ltMax = new LicenceTypeMaximum()
             {
-                LicenceTypeMaximumName = "5"
+                LicenceTypeMaximumName = 5
             };
             repository.AddLicenceTypeMaximum(ltMax);
             ltMax = new LicenceTypeMaximum()
             {
-                LicenceTypeMaximumName = "6"
+                LicenceTypeMaximumName = 6
             };
             repository.AddLicenceTypeMaximum(ltMax);
             ltMax = new LicenceTypeMaximum()
             {
-                LicenceTypeMaximumName = "8"
+                LicenceTypeMaximumName = 8
             };
             repository.AddLicenceTypeMaximum(ltMax);
             ltMax = new LicenceTypeMaximum()
             {
-                LicenceTypeMaximumName = "9"
+                LicenceTypeMaximumName = 9
             };
             repository.AddLicenceTypeMaximum(ltMax);
             ltMax = new LicenceTypeMaximum()
             {
-                LicenceTypeMaximumName = "10"
+                LicenceTypeMaximumName = 10
             };
             repository.AddLicenceTypeMaximum(ltMax);
             ltMax = new LicenceTypeMaximum()
             {
-                LicenceTypeMaximumName = "20"
+                LicenceTypeMaximumName = 20
             };
             repository.AddLicenceTypeMaximum(ltMax);
             ltMax = new LicenceTypeMaximum()
             {
-                LicenceTypeMaximumName = "50"
+                LicenceTypeMaximumName = 50
             };
             repository.AddLicenceTypeMaximum(ltMax);
             ltMax = new LicenceTypeMaximum()
             {
-                LicenceTypeMaximumName = "99"
+                LicenceTypeMaximumName = 99
             };
             repository.AddLicenceTypeMaximum(ltMax);
             ltMax = new LicenceTypeMaximum()
             {
-                LicenceTypeMaximumName = "250"
+                LicenceTypeMaximumName = 250
             };
             repository.AddLicenceTypeMaximum(ltMax);
             ltMax = new LicenceTypeMaximum()
             {
-                LicenceTypeMaximumName = "500"
+                LicenceTypeMaximumName = 500
             };
             repository.AddLicenceTypeMaximum(ltMax);
             ltMax = new LicenceTypeMaximum()
             {
-                LicenceTypeMaximumName = "16384"
+                LicenceTypeMaximumName = 16384
             };
             repository.AddLicenceTypeMaximum(ltMax);
             #endregion
@@ -2507,8 +2861,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("Internet Explorer 9"),
                     repository.FindBrowserByName("FIREFOX"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -2651,7 +3005,7 @@ namespace CloudCompare.POCOQueryRepository
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
                         ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
                         ThumbnailDocumentURL = "http://www.bbc.co.uk",
-                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
                         ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
@@ -2702,8 +3056,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("Internet Explorer 8"),
                     repository.FindBrowserByName("Internet Explorer 9"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("8"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(8),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -2816,31 +3170,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -2874,8 +3252,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("Internet Explorer 8"),
                     repository.FindBrowserByName("Internet Explorer 9"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("9"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(9),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -2907,7 +3285,7 @@ namespace CloudCompare.POCOQueryRepository
                     //repository.FindFeatureByName("FREEPHONE/LOCAL RATE NUMBER"),
                     //repository.FindFeatureByName("DIAL-BY-NAME DIRECTORY"),
                     //repository.FindFeatureByName("VIDEO CALLING"),
-                    repository.FindFeatureByName("AUTO RECEPTION/CALL HANDLING"),
+                    repository.FindFeatureByName("AUTO-RECEPTION/CALL HANDLING"),
                     repository.FindFeatureByName("ANSWERING RULES"),
                     //repository.FindFeatureByName("CALL CENTRE/INTERACTIVE VOICE RESPONSE"),
                     repository.FindFeatureByName("MUSIC-ON-HOLD"),
@@ -3001,31 +3379,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -3059,8 +3461,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("Internet Explorer 8"),
                     repository.FindBrowserByName("Internet Explorer 9"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("6"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(6),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -3186,31 +3588,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -3238,8 +3664,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("Internet Explorer 8"),
                     repository.FindBrowserByName("Internet Explorer 9"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("10"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(10),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -3365,31 +3791,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -3416,8 +3866,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("Internet Explorer 8"),
                     repository.FindBrowserByName("Internet Explorer 9"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("10"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(10),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -3449,7 +3899,7 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindFeatureByName("FREEPHONE/LOCAL RATE NUMBER"),
                     repository.FindFeatureByName("DIAL-BY-NAME DIRECTORY"),
                     //repository.FindFeatureByName("VIDEO CALLING"),
-                    repository.FindFeatureByName("AUTO RECEPTION/CALL HANDLING"),
+                    repository.FindFeatureByName("AUTO-RECEPTION/CALL HANDLING"),
                     repository.FindFeatureByName("ANSWERING RULES"),
                     repository.FindFeatureByName("CALL CENTRE/INTERACTIVE VOICE RESPONSE"),
                     repository.FindFeatureByName("MUSIC-ON-HOLD"),
@@ -3543,31 +3993,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -3595,8 +4069,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("Internet Explorer 9"),
                     repository.FindBrowserByName("FIREFOX"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("8"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(8),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -3628,7 +4102,7 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindFeatureByName("FREEPHONE/LOCAL RATE NUMBER"),
                     //repository.FindFeatureByName("DIAL-BY-NAME DIRECTORY"),
                     repository.FindFeatureByName("VIDEO CALLING"),
-                    repository.FindFeatureByName("AUTO RECEPTION/CALL HANDLING"),
+                    repository.FindFeatureByName("AUTO-RECEPTION/CALL HANDLING"),
                     repository.FindFeatureByName("ANSWERING RULES"),
                     //repository.FindFeatureByName("CALL CENTRE/INTERACTIVE VOICE RESPONSE"),
                     repository.FindFeatureByName("MUSIC-ON-HOLD"),
@@ -3722,31 +4196,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -3774,8 +4272,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("Internet Explorer 9"),
                     //repository.FindBrowserByName("FIREFOX"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("20"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(20),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -3807,7 +4305,7 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindFeatureByName("FREEPHONE/LOCAL RATE NUMBER"),
                     repository.FindFeatureByName("DIAL-BY-NAME DIRECTORY"),
                     repository.FindFeatureByName("VIDEO CALLING"),
-                    repository.FindFeatureByName("AUTO RECEPTION/CALL HANDLING"),
+                    repository.FindFeatureByName("AUTO-RECEPTION/CALL HANDLING"),
                     repository.FindFeatureByName("ANSWERING RULES"),
                     repository.FindFeatureByName("CALL CENTRE/INTERACTIVE VOICE RESPONSE"),
                     repository.FindFeatureByName("MUSIC-ON-HOLD"),
@@ -3901,31 +4399,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -3953,8 +4475,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("Internet Explorer 9"),
                     //repository.FindBrowserByName("FIREFOX"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("9"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(9),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -3998,7 +4520,7 @@ namespace CloudCompare.POCOQueryRepository
                 },
                 ApplicationCostPerMonth = 9.99M,
                 CallsPackageCostPerMonth = 0.00M,
-                //SetupFee = repository.FindSetupFeeByName("£130"),
+                SetupFee = repository.FindSetupFeeByName("NOT APPLICABLE"),
                 MinimumContract = repository.FindMinimumContractByName("NONE"),
                 PaymentFrequency = repository.FindPaymentFrequencyByName("MONTHLY"),
                 PaymentOptions = new List<PaymentOption>()
@@ -4081,31 +4603,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -4133,8 +4679,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("Internet Explorer 9"),
                     //repository.FindBrowserByName("FIREFOX"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("9"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(9),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -4263,31 +4809,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -4315,8 +4885,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("Internet Explorer 9"),
                     repository.FindBrowserByName("FIREFOX"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("1"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(1),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -4445,31 +5015,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -4497,8 +5091,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("Internet Explorer 9"),
                     repository.FindBrowserByName("FIREFOX"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -4532,7 +5126,7 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindFeatureByName("FREEPHONE/LOCAL RATE NUMBER"),
                     //repository.FindFeatureByName("DIAL-BY-NAME DIRECTORY"),
                     //repository.FindFeatureByName("VIDEO CALLING"),
-                    repository.FindFeatureByName("AUTO RECEPTION/CALL HANDLING"),
+                    repository.FindFeatureByName("AUTO-RECEPTION/CALL HANDLING"),
                     repository.FindFeatureByName("ANSWERING RULES"),
                     //repository.FindFeatureByName("CALL CENTRE/INTERACTIVE VOICE RESPONSE"),
                     //repository.FindFeatureByName("MUSIC-ON-HOLD"),
@@ -4627,31 +5221,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -4679,8 +5297,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("Internet Explorer 9"),
                     repository.FindBrowserByName("FIREFOX"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("20"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(20),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -4714,7 +5332,7 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindFeatureByName("FREEPHONE/LOCAL RATE NUMBER"),
                     //repository.FindFeatureByName("DIAL-BY-NAME DIRECTORY"),
                     //repository.FindFeatureByName("VIDEO CALLING"),
-                    repository.FindFeatureByName("AUTO RECEPTION/CALL HANDLING"),
+                    repository.FindFeatureByName("AUTO-RECEPTION/CALL HANDLING"),
                     repository.FindFeatureByName("ANSWERING RULES"),
                     //repository.FindFeatureByName("CALL CENTRE/INTERACTIVE VOICE RESPONSE"),
                     //repository.FindFeatureByName("MUSIC-ON-HOLD"),
@@ -4726,7 +5344,7 @@ namespace CloudCompare.POCOQueryRepository
                 },
                 ApplicationCostPerMonth = 1.49M,
                 CallsPackageCostPerMonth = 0.00M,
-                //SetupFee = repository.FindSetupFeeByName("£20"),
+                SetupFee = repository.FindSetupFeeByName("NOT APPLICABLE"),
                 MinimumContract = repository.FindMinimumContractByName("12 MONTHS"),
                 PaymentFrequency = repository.FindPaymentFrequencyByName("MONTHLY"),
                 PaymentOptions = new List<PaymentOption>()
@@ -4809,31 +5427,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -4861,8 +5503,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("Internet Explorer 9"),
                     repository.FindBrowserByName("FIREFOX"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -4908,7 +5550,7 @@ namespace CloudCompare.POCOQueryRepository
                 },
                 ApplicationCostPerMonth = 5.99M,
                 CallsPackageCostPerMonth = 0.00M,
-                //SetupFee = repository.FindSetupFeeByName("£20"),
+                SetupFee = repository.FindSetupFeeByName("NOT APPLICABLE"),
                 MinimumContract = repository.FindMinimumContractByName("12 MONTHS"),
                 PaymentFrequency = repository.FindPaymentFrequencyByName("MONTHLY"),
                 PaymentOptions = new List<PaymentOption>()
@@ -4991,31 +5633,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -5043,8 +5709,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("Internet Explorer 9"),
                     repository.FindBrowserByName("FIREFOX"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -5078,7 +5744,7 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindFeatureByName("FREEPHONE/LOCAL RATE NUMBER"),
                     //repository.FindFeatureByName("DIAL-BY-NAME DIRECTORY"),
                     repository.FindFeatureByName("VIDEO CALLING"),
-                    repository.FindFeatureByName("AUTO RECEPTION/CALL HANDLING"),
+                    repository.FindFeatureByName("AUTO-RECEPTION/CALL HANDLING"),
                     repository.FindFeatureByName("ANSWERING RULES"),
                     //repository.FindFeatureByName("CALL CENTRE/INTERACTIVE VOICE RESPONSE"),
                     repository.FindFeatureByName("MUSIC-ON-HOLD"),
@@ -5090,7 +5756,7 @@ namespace CloudCompare.POCOQueryRepository
                 },
                 ApplicationCostPerMonth = 10.00M,
                 CallsPackageCostPerMonth = 0.00M,
-                //SetupFee = repository.FindSetupFeeByName("£20"),
+                SetupFee = repository.FindSetupFeeByName("NOT APPLICABLE"),
                 MinimumContract = repository.FindMinimumContractByName("12 MONTHS"),
                 PaymentFrequency = repository.FindPaymentFrequencyByName("MONTHLY"),
                 PaymentOptions = new List<PaymentOption>()
@@ -5173,31 +5839,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -5225,8 +5915,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("Internet Explorer 9"),
                     repository.FindBrowserByName("FIREFOX"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -5260,7 +5950,7 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindFeatureByName("FREEPHONE/LOCAL RATE NUMBER"),
                     repository.FindFeatureByName("DIAL-BY-NAME DIRECTORY"),
                     repository.FindFeatureByName("VIDEO CALLING"),
-                    repository.FindFeatureByName("AUTO RECEPTION/CALL HANDLING"),
+                    repository.FindFeatureByName("AUTO-RECEPTION/CALL HANDLING"),
                     repository.FindFeatureByName("ANSWERING RULES"),
                     repository.FindFeatureByName("CALL CENTRE/INTERACTIVE VOICE RESPONSE"),
                     repository.FindFeatureByName("MUSIC-ON-HOLD"),
@@ -5272,7 +5962,7 @@ namespace CloudCompare.POCOQueryRepository
                 },
                 ApplicationCostPerMonth = 7.99M,
                 CallsPackageCostPerMonth = 0.00M,
-                //SetupFee = repository.FindSetupFeeByName("£20"),
+                SetupFee = repository.FindSetupFeeByName("NOT APPLICABLE"),
                 MinimumContract = repository.FindMinimumContractByName("12 MONTHS"),
                 PaymentFrequency = repository.FindPaymentFrequencyByName("MONTHLY"),
                 PaymentOptions = new List<PaymentOption>()
@@ -5355,31 +6045,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -5407,8 +6121,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("Internet Explorer 9"),
                     repository.FindBrowserByName("FIREFOX"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("3"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(3),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -5442,7 +6156,7 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindFeatureByName("FREEPHONE/LOCAL RATE NUMBER"),
                     //repository.FindFeatureByName("DIAL-BY-NAME DIRECTORY"),
                     repository.FindFeatureByName("VIDEO CALLING"),
-                    repository.FindFeatureByName("AUTO RECEPTION/CALL HANDLING"),
+                    repository.FindFeatureByName("AUTO-RECEPTION/CALL HANDLING"),
                     repository.FindFeatureByName("ANSWERING RULES"),
                     //repository.FindFeatureByName("CALL CENTRE/INTERACTIVE VOICE RESPONSE"),
                     repository.FindFeatureByName("MUSIC-ON-HOLD"),
@@ -5454,7 +6168,7 @@ namespace CloudCompare.POCOQueryRepository
                 },
                 ApplicationCostPerMonth = 14.95M,
                 CallsPackageCostPerMonth = 0.00M,
-                //SetupFee = repository.FindSetupFeeByName("£20"),
+                SetupFee = repository.FindSetupFeeByName("NOT APPLICABLE"),
                 MinimumContract = repository.FindMinimumContractByName("12 MONTHS"),
                 PaymentFrequency = repository.FindPaymentFrequencyByName("MONTHLY"),
                 PaymentOptions = new List<PaymentOption>()
@@ -5537,31 +6251,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -5595,8 +6333,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("Internet Explorer 9"),
                     repository.FindBrowserByName("FIREFOX"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("5"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(5),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -5720,31 +6458,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -5779,8 +6541,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("Internet Explorer 9"),
                     repository.FindBrowserByName("FIREFOX"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("16384"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(16384),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -5904,31 +6666,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -5963,8 +6749,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("Internet Explorer 9"),
                     repository.FindBrowserByName("FIREFOX"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("16384"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(16384),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -6088,31 +6874,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -6147,8 +6957,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("Internet Explorer 9"),
                     repository.FindBrowserByName("FIREFOX"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("16384"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(16384),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -6272,31 +7082,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -6326,8 +7160,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("Internet Explorer 9"),
                     //repository.FindBrowserByName("FIREFOX"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("16384"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(16384),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -6451,31 +7285,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -6510,8 +7368,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("Internet Explorer 9"),
                     repository.FindBrowserByName("FIREFOX"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("5"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(5),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -6635,31 +7493,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -6694,8 +7576,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("Internet Explorer 9"),
                     repository.FindBrowserByName("FIREFOX"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("3"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(3),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -6819,31 +7701,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -6880,8 +7786,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("SAFARI"),
                     repository.FindBrowserByName("OPERA")
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("20"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(20),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -7005,31 +7911,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -7064,8 +7994,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("Internet Explorer 9"),
                     //repository.FindBrowserByName("FIREFOX"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("9"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(9),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -7189,31 +8119,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -7250,8 +8204,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI")
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("16384"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(16384),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -7375,31 +8329,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -7434,8 +8412,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("Internet Explorer 9"),
                     repository.FindBrowserByName("FIREFOX"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("16384"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(16384),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -7559,31 +8537,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -7618,8 +8620,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("Internet Explorer 9"),
                     repository.FindBrowserByName("FIREFOX"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("2"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("10"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(2),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(10),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -7743,31 +8745,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -7802,8 +8828,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("Internet Explorer 9"),
                     repository.FindBrowserByName("FIREFOX"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("16384"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(16384),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -7927,31 +8953,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -7986,8 +9036,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("Internet Explorer 9"),
                     repository.FindBrowserByName("FIREFOX"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("16384"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(16384),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -8111,31 +9161,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -8177,8 +9251,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -8201,10 +9275,10 @@ namespace CloudCompare.POCOQueryRepository
                 {
                     repository.FindFeatureByName("HIGH DEFINITION VIDEO"),
                     repository.FindFeatureByName("PRESENTER PREPARATION MODE"),
-                    repository.FindFeatureByName("MULTIPLE MEETING HOSTS/CHAIRMAN"),
+                    repository.FindFeatureByName("MULTIPLE MEETING HOSTS/CHAIRPERSON"),
                     repository.FindFeatureByName("INDIVIDUAL USAGE REPORTS"),
                     repository.FindFeatureByName("'ON THE FLY' INVITATIONS FOR ADDITIONAL PARTICIPANTS"),
-                    repository.FindFeatureByName("INSTANT MEETING FUNCTIONS"),
+                    repository.FindFeatureByName("INSTANT MEETING FUNCTION"),
                     repository.FindFeatureByName("ACTIVE SPEAKER VIDEO SWITCHING"),
                     repository.FindFeatureByName("FULL DESKTOP SHARING"),
                     repository.FindFeatureByName("SINGLE APPLICATION SHARE"),
@@ -8302,31 +9376,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -8365,8 +9463,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -8392,7 +9490,7 @@ namespace CloudCompare.POCOQueryRepository
                     //repository.FindFeatureByName("MULTIPLE MEETING HOSTS/CHAIRMAN"),
                     //repository.FindFeatureByName("INDIVIDUAL USAGE REPORTS"),
                     repository.FindFeatureByName("'ON THE FLY' INVITATIONS FOR ADDITIONAL PARTICIPANTS"),
-                    repository.FindFeatureByName("INSTANT MEETING FUNCTIONS"),
+                    repository.FindFeatureByName("INSTANT MEETING FUNCTION"),
                     //repository.FindFeatureByName("ACTIVE SPEAKER VIDEO SWITCHING"),
                     repository.FindFeatureByName("FULL DESKTOP SHARING"),
                     repository.FindFeatureByName("SINGLE APPLICATION SHARE"),
@@ -8490,31 +9588,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -8553,8 +9675,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("9"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(9),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -8580,7 +9702,7 @@ namespace CloudCompare.POCOQueryRepository
                     //repository.FindFeatureByName("MULTIPLE MEETING HOSTS/CHAIRMAN"),
                     //repository.FindFeatureByName("INDIVIDUAL USAGE REPORTS"),
                     repository.FindFeatureByName("'ON THE FLY' INVITATIONS FOR ADDITIONAL PARTICIPANTS"),
-                    repository.FindFeatureByName("INSTANT MEETING FUNCTIONS"),
+                    repository.FindFeatureByName("INSTANT MEETING FUNCTION"),
                     //repository.FindFeatureByName("ACTIVE SPEAKER VIDEO SWITCHING"),
                     repository.FindFeatureByName("FULL DESKTOP SHARING"),
                     repository.FindFeatureByName("SINGLE APPLICATION SHARE"),
@@ -8678,31 +9800,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -8741,8 +9887,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -8765,10 +9911,10 @@ namespace CloudCompare.POCOQueryRepository
                 {
                     repository.FindFeatureByName("HIGH DEFINITION VIDEO"),
                     repository.FindFeatureByName("PRESENTER PREPARATION MODE"),
-                    repository.FindFeatureByName("MULTIPLE MEETING HOSTS/CHAIRMAN"),
+                    repository.FindFeatureByName("MULTIPLE MEETING HOSTS/CHAIRPERSON"),
                     //repository.FindFeatureByName("INDIVIDUAL USAGE REPORTS"),
                     repository.FindFeatureByName("'ON THE FLY' INVITATIONS FOR ADDITIONAL PARTICIPANTS"),
-                    repository.FindFeatureByName("INSTANT MEETING FUNCTIONS"),
+                    repository.FindFeatureByName("INSTANT MEETING FUNCTION"),
                     //repository.FindFeatureByName("ACTIVE SPEAKER VIDEO SWITCHING"),
                     repository.FindFeatureByName("FULL DESKTOP SHARING"),
                     repository.FindFeatureByName("SINGLE APPLICATION SHARE"),
@@ -8866,31 +10012,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -8929,8 +10099,8 @@ namespace CloudCompare.POCOQueryRepository
                     //repository.FindBrowserByName("CHROME"),
                     //repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("9"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(9),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -8956,7 +10126,7 @@ namespace CloudCompare.POCOQueryRepository
                     //repository.FindFeatureByName("MULTIPLE MEETING HOSTS/CHAIRMAN"),
                     //repository.FindFeatureByName("INDIVIDUAL USAGE REPORTS"),
                     //repository.FindFeatureByName("'ON THE FLY' INVITATIONS FOR ADDITIONAL PARTICIPANTS"),
-                    repository.FindFeatureByName("INSTANT MEETING FUNCTIONS"),
+                    repository.FindFeatureByName("INSTANT MEETING FUNCTION"),
                     //repository.FindFeatureByName("ACTIVE SPEAKER VIDEO SWITCHING"),
                     repository.FindFeatureByName("FULL DESKTOP SHARING"),
                     repository.FindFeatureByName("SINGLE APPLICATION SHARE"),
@@ -9054,31 +10224,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -9117,8 +10311,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("5"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(5),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -9144,7 +10338,7 @@ namespace CloudCompare.POCOQueryRepository
                     //repository.FindFeatureByName("MULTIPLE MEETING HOSTS/CHAIRMAN"),
                     //repository.FindFeatureByName("INDIVIDUAL USAGE REPORTS"),
                     repository.FindFeatureByName("'ON THE FLY' INVITATIONS FOR ADDITIONAL PARTICIPANTS"),
-                    repository.FindFeatureByName("INSTANT MEETING FUNCTIONS"),
+                    repository.FindFeatureByName("INSTANT MEETING FUNCTION"),
                     //repository.FindFeatureByName("ACTIVE SPEAKER VIDEO SWITCHING"),
                     repository.FindFeatureByName("FULL DESKTOP SHARING"),
                     repository.FindFeatureByName("SINGLE APPLICATION SHARE"),
@@ -9242,31 +10436,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -9305,8 +10523,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -9332,7 +10550,7 @@ namespace CloudCompare.POCOQueryRepository
                     //repository.FindFeatureByName("MULTIPLE MEETING HOSTS/CHAIRMAN"),
                     //repository.FindFeatureByName("INDIVIDUAL USAGE REPORTS"),
                     repository.FindFeatureByName("'ON THE FLY' INVITATIONS FOR ADDITIONAL PARTICIPANTS"),
-                    repository.FindFeatureByName("INSTANT MEETING FUNCTIONS"),
+                    repository.FindFeatureByName("INSTANT MEETING FUNCTION"),
                     //repository.FindFeatureByName("ACTIVE SPEAKER VIDEO SWITCHING"),
                     repository.FindFeatureByName("FULL DESKTOP SHARING"),
                     repository.FindFeatureByName("SINGLE APPLICATION SHARE"),
@@ -9430,31 +10648,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -9493,8 +10735,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -9521,7 +10763,7 @@ namespace CloudCompare.POCOQueryRepository
                     //repository.FindFeatureByName("MULTIPLE MEETING HOSTS/CHAIRMAN"),
                     //repository.FindFeatureByName("INDIVIDUAL USAGE REPORTS"),
                     repository.FindFeatureByName("'ON THE FLY' INVITATIONS FOR ADDITIONAL PARTICIPANTS"),
-                    repository.FindFeatureByName("INSTANT MEETING FUNCTIONS"),
+                    repository.FindFeatureByName("INSTANT MEETING FUNCTION"),
                     //repository.FindFeatureByName("ACTIVE SPEAKER VIDEO SWITCHING"),
                     repository.FindFeatureByName("FULL DESKTOP SHARING"),
                     repository.FindFeatureByName("SINGLE APPLICATION SHARE"),
@@ -9619,31 +10861,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -9682,8 +10948,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -9706,10 +10972,10 @@ namespace CloudCompare.POCOQueryRepository
                 {
                     //repository.FindFeatureByName("HIGH DEFINITION VIDEO"),
                     //repository.FindFeatureByName("PRESENTER PREPARATION MODE"),
-                    repository.FindFeatureByName("MULTIPLE MEETING HOSTS/CHAIRMAN"),
+                    repository.FindFeatureByName("MULTIPLE MEETING HOSTS/CHAIRPERSON"),
                     //repository.FindFeatureByName("INDIVIDUAL USAGE REPORTS"),
                     repository.FindFeatureByName("'ON THE FLY' INVITATIONS FOR ADDITIONAL PARTICIPANTS"),
-                    repository.FindFeatureByName("INSTANT MEETING FUNCTIONS"),
+                    repository.FindFeatureByName("INSTANT MEETING FUNCTION"),
                     //repository.FindFeatureByName("ACTIVE SPEAKER VIDEO SWITCHING"),
                     repository.FindFeatureByName("FULL DESKTOP SHARING"),
                     repository.FindFeatureByName("SINGLE APPLICATION SHARE"),
@@ -9807,31 +11073,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -9870,8 +11160,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("2"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("2"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(2),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(2),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -9894,10 +11184,10 @@ namespace CloudCompare.POCOQueryRepository
                 {
                     repository.FindFeatureByName("HIGH DEFINITION VIDEO"),
                     repository.FindFeatureByName("PRESENTER PREPARATION MODE"),
-                    repository.FindFeatureByName("MULTIPLE MEETING HOSTS/CHAIRMAN"),
+                    repository.FindFeatureByName("MULTIPLE MEETING HOSTS/CHAIRPERSON"),
                     repository.FindFeatureByName("INDIVIDUAL USAGE REPORTS"),
                     repository.FindFeatureByName("'ON THE FLY' INVITATIONS FOR ADDITIONAL PARTICIPANTS"),
-                    repository.FindFeatureByName("INSTANT MEETING FUNCTIONS"),
+                    repository.FindFeatureByName("INSTANT MEETING FUNCTION"),
                     //repository.FindFeatureByName("ACTIVE SPEAKER VIDEO SWITCHING"),
                     repository.FindFeatureByName("FULL DESKTOP SHARING"),
                     repository.FindFeatureByName("SINGLE APPLICATION SHARE"),
@@ -9995,31 +11285,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -10058,8 +11372,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -10085,7 +11399,7 @@ namespace CloudCompare.POCOQueryRepository
                     //repository.FindFeatureByName("MULTIPLE MEETING HOSTS/CHAIRMAN"),
                     repository.FindFeatureByName("INDIVIDUAL USAGE REPORTS"),
                     repository.FindFeatureByName("'ON THE FLY' INVITATIONS FOR ADDITIONAL PARTICIPANTS"),
-                    repository.FindFeatureByName("INSTANT MEETING FUNCTIONS"),
+                    repository.FindFeatureByName("INSTANT MEETING FUNCTION"),
                     //repository.FindFeatureByName("ACTIVE SPEAKER VIDEO SWITCHING"),
                     repository.FindFeatureByName("FULL DESKTOP SHARING"),
                     repository.FindFeatureByName("SINGLE APPLICATION SHARE"),
@@ -10183,31 +11497,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -10246,8 +11584,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -10270,10 +11608,10 @@ namespace CloudCompare.POCOQueryRepository
                 {
                     //repository.FindFeatureByName("HIGH DEFINITION VIDEO"),
                     repository.FindFeatureByName("PRESENTER PREPARATION MODE"),
-                    repository.FindFeatureByName("MULTIPLE MEETING HOSTS/CHAIRMAN"),
+                    repository.FindFeatureByName("MULTIPLE MEETING HOSTS/CHAIRPERSON"),
                     repository.FindFeatureByName("INDIVIDUAL USAGE REPORTS"),
                     repository.FindFeatureByName("'ON THE FLY' INVITATIONS FOR ADDITIONAL PARTICIPANTS"),
-                    repository.FindFeatureByName("INSTANT MEETING FUNCTIONS"),
+                    repository.FindFeatureByName("INSTANT MEETING FUNCTION"),
                     //repository.FindFeatureByName("ACTIVE SPEAKER VIDEO SWITCHING"),
                     repository.FindFeatureByName("FULL DESKTOP SHARING"),
                     repository.FindFeatureByName("SINGLE APPLICATION SHARE"),
@@ -10371,31 +11709,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -10434,8 +11796,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("50"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(50),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -10458,10 +11820,10 @@ namespace CloudCompare.POCOQueryRepository
                 {
                     //repository.FindFeatureByName("HIGH DEFINITION VIDEO"),
                     repository.FindFeatureByName("PRESENTER PREPARATION MODE"),
-                    repository.FindFeatureByName("MULTIPLE MEETING HOSTS/CHAIRMAN"),
+                    repository.FindFeatureByName("MULTIPLE MEETING HOSTS/CHAIRPERSON"),
                     repository.FindFeatureByName("INDIVIDUAL USAGE REPORTS"),
                     repository.FindFeatureByName("'ON THE FLY' INVITATIONS FOR ADDITIONAL PARTICIPANTS"),
-                    repository.FindFeatureByName("INSTANT MEETING FUNCTIONS"),
+                    repository.FindFeatureByName("INSTANT MEETING FUNCTION"),
                     //repository.FindFeatureByName("ACTIVE SPEAKER VIDEO SWITCHING"),
                     repository.FindFeatureByName("FULL DESKTOP SHARING"),
                     repository.FindFeatureByName("SINGLE APPLICATION SHARE"),
@@ -10559,31 +11921,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -10626,8 +12012,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -10753,31 +12139,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -10816,8 +12226,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("9"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(9),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -10943,31 +12353,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -11006,8 +12440,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -11133,31 +12567,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -11196,8 +12654,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -11323,31 +12781,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -11386,8 +12868,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -11513,31 +12995,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -11576,8 +13082,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -11703,31 +13209,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -11766,8 +13296,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -11893,31 +13423,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -11956,8 +13510,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -12083,31 +13637,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -12146,8 +13724,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -12274,31 +13852,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -12337,8 +13939,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -12464,31 +14066,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -12527,8 +14153,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -12654,31 +14280,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -12717,8 +14367,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -12844,31 +14494,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -12907,8 +14581,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -13034,31 +14708,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -13097,8 +14795,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -13224,31 +14922,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -13287,8 +15009,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -13414,31 +15136,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -13477,8 +15223,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -13604,31 +15350,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -13671,8 +15441,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("9"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(9),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -13812,31 +15582,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -13875,8 +15669,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -14016,31 +15810,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -14079,8 +15897,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -14220,31 +16038,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -14283,8 +16125,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -14424,31 +16266,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -14487,8 +16353,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -14628,31 +16494,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -14691,8 +16581,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -14832,31 +16722,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -14895,8 +16809,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("5"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("250"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(5),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(250),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -15036,31 +16950,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -15099,8 +17037,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -15241,31 +17179,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -15304,8 +17266,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -15445,31 +17407,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -15509,8 +17495,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -15650,31 +17636,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -15714,8 +17724,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("16384"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(16384),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -15856,31 +17866,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -15920,8 +17954,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("16384"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(16384),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -16061,31 +18095,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -16125,8 +18183,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("16384"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(16384),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -16267,31 +18325,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -16335,8 +18417,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -16464,31 +18546,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -16528,8 +18634,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("3"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("500"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(3),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(500),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -16657,31 +18763,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -16721,8 +18851,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -16850,31 +18980,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -16914,8 +19068,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -17043,31 +19197,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -17107,8 +19285,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("1"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(1),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -17236,31 +19414,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -17300,8 +19502,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("1"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(1),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -17429,31 +19631,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -17493,8 +19719,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("1"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(1),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -17622,31 +19848,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -17686,8 +19936,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("1"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(1),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -17815,31 +20065,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -17879,8 +20153,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("1"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(1),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -18008,31 +20282,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -18072,8 +20370,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("1"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(1),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -18201,31 +20499,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -18265,8 +20587,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("1"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(1),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -18394,31 +20716,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -18458,8 +20804,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("1"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(1),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -18587,31 +20933,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -18651,8 +21021,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("1"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(1),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -18780,31 +21150,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -18844,8 +21238,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("1"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(1),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -18973,31 +21367,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -19037,8 +21455,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("1"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(1),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -19166,31 +21584,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -19234,8 +21676,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -19269,7 +21711,7 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindFeatureByName("BUDGET TRACKING"),
                     repository.FindFeatureByName("CLIENT INVOICING"),
                     repository.FindFeatureByName("PROJECT WIKI"),
-                    repository.FindFeatureByName("CUSTOMIZED REPORTS"),
+                    repository.FindFeatureByName("CUSTOMISED REPORTS"),
                     repository.FindFeatureByName("MS PROJECT COMPATIBLE"),
                     repository.FindFeatureByName("SSL SECURITY"),
                     repository.FindFeatureByName("MILITARY GRADE DOCUMENT SECURITY"),
@@ -19363,31 +21805,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -19427,8 +21893,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -19462,7 +21928,7 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindFeatureByName("BUDGET TRACKING"),
                     //repository.FindFeatureByName("CLIENT INVOICING"),
                     //repository.FindFeatureByName("PROJECT WIKI"),
-                    repository.FindFeatureByName("CUSTOMIZED REPORTS"),
+                    repository.FindFeatureByName("CUSTOMISED REPORTS"),
                     repository.FindFeatureByName("MS PROJECT COMPATIBLE"),
                     repository.FindFeatureByName("SSL SECURITY"),
                     repository.FindFeatureByName("MILITARY GRADE DOCUMENT SECURITY"),
@@ -19556,31 +22022,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -19620,8 +22110,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -19655,7 +22145,7 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindFeatureByName("BUDGET TRACKING"),
                     repository.FindFeatureByName("CLIENT INVOICING"),
                     //repository.FindFeatureByName("PROJECT WIKI"),
-                    repository.FindFeatureByName("CUSTOMIZED REPORTS"),
+                    repository.FindFeatureByName("CUSTOMISED REPORTS"),
                     repository.FindFeatureByName("MS PROJECT COMPATIBLE"),
                     repository.FindFeatureByName("SSL SECURITY"),
                     repository.FindFeatureByName("MILITARY GRADE DOCUMENT SECURITY"),
@@ -19749,31 +22239,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -19813,8 +22327,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -19848,7 +22362,7 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindFeatureByName("BUDGET TRACKING"),
                     //repository.FindFeatureByName("CLIENT INVOICING"),
                     //repository.FindFeatureByName("PROJECT WIKI"),
-                    repository.FindFeatureByName("CUSTOMIZED REPORTS"),
+                    repository.FindFeatureByName("CUSTOMISED REPORTS"),
                     repository.FindFeatureByName("MS PROJECT COMPATIBLE"),
                     repository.FindFeatureByName("SSL SECURITY"),
                     repository.FindFeatureByName("MILITARY GRADE DOCUMENT SECURITY"),
@@ -19942,31 +22456,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -20006,8 +22544,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -20041,7 +22579,7 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindFeatureByName("BUDGET TRACKING"),
                     //repository.FindFeatureByName("CLIENT INVOICING"),
                     //repository.FindFeatureByName("PROJECT WIKI"),
-                    repository.FindFeatureByName("CUSTOMIZED REPORTS"),
+                    repository.FindFeatureByName("CUSTOMISED REPORTS"),
                     repository.FindFeatureByName("MS PROJECT COMPATIBLE"),
                     repository.FindFeatureByName("SSL SECURITY"),
                     repository.FindFeatureByName("MILITARY GRADE DOCUMENT SECURITY"),
@@ -20135,31 +22673,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -20199,8 +22761,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -20234,7 +22796,7 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindFeatureByName("BUDGET TRACKING"),
                     //repository.FindFeatureByName("CLIENT INVOICING"),
                     //repository.FindFeatureByName("PROJECT WIKI"),
-                    repository.FindFeatureByName("CUSTOMIZED REPORTS"),
+                    repository.FindFeatureByName("CUSTOMISED REPORTS"),
                     repository.FindFeatureByName("MS PROJECT COMPATIBLE"),
                     repository.FindFeatureByName("SSL SECURITY"),
                     repository.FindFeatureByName("MILITARY GRADE DOCUMENT SECURITY"),
@@ -20328,31 +22890,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -20392,8 +22978,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -20427,7 +23013,7 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindFeatureByName("BUDGET TRACKING"),
                     repository.FindFeatureByName("CLIENT INVOICING"),
                     repository.FindFeatureByName("PROJECT WIKI"),
-                    repository.FindFeatureByName("CUSTOMIZED REPORTS"),
+                    repository.FindFeatureByName("CUSTOMISED REPORTS"),
                     repository.FindFeatureByName("MS PROJECT COMPATIBLE"),
                     repository.FindFeatureByName("SSL SECURITY"),
                     repository.FindFeatureByName("MILITARY GRADE DOCUMENT SECURITY"),
@@ -20521,31 +23107,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -20585,8 +23195,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -20620,7 +23230,7 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindFeatureByName("BUDGET TRACKING"),
                     //repository.FindFeatureByName("CLIENT INVOICING"),
                     //repository.FindFeatureByName("PROJECT WIKI"),
-                    repository.FindFeatureByName("CUSTOMIZED REPORTS"),
+                    repository.FindFeatureByName("CUSTOMISED REPORTS"),
                     repository.FindFeatureByName("MS PROJECT COMPATIBLE"),
                     repository.FindFeatureByName("SSL SECURITY"),
                     repository.FindFeatureByName("MILITARY GRADE DOCUMENT SECURITY"),
@@ -20714,31 +23324,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -20778,8 +23412,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -20813,7 +23447,7 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindFeatureByName("BUDGET TRACKING"),
                     //repository.FindFeatureByName("CLIENT INVOICING"),
                     //repository.FindFeatureByName("PROJECT WIKI"),
-                    repository.FindFeatureByName("CUSTOMIZED REPORTS"),
+                    repository.FindFeatureByName("CUSTOMISED REPORTS"),
                     repository.FindFeatureByName("MS PROJECT COMPATIBLE"),
                     repository.FindFeatureByName("SSL SECURITY"),
                     repository.FindFeatureByName("MILITARY GRADE DOCUMENT SECURITY"),
@@ -20907,31 +23541,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -20971,8 +23629,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -21006,7 +23664,7 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindFeatureByName("BUDGET TRACKING"),
                     //repository.FindFeatureByName("CLIENT INVOICING"),
                     //repository.FindFeatureByName("PROJECT WIKI"),
-                    repository.FindFeatureByName("CUSTOMIZED REPORTS"),
+                    repository.FindFeatureByName("CUSTOMISED REPORTS"),
                     repository.FindFeatureByName("MS PROJECT COMPATIBLE"),
                     repository.FindFeatureByName("SSL SECURITY"),
                     repository.FindFeatureByName("MILITARY GRADE DOCUMENT SECURITY"),
@@ -21100,31 +23758,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -21164,8 +23846,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -21199,7 +23881,7 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindFeatureByName("BUDGET TRACKING"),
                     //repository.FindFeatureByName("CLIENT INVOICING"),
                     //repository.FindFeatureByName("PROJECT WIKI"),
-                    repository.FindFeatureByName("CUSTOMIZED REPORTS"),
+                    repository.FindFeatureByName("CUSTOMISED REPORTS"),
                     repository.FindFeatureByName("MS PROJECT COMPATIBLE"),
                     repository.FindFeatureByName("SSL SECURITY"),
                     repository.FindFeatureByName("MILITARY GRADE DOCUMENT SECURITY"),
@@ -21293,31 +23975,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -21357,8 +24063,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -21392,7 +24098,7 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindFeatureByName("BUDGET TRACKING"),
                     //repository.FindFeatureByName("CLIENT INVOICING"),
                     //repository.FindFeatureByName("PROJECT WIKI"),
-                    repository.FindFeatureByName("CUSTOMIZED REPORTS"),
+                    repository.FindFeatureByName("CUSTOMISED REPORTS"),
                     repository.FindFeatureByName("MS PROJECT COMPATIBLE"),
                     repository.FindFeatureByName("SSL SECURITY"),
                     repository.FindFeatureByName("MILITARY GRADE DOCUMENT SECURITY"),
@@ -21486,31 +24192,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -21550,8 +24280,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -21585,7 +24315,7 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindFeatureByName("BUDGET TRACKING"),
                     //repository.FindFeatureByName("CLIENT INVOICING"),
                     //repository.FindFeatureByName("PROJECT WIKI"),
-                    repository.FindFeatureByName("CUSTOMIZED REPORTS"),
+                    repository.FindFeatureByName("CUSTOMISED REPORTS"),
                     repository.FindFeatureByName("MS PROJECT COMPATIBLE"),
                     repository.FindFeatureByName("SSL SECURITY"),
                     repository.FindFeatureByName("MILITARY GRADE DOCUMENT SECURITY"),
@@ -21679,31 +24409,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -21743,8 +24497,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -21778,7 +24532,7 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindFeatureByName("BUDGET TRACKING"),
                     //repository.FindFeatureByName("CLIENT INVOICING"),
                     //repository.FindFeatureByName("PROJECT WIKI"),
-                    repository.FindFeatureByName("CUSTOMIZED REPORTS"),
+                    repository.FindFeatureByName("CUSTOMISED REPORTS"),
                     repository.FindFeatureByName("MS PROJECT COMPATIBLE"),
                     repository.FindFeatureByName("SSL SECURITY"),
                     repository.FindFeatureByName("MILITARY GRADE DOCUMENT SECURITY"),
@@ -21872,31 +24626,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -21936,8 +24714,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -21971,7 +24749,7 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindFeatureByName("BUDGET TRACKING"),
                     //repository.FindFeatureByName("CLIENT INVOICING"),
                     //repository.FindFeatureByName("PROJECT WIKI"),
-                    repository.FindFeatureByName("CUSTOMIZED REPORTS"),
+                    repository.FindFeatureByName("CUSTOMISED REPORTS"),
                     repository.FindFeatureByName("MS PROJECT COMPATIBLE"),
                     repository.FindFeatureByName("SSL SECURITY"),
                     repository.FindFeatureByName("MILITARY GRADE DOCUMENT SECURITY"),
@@ -22065,31 +24843,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -22129,8 +24931,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -22164,7 +24966,7 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindFeatureByName("BUDGET TRACKING"),
                     repository.FindFeatureByName("CLIENT INVOICING"),
                     repository.FindFeatureByName("PROJECT WIKI"),
-                    repository.FindFeatureByName("CUSTOMIZED REPORTS"),
+                    repository.FindFeatureByName("CUSTOMISED REPORTS"),
                     repository.FindFeatureByName("MS PROJECT COMPATIBLE"),
                     repository.FindFeatureByName("SSL SECURITY"),
                     repository.FindFeatureByName("MILITARY GRADE DOCUMENT SECURITY"),
@@ -22258,31 +25060,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -22322,8 +25148,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -22357,7 +25183,7 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindFeatureByName("BUDGET TRACKING"),
                     //repository.FindFeatureByName("CLIENT INVOICING"),
                     //repository.FindFeatureByName("PROJECT WIKI"),
-                    repository.FindFeatureByName("CUSTOMIZED REPORTS"),
+                    repository.FindFeatureByName("CUSTOMISED REPORTS"),
                     repository.FindFeatureByName("MS PROJECT COMPATIBLE"),
                     repository.FindFeatureByName("SSL SECURITY"),
                     repository.FindFeatureByName("MILITARY GRADE DOCUMENT SECURITY"),
@@ -22451,31 +25277,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -22515,8 +25365,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -22550,7 +25400,7 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindFeatureByName("BUDGET TRACKING"),
                     repository.FindFeatureByName("CLIENT INVOICING"),
                     repository.FindFeatureByName("PROJECT WIKI"),
-                    repository.FindFeatureByName("CUSTOMIZED REPORTS"),
+                    repository.FindFeatureByName("CUSTOMISED REPORTS"),
                     repository.FindFeatureByName("MS PROJECT COMPATIBLE"),
                     repository.FindFeatureByName("SSL SECURITY"),
                     repository.FindFeatureByName("MILITARY GRADE DOCUMENT SECURITY"),
@@ -22644,31 +25494,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -22708,8 +25582,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -22743,7 +25617,7 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindFeatureByName("BUDGET TRACKING"),
                     //repository.FindFeatureByName("CLIENT INVOICING"),
                     //repository.FindFeatureByName("PROJECT WIKI"),
-                    repository.FindFeatureByName("CUSTOMIZED REPORTS"),
+                    repository.FindFeatureByName("CUSTOMISED REPORTS"),
                     repository.FindFeatureByName("MS PROJECT COMPATIBLE"),
                     repository.FindFeatureByName("SSL SECURITY"),
                     repository.FindFeatureByName("MILITARY GRADE DOCUMENT SECURITY"),
@@ -22837,31 +25711,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -22901,8 +25799,8 @@ namespace CloudCompare.POCOQueryRepository
                     //repository.FindBrowserByName("CHROME"),
                     //repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -22936,7 +25834,7 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindFeatureByName("BUDGET TRACKING"),
                     //repository.FindFeatureByName("CLIENT INVOICING"),
                     //repository.FindFeatureByName("PROJECT WIKI"),
-                    repository.FindFeatureByName("CUSTOMIZED REPORTS"),
+                    repository.FindFeatureByName("CUSTOMISED REPORTS"),
                     repository.FindFeatureByName("MS PROJECT COMPATIBLE"),
                     repository.FindFeatureByName("SSL SECURITY"),
                     repository.FindFeatureByName("MILITARY GRADE DOCUMENT SECURITY"),
@@ -23030,31 +25928,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -23098,8 +26020,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -23227,31 +26149,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -23291,8 +26237,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -23420,31 +26366,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -23484,8 +26454,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -23613,31 +26583,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -23677,8 +26671,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -23806,31 +26800,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -23870,8 +26888,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -23999,31 +27017,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -24063,8 +27105,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -24192,31 +27234,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -24256,8 +27322,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -24385,31 +27451,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -24449,8 +27539,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -24578,31 +27668,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -24642,8 +27756,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -24771,31 +27885,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -24835,8 +27973,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -24964,31 +28102,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -25028,8 +28190,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -25157,31 +28319,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -25221,8 +28407,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -25350,31 +28536,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -25414,8 +28624,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -25543,31 +28753,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -25607,8 +28841,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -25736,31 +28970,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -25800,8 +29058,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -25929,31 +29187,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -25993,8 +29275,8 @@ namespace CloudCompare.POCOQueryRepository
                     repository.FindBrowserByName("CHROME"),
                     repository.FindBrowserByName("SAFARI"),
                 },
-                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName("1"),
-                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName("99"),
+                LicenceTypeMinimum = repository.FindLicenceTypeMinimumByName(1),
+                LicenceTypeMaximum = repository.FindLicenceTypeMaximumByName(99),
                 Languages = new List<Language>()
                 {
                     repository.FindLanguageByName("ENGLISH")
@@ -26122,31 +29404,55 @@ namespace CloudCompare.POCOQueryRepository
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("WHITE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_WHITE_PAPER_FILEPATH+PDF_TEST_WHITE_PAPER_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_WHITE_PAPER_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_WHITE_PAPER_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_WHITE_PAPER_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                     new ThumbnailDocument()
                     {
                         ThumbnailDocumentTitle = repository.GetDescription(4),
                         ThumbnailDocumentType = repository.FindThumbnailDocumentTypeByName("CASE"),
+                        ThumbnailImage = GhostscriptWrapper.GetPageThumb(PDF_TEST_CASE_STUDY_FILEPATH+PDF_TEST_CASE_STUDY_FILENAME,OUTPUT_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg", new Random().Next(1,PDF_TEST_CASE_STUDY_PAGE_COUNT), IMAGE_FILE_WIDTH, IMAGE_FILE_HEIGHT),
+                        ThumbnailDocumentURL = "http://www.bbc.co.uk",
+                        ThumbnailDocumentPhysicalFilePath = PDF_TEST_CASE_STUDY_FILEPATH,
+                        ThumbnailDocumentFileName = PDF_TEST_CASE_STUDY_FILENAME,
                     },
                 },
                 #endregion
@@ -26159,6 +29465,18 @@ namespace CloudCompare.POCOQueryRepository
             #endregion
 
             #endregion
+        }
+
+        public void InsertRatings(ICloudCompareContext context, Random r)
+        {
+            foreach (CloudApplication ca in context.CloudApplications)
+            {
+
+                ca.AverageOverallRating = (decimal)r.NextDouble()*100;
+                ca.AverageEaseOfUse = (decimal)r.NextDouble() * 100;
+                ca.AverageValueForMoney = (decimal)r.NextDouble() * 100;
+                ca.AverageFunctionality = (decimal)r.NextDouble() * 100;
+            }
         }
     }
 }

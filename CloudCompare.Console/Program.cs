@@ -29,6 +29,7 @@ namespace CloudCompare.Console
             //Database.SetInitializer(new DropCreateDatabaseAlways<CloudCompareContext>());
             //InsertVendor();
             StageData();
+            //LoadRatings();
 
             //string outputFile = SINGLE_FILE_LOCATION + Guid.NewGuid().ToString() + ".jpg";
             //GetThumbnail("J:\\CloudCompare\\CloudCompare.Web\\Documents\\WhitePapers\\words.pdf");
@@ -108,6 +109,49 @@ namespace CloudCompare.Console
                         //Trace.TraceInformation("Property: {0} Error: {1}", validationError.PropertyName, validationError.ErrorMessage);
                     }
                 }
+            }
+
+        
+        
+            LoadRatings(context);
+            try
+            {
+                context.SaveChanges();
+            }
+            catch (DbEntityValidationException dbEx)
+            {
+                foreach (var validationErrors in dbEx.EntityValidationErrors)
+                {
+                    foreach (var validationError in validationErrors.ValidationErrors)
+                    {
+                        Trace.TraceInformation("Property: {0} Error: {1}", validationError.PropertyName, validationError.ErrorMessage);
+                    }
+                }
+            }
+            catch (DbUpdateException dbEx)
+            {
+                foreach (var validationErrors in dbEx.Entries)
+                {
+                    //foreach (var validationError in validationErrors.ValidationErrors)
+                    {
+                        //Trace.TraceInformation("Property: {0} Error: {1}", validationError.PropertyName, validationError.ErrorMessage);
+                    }
+                }
+            }
+
+        }
+        #endregion
+
+        #region LoadRatings
+        private static void LoadRatings(CloudCompareContext context)
+        {
+            //using (var context = new CloudCompareContext())
+            {
+                var data = new FakeData();
+                Random r = new Random();
+
+                data.InsertRatings(context,r);
+                context.SaveChanges();
             }
 
         }

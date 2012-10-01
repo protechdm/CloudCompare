@@ -15,7 +15,16 @@ namespace CloudCompare.Web.Models
         {
         }
 
-        public int? CategoryID { get; set; }
+        public int? PreviouslyChosenCategoryID { get; set; }
+        public int? ChosenCategoryID { get; set; }
+        [Display(Name = "Categories")]
+        public IList<CategoryModel> Categories { get; set; }
+
+
+        public int? ChosenNumberOfUsers { get; set; }
+        [Display(Name = "Users")]
+        public IList<NumberOfUsersModel> NumberOfUsers { get; set; }
+
         //[Display(Name = "Categories", ResourceType = typeof(App_LocalResources.ENG_Case))]
         [Display(Name = "Search Filters")]
         //[UIHint("SearchFilter")]

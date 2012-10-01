@@ -16,7 +16,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudCompare.POCOQueryRepos
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudCompare.Console", "CloudCompare.Console\CloudCompare.Console.csproj", "{052B7CB2-A48A-4EE9-A9C2-B806B5A08B3A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GhostscriptSharp", "..\mephraim-ghostscriptsharp-1cdb015\GhostScriptSharp\GhostscriptSharp.csproj", "{56605627-E6FA-4F47-9440-FB877CEA5C84}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GhostscriptSharp", "GhostScriptSharp\GhostscriptSharp.csproj", "{56605627-E6FA-4F47-9440-FB877CEA5C84}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

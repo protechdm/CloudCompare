@@ -13,7 +13,7 @@ namespace CloudCompare.POCOQueryRepository.Configurations
         {
             ToTable("LicenceTypeMinimums");
             Property(d => d.LicenceTypeMinimumName).IsRequired();
-            Property(d => d.LicenceTypeMinimumName).HasMaxLength(105);
+            //Property(d => d.LicenceTypeMinimumName).HasMaxLength(105);
             Property(d => d.RowVersion).IsRowVersion();
         }
     }
@@ -24,7 +24,7 @@ namespace CloudCompare.POCOQueryRepository.Configurations
         {
             ToTable("LicenceTypeMaximums");
             Property(d => d.LicenceTypeMaximumName).IsRequired();
-            Property(d => d.LicenceTypeMaximumName).HasMaxLength(105);
+            //Property(d => d.LicenceTypeMaximumName).HasMaxLength(105);
             Property(d => d.RowVersion).IsRowVersion();
         }
     }

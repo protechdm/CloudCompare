@@ -276,6 +276,10 @@ namespace CloudCompare.POCOQueryRepository
                               where cf.FeatureName.ToUpper().StartsWith(featureName.ToUpper())
                          select cf).FirstOrDefault();
 
+            if (f2 == null)
+            {
+                string x = "";
+            }
             return new CloudApplicationFeature()
             {
                 Feature = f2    
@@ -328,23 +332,33 @@ namespace CloudCompare.POCOQueryRepository
         #endregion
 
         #region FindLicenceTypeMinimumByName
-        public LicenceTypeMinimum FindLicenceTypeMinimumByName(string licenceTypeMinimumName)
+        public LicenceTypeMinimum FindLicenceTypeMinimumByName(int licenceTypeMinimumName)
         {
-            LicenceTypeMinimum f1 = _context.LicenceTypeMinimums.Where(x => x.LicenceTypeMinimumName.ToUpper().StartsWith(licenceTypeMinimumName.ToUpper())).FirstOrDefault();
+            //LicenceTypeMinimum f1 = _context.LicenceTypeMinimums.Where(x => x.LicenceTypeMinimumName.ToUpper().StartsWith(licenceTypeMinimumName.ToUpper())).FirstOrDefault();
+            //LicenceTypeMinimum f2 = (from cf in _context.LicenceTypeMinimums
+            //              where cf.LicenceTypeMinimumName.ToUpper().StartsWith(licenceTypeMinimumName.ToUpper())
+            //              select cf).FirstOrDefault();
+
+            LicenceTypeMinimum f1 = _context.LicenceTypeMinimums.Where(x => x.LicenceTypeMinimumName == licenceTypeMinimumName).FirstOrDefault();
             LicenceTypeMinimum f2 = (from cf in _context.LicenceTypeMinimums
-                          where cf.LicenceTypeMinimumName.ToUpper().StartsWith(licenceTypeMinimumName.ToUpper())
-                          select cf).FirstOrDefault();
+                                     where cf.LicenceTypeMinimumName == licenceTypeMinimumName
+                                     select cf).FirstOrDefault();
 
             return f2;
         }
         #endregion
 
         #region FindLicenceTypeMaximumByName
-        public LicenceTypeMaximum FindLicenceTypeMaximumByName(string licenceTypeMaximumName)
+        public LicenceTypeMaximum FindLicenceTypeMaximumByName(int licenceTypeMaximumName)
         {
-            LicenceTypeMaximum f1 = _context.LicenceTypeMaximums.Where(x => x.LicenceTypeMaximumName.ToUpper().StartsWith(licenceTypeMaximumName.ToUpper())).FirstOrDefault();
+            //LicenceTypeMaximum f1 = _context.LicenceTypeMaximums.Where(x => x.LicenceTypeMaximumName.ToUpper().StartsWith(licenceTypeMaximumName.ToUpper())).FirstOrDefault();
+            //LicenceTypeMaximum f2 = (from cf in _context.LicenceTypeMaximums
+            //                         where cf.LicenceTypeMaximumName.ToUpper().StartsWith(licenceTypeMaximumName.ToUpper())
+            //                         select cf).FirstOrDefault();
+
+            LicenceTypeMaximum f1 = _context.LicenceTypeMaximums.Where(x => x.LicenceTypeMaximumName == licenceTypeMaximumName).FirstOrDefault();
             LicenceTypeMaximum f2 = (from cf in _context.LicenceTypeMaximums
-                                     where cf.LicenceTypeMaximumName.ToUpper().StartsWith(licenceTypeMaximumName.ToUpper())
+                                     where cf.LicenceTypeMaximumName == licenceTypeMaximumName
                                      select cf).FirstOrDefault();
 
             return f2;
@@ -508,7 +522,7 @@ namespace CloudCompare.POCOQueryRepository
         #endregion
 
         #region test
-        public IList<SearchFilterTwoColumn> Test(int categoryID)
+        public IList<SearchFilterTwoColumn> Test(int categoryID, int numberOfUsers)
         {
             #region Crap
             //Data Source=.\SQLEXPRESS;Initial Catalog=CloudCompare.POCOQueryRepository.CloudCompareContext;Integrated Security=True;MultipleActiveResultSets=True
@@ -545,7 +559,7 @@ namespace CloudCompare.POCOQueryRepository
             //List<Browser> featurelist = _context.Browsers.ToList();
             IList<SearchFilterTwoColumn> allFeatures = GetSearchOptions(categoryID);
             //List<Browser> featurelist = _context.Browsers.ToList();
-            
+            //IList<NumberOfUsers> numberOfUsersList = GetNumberOfUsers();
             IList<SearchFilterTwoColumn> browserList = GetSearchFiltersForFilterType<SearchFilterTwoColumn,SearchFilterTwoColumn>(allFeatures,FILTER_BROWSERS);
             IList<SearchFilterTwoColumn> featureList = (IList<SearchFilterTwoColumn>)GetSearchFiltersForFilterType<SearchFilterTwoColumn, SearchFilterOneColumn>(allFeatures, FILTER_FEATURES);
             IList<SearchFilterTwoColumn> languageList = GetSearchFiltersForFilterType<SearchFilterTwoColumn, SearchFilterTwoColumn>(allFeatures, FILTER_LANGUAGES);
@@ -889,19 +903,48 @@ namespace CloudCompare.POCOQueryRepository
             try
             {
 
-                var list = (
-                    from x 
-                        in _context.Features
-                        where x.Category.CategoryID == categoryID
-                        select new SearchFilterTwoColumn()
+                var listTemp = (
+                    from x
+                    in _context.Features
+                    //where x.Category.CategoryID == categoryID
+                    where x.Categories.Any(y => y.CategoryID == categoryID)
+                    select new SearchFilterTwoColumn()
                     {
-                        CategoryCol1 = x.Category,
+                        CategoryCol1 = x.Categories.FirstOrDefault(z => z.CategoryID == categoryID),
+                        //CategoryCol1 = x.Categories.AsQueryable().FirstOrDefault(z => z.CategoryID == FindCategoryByName),
                         SearchFilterID = x.FeatureID,
                         SearchFilterNameCol1 = x.FeatureName,
                         SearchFilterTypeNameCol1 = FILTER_FEATURES,
                     }
-                    )
-                    
+                ).ToList();
+
+                var list = (
+                    //from x 
+                    //    in _context.Features
+                    //    //where x.Category.CategoryID == categoryID
+                    //where x.Categories.Any(y => y.CategoryID == categoryID)
+                    //select new SearchFilterTwoColumn()
+                    //{
+                    //    //CategoryCol1 = x.Category,
+                    //    SearchFilterID = x.FeatureID,
+                    //    SearchFilterNameCol1 = x.FeatureName,
+                    //    SearchFilterTypeNameCol1 = FILTER_FEATURES,
+                    //}
+                    //)
+
+                                        from x
+                    in _context.Features
+                    //where x.Category.CategoryID == categoryID
+                    where x.Categories.Any(y => y.CategoryID == categoryID)
+                    select new SearchFilterTwoColumn()
+                    {
+                        CategoryCol1 = x.Categories.FirstOrDefault(z => z.CategoryID == categoryID),
+                        //CategoryCol1 = x.Categories.AsQueryable().FirstOrDefault(z => z.CategoryID == FindCategoryByName),
+                        SearchFilterID = x.FeatureID,
+                        SearchFilterNameCol1 = x.FeatureName,
+                        SearchFilterTypeNameCol1 = FILTER_FEATURES,
+                    }
+                )
                     .Union(
                     from x
                         in _context.OperatingSystems
@@ -1057,6 +1100,23 @@ namespace CloudCompare.POCOQueryRepository
         }
         #endregion
 
+
+
+        public IList<NumberOfUsers> GetNumberOfUsers()
+        {
+            List<NumberOfUsers> NumberOfUsers = new List<NumberOfUsers>();
+            for (int i = 0; i <= 50; i++)
+            {
+                NumberOfUsers.Add(new NumberOfUsers() { UserValue = i });
+            }
+
+            var retVal1 = _context.LicenceTypeMaximums.Select(x => new { User = x.LicenceTypeMaximumName } ).ToList().Select(y => y.User).Where(z => z > 50);
+
+            //var retVal2 = _context.LicenceTypeMinimums.Where(x => int.Parse(x.LicenceTypeMinimumName) > 50).OrderBy(x => int.Parse(x.LicenceTypeMinimumName));
+
+            retVal1.ForEach(x => NumberOfUsers.Add(new NumberOfUsers() { UserValue = x }));
+            return NumberOfUsers;
+        }
     }
 
 

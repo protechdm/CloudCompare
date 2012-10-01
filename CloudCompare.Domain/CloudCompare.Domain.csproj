@@ -54,6 +54,7 @@
     <Compile Include="Models\CloudApplicationFeature.cs" />
     <Compile Include="Models\CloudApplicationReview.cs" />
     <Compile Include="Models\CloudApplicationRating.cs" />
+    <Compile Include="Models\NumberOfUsers.cs" />
     <Compile Include="Models\ThumbnailDocument.cs" />
     <Compile Include="Models\ThumbnailDocumentType.cs" />
     <Compile Include="Models\SearchFilterTwoColumn.cs" />
